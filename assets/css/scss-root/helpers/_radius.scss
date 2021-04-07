@@ -1,0 +1,53 @@
+/* -------------------------------------------- */
+/* ############### BorderRadius ############### */
+/* -------------------------------------------- */
+// Top,Right,Bottom,Left Position
+$num: 0;
+@while $num <= 15 {
+  .rds-#{$num}    { border-radius: #{$num}px;  }
+  $num: $num + 1;
+}
+
+$num: 0;
+@while $num <= 15 {
+  $p: $num + "%";
+  .rds-#{$num}p    { border-radius: #{$p};  }
+  $num: $num + 1;
+}
+
+$num: 20;
+@while $num <= 50 {
+  .rds-#{$num}    { border-radius: #{$num}px;  }
+  $num: $num + 5;
+}
+
+$num: 20;
+@while $num <= 50 {
+  $p: $num + "%";
+  .rds-#{$num}p    { border-radius: #{$p};  }
+  $num: $num + 5;
+}
+
+$num: 0;
+@while $num <= 15 {
+  .rds-top-right-#{$num}    { border-top-right-radius: #{$num}px;  }
+  $num: $num + 1;
+}
+
+$num: 0;
+@while $num <= 15 {
+  .rds-top-left-#{$num}    { border-top-left-radius: #{$num}px;  }
+  $num: $num + 1;
+}
+
+$num: 0;
+@while $num <= 15 {
+  .rds-bottom-right-#{$num}    { border-bottom-right-radius: #{$num}px;  }
+  $num: $num + 1;
+}
+
+$num: 0;
+@while $num <= 15 {
+  .rds-bottom-left-#{$num}    { border-bottom-left-radius: #{$num}px;  }
+  $num: $num + 1;
+}

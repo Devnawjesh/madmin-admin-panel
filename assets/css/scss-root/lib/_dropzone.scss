@@ -1,0 +1,203 @@
+.dropzone {
+    min-height: 265px;
+}
+
+.dz-wrapper {
+    min-height: auto;
+    margin-bottom: 10px;
+
+    &.dz-default {
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+        border: 2px dashed $border-color;
+        background-color: $light-light;
+        border-radius: 4px;
+
+        &.dz-message {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .dz-msg-title {
+            color: $secondary;
+            margin: 0 0 5px;
+            padding: 0;
+            font-weight: 500;
+            font-size: 12px;
+        }
+
+        .dz-msg-desc {
+            color: $secondary;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+    }
+
+    .dz-preview {
+        min-height: 160px;
+
+        &.dz-file-preview {
+            .dz-image {
+                border-radius: 4px;
+            }
+        }
+
+        .dz-image {
+            border-radius: 4px;
+        }
+
+        .dz-details {
+            .dz-size {
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .dz-filename {
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+
+        .dz-progress {
+            height: 7px;
+            left: 0;
+            top: 85%;
+            margin-top: -8px;
+            width: 100%;
+            margin-left: 0;
+            background: $light;
+            border-radius: 2px;
+
+            .dz-upload {
+                background-color: $success;
+            }
+        }
+
+        .dz-error-message {
+            border-radius: 4px;
+            font-size: 12px;
+            background-color: $danger;
+            padding: 7px;
+            font-weight: 500;
+        }
+
+        .dz-error-mark,
+        .dz-success-mark {
+            margin-left: -12px;
+            margin-top: -7px;
+            border-radius: 50%;
+
+            svg {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        .dz-success-mark {
+            background: $success;
+        }
+
+        .dz-error-mark {
+            background: $danger;
+        }
+    }
+
+    &.dz-modern {
+        border: 0;
+        padding: 0;
+
+        .dz-message {
+            display: none;
+        }
+
+        .dz-row {
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+            margin-top: 7px;
+            padding: 7px 15px;
+            background-color: $light-light;
+
+            .dz-file {
+                flex-grow: 1;
+
+                .dz-filename {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $secondary;
+                    max-width: 300px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                    b {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: $secondary;
+                    }
+                }
+
+                .dz-error {
+                    margin-top: 10px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $danger;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            .dz-progress {
+                width: 25%;
+
+                .progress {
+                    height: 5px;
+                    transition: all 220ms ease-in-out;
+                }
+            }
+
+            .dz-options {
+                margin-left: 15px;
+                display: flex;
+                flex-wrap: nowrap;
+
+                .dz-start {
+                    transition: all 0.2s ease-in-out;
+                }
+
+                .dz-cancel,
+                .dz-remove,
+                .dz-start {
+                    height: 20px;
+                    width: 20px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    i {
+                        font-size: 14px;
+                    }
+                }
+
+                .dz-start {
+                    i {
+                        color: $primary;
+                    }
+                }
+
+                .dz-cancel {
+                    i {
+                        color: $warning;
+                    }
+                }
+
+                .dz-remove {
+                    i {
+                        color: $danger;
+                    }
+                }
+            }
+        }
+    }
+}

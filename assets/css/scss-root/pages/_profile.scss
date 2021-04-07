@@ -1,0 +1,303 @@
+.profile .profile-cover-img {
+    width: 100%;
+    height: 200px;
+}
+
+.profile-img {
+    margin-top: -85px;
+    margin-bottom: 15px;
+
+    img {
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+    }
+}
+
+.profile-tab li a.nav-link {
+    padding: 15px 20px;
+}
+
+.profile-row {
+    padding: 15px 0;
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 5px;
+}
+
+.address {
+    .map {
+        iframe {
+            width: 100%;
+            max-width: 100%;
+            height: 180px;
+            border: 0;
+        }
+    }
+
+    i {
+        font-size: 18px;
+        color: $secondary;
+    }
+
+    h6,
+    span {
+        font-size: 14px;
+        color: $secondary;
+        font-weight: 400;
+    }
+}
+@media(max-width: 576px) {
+    .address .map iframe {
+        min-width: 100%;
+        width: 100%;
+    }
+}
+
+.profile {
+    h6 {
+        font-size: 14px;
+        color: $secondary;
+    }
+
+    .designation {
+        font-size: 13px;
+        margin-top: 3px;
+        color: #607D8B;
+    }
+
+    .description {
+        font-size: 14px;
+        color: #797979;
+    }
+}
+
+.team {
+    h4 {
+        font-weight: 500;
+        color: $queen-blue;
+        margin: 0;
+    }
+
+    .team-details {
+        img {
+            width: 70px;
+            height: 70px;
+        }
+
+        h6 {
+            font-size: 14px;
+            font-weight: 500;
+            color: $secondary;
+        }
+
+        p {
+            font-size: 13px;
+            margin-top: 3px;
+            color: #607D8B;
+        }
+
+        .skill {
+            .title {
+                font-size: 14px;
+                font-weight: 400;
+                color: $secondary;
+            }
+        }
+    }
+
+    .bio {
+        font-size: 14px;
+        color: $secondary;
+    }
+}
+
+.profile-v2 {
+    .profile-header {
+        .profile-image {
+            position: relative;
+            height: 100%;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba($light, 0.05);
+
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+            }
+
+            .social-icons {
+                display: flex;
+                align-items: center;
+
+                a {
+                    color: $light;
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 500;
+
+                    + a {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .profile-summary {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            @include media-breakpoint-down(md) {
+                margin-top: 15px;
+            }
+
+            .basic-info {
+                .full-name {
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
+
+                .username {
+                    font-size: 14px;
+                    color: $light;
+                }
+            }
+
+            .contact-buttons {
+                button {
+                    background-color: rgba($primary, 0.05);
+                    color: $primary;
+                    border: none;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .stats {
+            font-size: 14px;
+            color: $light;
+            display: flex;
+
+            .stats-item {
+                .stats-cat {
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    display: block;
+                    color: $light;
+                    font-weight: 500;
+                    margin-bottom: 0;
+                }
+
+                .stats-number {
+                    font-size: 16px;
+                    color: #000;
+                    font-weight: 500;
+                }
+
+                + .stats-item {
+                    margin-left: 55px;
+                }
+            }
+        }
+
+        .extra-info {
+            display: flex;
+
+            .info-item {
+                .info-icon {
+                    font-size: 22px;
+                    color: $primary;
+                    font-weight: 500;
+                    margin-bottom: 0;
+                }
+
+                .info-text {
+                    font-weight: 500;
+                    color: $secondary;
+                }
+
+                + .info-item {
+                    margin-left: 55px;
+                }
+            }
+        }
+    }
+
+    .profile-body {
+        .profile-sidebar {
+            border-left: 1px solid $border-color !important;
+            @include media-breakpoint-down(lg) {
+                border-left: none !important;
+                margin-top: 25px;
+            }
+
+            .about-me {
+                font-size: 13px;
+                font-weight: 400;
+            }
+
+            .stats-summary {
+                display: flex;
+                color: $light;
+                justify-content: space-between;
+
+                .stats-item {
+                    .stats-cat {
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        display: block;
+                        color: $light;
+                        font-weight: 500;
+                        margin-bottom: 0;
+                    }
+
+                    .stats-number {
+                        font-size: 16px;
+                        color: #000;
+                        font-weight: 500;
+                    }
+
+                    + .stats-item {
+                        margin-left: 15px;
+                    }
+                }
+            }
+
+            .profile-info-list {
+                li {
+                    padding: 0;
+                    margin-bottom: 10px;
+
+                    a {
+                        display: block;
+                        font-size: 13px;
+                        font-weight: 400;
+
+                        i {
+                            font-size: 16px;
+                            position: relative;
+                            top: 5px;
+                            color: $light;
+                        }
+
+                        span {
+                            line-height: 16px;
+                            color: $secondary;
+                        }
+                    }
+                }
+            }
+
+            .profile-skills {
+                span {
+                    font-size: 10px;
+                    color: $light;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

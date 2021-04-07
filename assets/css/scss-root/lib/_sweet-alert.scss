@@ -1,0 +1,55 @@
+.swal-modal {
+    border-radius: 4px;
+
+    .swal-icon {
+        .swal-icon--warning {
+            border-color: $warning;
+        }
+
+        .swal-icon--success {
+            border-color: $success;
+        }
+    }
+
+    .swal-title {
+        color: $secondary;
+        font-weight: 400;
+        font-size: 25px;
+    }
+
+    .swal-text {
+        font-size: 14px;
+        font-weight: 400;
+        color: $secondary;
+    }
+
+    .swal-footer {
+        text-align: center;
+
+        .swal-button-container {
+            .swal-button {
+                color: $primary;
+                background-color: rgba($primary, 0.1);
+
+                &:active {
+                    color: #fff;
+                    background-color: $primary;
+                }
+
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+
+            .swal-button--cancel {
+                background-color: $secondary;
+                color: #fff;
+            }
+
+            .swal-button__loader {
+                background-color: #fff;
+            }
+        }
+    }
+}

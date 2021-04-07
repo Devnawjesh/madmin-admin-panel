@@ -1,0 +1,155 @@
+.invoice-wrapper {
+    padding: 25px;
+}
+
+.invoice-wrapper table tr td img {
+    border-radius: 0;
+    width: 150px;
+    height: auto;
+}
+
+.invoice-table {
+    margin: 15px;
+}
+
+.invoice-v2 {
+	background-color: #fff;
+	max-width: 640px;
+	margin: 0 auto;
+	font-family: $font-family-base;
+
+	.invoice-header-wrapper {
+		background-color: $primary;
+
+		.invoice-title {
+			justify-content: space-between;
+			align-items: center;
+			color: #fff;
+			font-weight: 700;
+
+			svg {
+				width: 80px;
+				max-width: 80px;
+				height: auto;
+			}
+
+		}
+
+		.invoice-details {
+			color: #fff;
+
+			.invoice-date-num,
+			.invoice-from-to {
+
+				.left-side,
+				.right-side {
+					flex: 0 0 50%;
+
+					.cat-title {
+						text-transform: uppercase;
+					    font-weight: 700;
+					    font-size: 14px;
+					}
+
+					.cat-text {
+						font-weight: 400;
+    					font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+
+	.invoice-table {
+		thead,
+		tbody {
+			th,
+			td {
+				&:first-child {
+					background-color: rgba($light-light, 0.3);
+					color: $dark;
+					font-weight: 500;
+				}
+
+				&:not(:first-child) {
+					color: darken($light, 20%);
+				}
+			}
+		}
+	}
+
+	.invoice-table-footer {
+		  display: flex;
+    	justify-content: space-between;
+
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+      }
+
+    	.invoice-notes {
+    		width: 50%;
+    		color: darken($light, 20%);
+
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+    	}
+
+    	.invoice-total {
+    		width: 30%;
+
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+        }
+
+    		ul {
+    			list-style: none;
+			    margin: 0;
+			    padding: 0;
+
+			    li {
+			    	display: flex;
+    				justify-content: space-between;
+
+    				.cat {
+						color: darken($light, 20%);
+    				}
+
+    				.amount {
+						color: darken($light, 20%);
+    				}
+
+					&:last-child {
+						font-size: 18px;
+						font-weight: 700;
+						color: $primary !important;
+						margin-top: 15px;
+					}
+			    }
+    		}
+    	}
+	}
+
+	.invoice-footer {
+		display: flex;
+		justify-content: space-between;
+
+		.logo {
+			width: 100px;
+		}
+
+		.copyright {
+			color: $light;
+			font-size: 14px;
+		}
+	}
+}
+
+.invoice-print-options {
+	background-color: #fff;
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 15px;
+	border-top: 1px solid $border-color;
+}

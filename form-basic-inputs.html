@@ -1,0 +1,2457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="assets/images/favicon.ico">
+
+    <title>Forms | Basic Inputs</title>
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/js/vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/js/vendor/prism/prism.css">
+
+    <!-- Madmin CSS -->
+    <link rel="stylesheet" href="assets/css/scss-root/main.css">
+
+  </head>
+
+  <body class="vertical">
+
+    <!-- #app start -->
+    <div id="app">
+
+      <!-- header.topbar start-->
+      <header class="topbar">
+
+        <!--navbar Logo section left-->
+        <div class="topbar-left">
+          <div class="main-logo">
+            <a href="index.html" class="madmin-logo-link">
+              <img src="assets/images/madmin-logo-icon.png" class="logo" alt="Madmin logo">
+            </a>
+            <a href="index.html" class="logo-text">Madmin</a>
+          </div>
+        </div>
+        <!--Topbar Logo section end-->
+
+        <!--navbar menu section right-->
+        <nav class="navbar-main navbar-full d-flex flex-nowrap flex-row">
+
+          <!-- .nav-left start -->
+          <ul class="navbar-inner nav-left d-flex flex-row pl-0 mb-0 order-1 bdr-l">
+            <li class="text-center">
+              <a href="#" id="show-menubar" class="nav-link text-center">
+                <i class="icon-menu"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- .nav-left end -->
+
+          <!-- .navbar-inner start -->
+          <ul class="navbar-inner d-flex flex-row ml-auto mb-0 m-20 order-2">
+            <li class="search-dropin">
+
+              <a href="#" id="searchIcon" class="nav-link search-icon">
+                <i class="icon-magnifier"></i>
+              </a>
+
+              <!-- .search-input-field start -->
+              <div class="search-input-field">
+                <input type="search" class="form-control form-field" placeholder="Type to search...">
+                <button class="btn">
+                  <i class="icon-magnifier"></i>
+                </button>
+                <a id="closeSearchBox" href="" class="">
+                  <i class=" icon-close"></i>
+                </a>
+              </div>
+              <!-- .search-input-field end -->
+
+            </li>
+            <li class="dropdown">
+
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link notification-icon">
+                <i class="icon-grid"></i>
+              </a>
+
+              <!-- .boxed-dropdown start -->
+              <div class="dropdown-menu pdn-8" aria-labelledby="dropdownMenuButton">
+                <div class="boxed-dropdown">
+                  <a class="dropdown-icon-menu pt-3 pb-3 " href="mail-inbox.html">
+                    <i class="icon-envelope-open d-block"></i>
+                    <span>Mail</span>
+                  </a>
+                  <a class="dropdown-icon-menu pt-3 pb-3" href="chat.html">
+                    <i class="icon-bubbles d-block"></i>
+                    <span>Messages</span>
+                  </a>
+                  <a class="dropdown-icon-menu pt-3 pb-3" href="#">
+                    <i class="icon-bag d-block"></i>
+                    <span>Orders</span>
+                  </a>
+                  <a class="dropdown-icon-menu pt-3 pb-3" href="fullcalendar.html">
+                    <i class="icon-calendar d-block"></i>
+                    <span>Calender</span>
+                  </a>
+                </div>
+              </div>
+              <!-- .boxed-dropdown end -->
+
+            </li>
+            <li class="dropdown">
+
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link">
+                <i class="icon-bell"></i>
+                <span class="notify"></span>
+                <span class="heartbeat"></span>
+              </a>
+
+              <!-- .notification-dropdown start -->
+              <div class="dropdown-menu pdn-8" aria-labelledby="dropdownMenuButton">
+                <div class="notification-dropdown list-group-notification list-group list-group-borderless">
+                  <div class="notification-wrapper">
+                    <div class="d-flex flex-row list-group-item">
+                      <img src="assets/images/user/thumb/default.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                      <div class="info">
+                        <p class="top">John Snow commented</p>
+                        <span class="bottom">02 minutes ago</span>
+                      </div>
+                      <div class="buttons ml-auto">
+                        <a href="#">
+                          <div class="icon-wrapper">
+                            <i class="icon-trash"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row list-group-item">
+                      <img src="assets/images/user/thumb/user-thumb-1.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                      <div class="info">
+                        <p class="top">Era Lara reacted on a post you posted yesterday.</p>
+                        <span class="bottom">15 minutes ago.</span>
+                      </div>
+                      <div class="buttons ml-auto">
+                        <a href="#">
+                          <div class="icon-wrapper">
+                            <i class="icon-trash"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row list-group-item">
+                      <img src="assets/images/user/thumb/user-thumb-2.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                      <div class="info">
+                        <p class="top">John Snow wrote on your wall.</p>
+                        <span class="bottom">01 hour ago</span>
+                      </div>
+                      <div class="buttons ml-auto">
+                        <a href="#">
+                          <div class="icon-wrapper">
+                            <i class="icon-trash"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row list-group-item">
+                      <img src="assets/images/user/thumb/user-thumb-8.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                      <div class="info">
+                        <p class="top">Jhon Censoria commented on an image.</p>
+                        <span class="bottom">06 hours ago</span>
+                      </div>
+                      <div class="buttons ml-auto">
+                        <a href="#">
+                          <div class="icon-wrapper">
+                            <i class="icon-trash"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row list-group-item">
+                      <img src="assets/images/user/thumb/user-thumb-1.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                      <div class="info">
+                        <p class="top">Diago Estallo commented on an image.</p>
+                        <span class="bottom">20 hours ago</span>
+                      </div>
+                      <div class="buttons ml-auto">
+                        <a href="#">
+                          <div class="icon-wrapper">
+                            <i class="icon-trash"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row list-group-item list-group-footer">
+                    <a href="#">
+                      <span class="text-uppercase">View All</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- .notification-dropdown end -->
+
+            </li>
+            <li class="dropdown">
+
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link user-dropdown-icon">
+                <img src="assets/images/user/thumb/default.png" alt="Notification" class="list-thumbnail  rounded-circle">
+              </a>
+
+              <!-- .user-dropdown start -->
+              <div class="user-dropdown dropdown-menu pdn-15" aria-labelledby="dropdownMenuButton">
+                <div class="media">
+                  <img src="assets/images/user/thumb/default.png" alt="Notification" class="user-thumb rounded-circle mr-3">
+                  <div class="media-body">
+                    <h5 class="mgn-0">Sirus Holding</h5>
+                    sirus@neonmail.com
+                  </div>
+                </div>
+                <ul class="list-group list-group-borderless mgn-t-15">
+                  <li class="list-group-item pdn-y-5 pdn-x-0">
+                    <i class="icon-user"></i>
+                    <a href="#">
+                      <span class="mgn-l-10">Profile</span>
+                    </a>
+                  </li>
+                  <li class="list-group-item pdn-y-5 pdn-x-0">
+                    <i class="icon-key"></i>
+                    <a href="#">
+                      <span class="mgn-l-10">Change password</span>
+                    </a>
+                  </li>
+                  <li class="list-group-item pdn-y-5 pdn-x-0">
+                    <i class="icon-settings"></i>
+                    <a href="#">
+                      <span class="mgn-l-10">Settings</span>
+                    </a>
+                  </li>
+                  <li class="list-group-item pdn-y-5 pdn-x-0">
+                    <i class="icon-logout"></i>
+                    <a href="#">
+                      <span class="mgn-l-10">Signout</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- .user-dropdown end -->
+
+            </li>
+
+          </ul>
+          <!-- .navbar-inner end -->
+
+        </nav>
+        <!--navbar menu section right end-->
+
+      </header>
+      <!-- header.topbar end-->
+
+      <!-- .aside-wrapper start -->
+      <aside class="aside-wrapper">
+
+        <!-- .aside-inner start -->
+        <div class="aside-inner">
+
+          <!-- .aisde-header start -->
+          <div class="aisde-header">
+            <img src="./assets/images/user/thumb/user-thumb-7.png" alt="User image">
+            <h6 class="user-name mgn-t-15">Vela Holdooing</h6>
+          </div>
+          <!-- .aisde-header end -->
+
+          <!-- .aside-body start -->
+          <div class="aside-body">
+
+            <!-- .aside-menu start -->
+            <div class="aside-menu">
+
+              <!-- ul.aside-nav start -->
+              <ul class="nav aside-nav">
+                <!-- Index Dashboard -->
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">
+                    <i class="icon-grid"></i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <!-- Analytics -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-calculator"></i>
+                    <span>Analytics</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="analytics-dashboard.html">
+                        Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="analytics-customers.html">
+                        Customers
+                      </a>
+                    </li>
+                    <li>
+                      <a href="analytics-reports.html">
+                        Reports
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Ecommerce -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-basket-loaded"></i>
+                    <span>Ecommerce</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="ecom-dashboard.html">
+                        Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-products.html">
+                        Products
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-list-product.html">
+                        Products List
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-single-product.html">
+                        Single Product
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-add-product.html">
+                        Add Product
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-add-customer.html">
+                        Add Customer
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-client-profile.html">
+                        Customer Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-shopping-cart.html">
+                        Cart
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-checkout.html">
+                        Checkout
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-invoice.html">
+                        Invoice
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- CRM -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-diamond"></i>
+                    <span>CRM</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="crm-dashboard.html">
+                        Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-add-client.html">
+                        Add Client
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-clients.html">
+                        Client List
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-contact-list.html">
+                        Contacts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-client-profile.html">
+                        Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-invoice.html">
+                        Invoice
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-projects.html">
+                        Projects
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-tasks.html">
+                        Tasks
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-invoice.html">
+                        Invoice
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-payments.html">
+                        Payments
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-attendance.html">
+                        Attendance
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-leaves.html">
+                        Leaves
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-payroll.html">
+                        Payroll
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-tickets.html">
+                        Tickets
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Crypto -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-energy"></i>
+                    <span>Cryptocurrency</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="crypto-dashboard.html">
+                        Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crypto-exchange.html">
+                        Exchange
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crypto-wallet.html">
+                        Wallet
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crypto-news.html">
+                        News
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crypto-settings.html">
+                        Settings
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- POS -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-bag"></i>
+                    <span>POS</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="pos1.html">
+                        POS 1
+                      </a>
+                    </li>
+                    <li>
+                      <a href="pos2.html">
+                        POS 2
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-title">
+                  Elements
+                </li>
+                <!-- UI Elements -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-tag"></i>
+                    <span>UI Elements</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="ui-alerts.html">
+                        Alerts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-avatars.html">
+                        Avatars
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-badge.html">
+                        Badges
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-buttons.html">
+                        Buttons
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-cards.html">
+                        Cards
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-carrousel.html">
+                        Carrousel
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-owl-carousel.html">
+                        Owl Carousel
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-clipboard.html">
+                        Clipboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-collapse.html">
+                        Collapse
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-dropdowns.html">
+                        Dropdowns
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-nestable.html">
+                        Nestable
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-li-groups.html">
+                        List Group
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-modals.html">
+                        Modals
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-navs-navbar.html">
+                        Navs & Navbar
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-paginations.html">
+                        Paginations
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-progress-bars.html">
+                        Progress Bars
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-progressbar-lib.html">
+                        Progressbar Library
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-popovers-tooltips.html">
+                        Popovers & Tooltips
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-preloaders.html">
+                        Presloaders
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-scrollspy.html">
+                        Scrollspy
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-sweetAlert.html">
+                        SweetAlert
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-typography.html">
+                        Typography
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Charts -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-chart"></i>
+                    <span>Charts</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="chart-apexcharts.html">
+                        Apex Charts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-chartjs.html">
+                        Chartjs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-morris.html">
+                        Morris Charts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-c3chart.html">
+                        C3 Charts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-chartist.html">
+                        Chartist
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-jquery-sparkline.html">
+                        Jquery Sparkline
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-peity.html">
+                        Peity Charts
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Forms -->
+                <li class="nav-item has-submenu drop-down">
+                  <a href="#" class="nav-link">
+                    <i class="icon-notebook"></i>
+                    <span>Forms</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="form-basic-inputs.html" class="active">
+                        Basic Inputs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-checkbox-radio.html">
+                        Checkbox & Radio
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-input-groups.html">
+                        Input Groups
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-groups.html">
+                        Form Groups
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-grid.html">
+                        Form Grid
+                      </a>
+                    </li>
+                    <li>
+                      <a href="repeater.html">
+                        Repeater
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-basic-validation.html">
+                        Basic Validation
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-jquery-validation.html">
+                        Jquery Validation
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Advanced elements -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-rocket"></i>
+                    <span>Advanced UI</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="animate.html">
+                        Animate
+                      </a>
+                    </li>
+                    <li>
+                      <a href="dragula.html">
+                        Dragula
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-pickers.html">
+                        Form Pickers
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-Select2.html">
+                        Select2
+                      </a>
+                    </li>
+                    <li>
+                      <a href="toastr.html">
+                        Toastr
+                      </a>
+                    </li>
+                    <li>
+                      <a href="treeview.html">
+                        Treeview
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-range-sliders.html">
+                        Range Sliders
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-switches.html">
+                        Switches
+                      </a>
+                    </li>
+                    <li>
+                      <a href="rating.html">
+                        Rating
+                      </a>
+                    </li>
+                    <li>
+                      <a href="jquery-knob.html">
+                        Jquery-knob
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-editors.html">
+                        Form Editors
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-dropzone.html">
+                        Dropzone
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-autocomplete.html">
+                        Autocomplete
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-wizards.html">
+                        Form Wizard
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Table -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-list"></i>
+                    <span>Tables</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="basic-tables.html">
+                        Basic Tables
+                      </a>
+                    </li>
+                    <li>
+                      <a href="custom-tables.html">
+                        Custom Tables
+                      </a>
+                    </li>
+                    <li>
+                      <a href="data-tables.html">
+                        Data Tables
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ajax-source-tables.html">
+                        Ajax-sourced Table
+                      </a>
+                    </li>
+                    <li>
+                      <a href="editable-tables.html">
+                        Editable Tables
+                      </a>
+                    </li>
+                    <li>
+                      <a href="jsgrid.html">
+                        JSgrid
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Icons -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-diamond"></i>
+                    <span>Icons</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="icons-fontawesome.html">
+                        Fontawesome
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icon-feather-icons.html">
+                        Feather Icon
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icon-ionicons.html">
+                        Ionicons
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icon-mdi.html">
+                        MDI Icons
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icons-flag-icons.html">
+                        Flag Icons
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icons-simple-line-icons.html">
+                        Simple Line Icons
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icons-themify-icon.html">
+                        Themify icon
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-title">
+                  Apps
+                </li>
+                <!-- Mail -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-envelope"></i>
+                    <span>Mail</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="mail-inbox.html">
+                        Mail Inbox
+                      </a>
+                    </li>
+                    <li class="horizontal-subnav-lvl2-item">
+                      <a href="mail-reply.html">
+                        Mail Reply
+                      </a>
+                    </li>
+                    <li class="horizontal-subnav-lvl2-item">
+                      <a href="mail-compose.html">
+                        Mail Compose
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Messages -->
+                <li class="nav-item">
+                  <a href="chat.html" class="nav-link">
+                    <i class="icon-bubbles"></i>
+                    <span>Chat</span>
+                  </a>
+                </li>
+                <!-- File manager -->
+                <li class="nav-item">
+                  <a href="file-manager.html" class="nav-link">
+                    <i class="icon-folder"></i>
+                    <span>File Manager</span>
+                  </a>
+                </li>
+                <!-- Jkanban -->
+                <li class="nav-item">
+                  <a href="jkanban.html" class="nav-link">
+                    <i class="icon-target"></i>
+                    <span>jKanban</span>
+                  </a>
+                </li>
+                <!-- Calendar -->
+                <li class="nav-item">
+                  <a href="fullcalendar.html" class="nav-link">
+                    <i class="icon-calendar"></i>
+                    <span>Calender</span>
+                  </a>
+                </li>
+                <!-- Widgets -->
+                <li class="nav-item">
+                  <a href="widgets-1.html" class="nav-link">
+                    <i class="icon-drawer"></i>
+                    <span>Widgets 1</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="widgets-2.html" class="nav-link">
+                    <i class="icon-drawer"></i>
+                    <span>Widgets 2</span>
+                  </a>
+                </li>
+                <!-- Maps -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-globe"></i>
+                    <span>Maps</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="map-google.html">
+                        Google Map
+                      </a>
+                    </li>
+                    <li>
+                      <a href="map-jqvmap.html">
+                        JQVMap
+                      </a>
+                    </li>
+                    <li>
+                      <a href="map-vector.html">
+                        Vector Map
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-lock"></i>
+                    <span>Authentication</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="login.html">
+                        Login
+                      </a>
+                    </li>
+                    <li>
+                      <a href="register.html">
+                        Register
+                      </a>
+                    </li>
+                    <li>
+                      <a href="lock-screen.html">
+                        Lock Screen
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Pages -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-docs"></i>
+                    <span>Extra Pages</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="blank-page.html">
+                        Blank
+                      </a>
+                    </li>
+                    <li>
+                      <a href="faq.html">
+                        FAQ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="404.html">
+                        Errors 404
+                      </a>
+                    </li>
+                    <li>
+                      <a href="500.html">
+                        Errors 500
+                      </a>
+                    </li>
+                    <li>
+                      <a href="profile-v1.html">
+                        Profile V1
+                      </a>
+                    </li>
+                    <li>
+                      <a href="profile-v2.html">
+                        Profile V2
+                      </a>
+                    </li>
+                    <li>
+                      <a href="single-product.html">
+                        Single Product
+                      </a>
+                    </li>
+                    <li>
+                      <a href="shopping-cart.html">
+                        Cart
+                      </a>
+                    </li>
+                    <li>
+                      <a href="checkout.html">
+                        Checkout
+                      </a>
+                    </li>
+                    <li>
+                      <a href="invoice-v1.html">
+                        Invoice V1
+                      </a>
+                    </li>
+                    <li>
+                      <a href="invoice-v2.html">
+                        Invoice V2
+                      </a>
+                    </li>
+                    <li>
+                      <a href="pricing-tables.html">
+                        Pricing Tables
+                      </a>
+                    </li>
+                    <li>
+                      <a href="gallery.html">
+                        Gallery
+                      </a>
+                    </li>
+                    <li>
+                      <a href="search-result.html">
+                        Search Result
+                      </a>
+                    </li>
+                    <li>
+                      <a href="search-list.html">
+                        Search List
+                      </a>
+                    </li>
+                    <li>
+                      <a href="search-grid.html">
+                        Search Grid
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Helper Classes -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-magic-wand"></i>
+                    <span>Helper Classes</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="helper-background.html">
+                        Background
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-border.html">
+                        Border
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-height.html">
+                        Height
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-margin.html">
+                        Margin
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-padding.html">
+                        Padding
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-position.html">
+                        Position
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-radius.html">
+                        Radius
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-typography.html">
+                        Typography
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-width.html">
+                        Width
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- ul.aside-nav end -->
+
+            </div>
+            <!-- .aside-menu end -->
+
+          </div>
+          <!-- .aside-body end -->
+
+        </div>
+        <!-- .aside-inner end -->
+
+      </aside>
+      <!-- .aside-wrapper end -->
+
+      <!-- .content-wrapper start -->
+      <div class="content-wrapper">
+
+        <div class="container">
+          <div class="page-content">
+
+            <!--.page-title start-->
+            <div class="page-title">
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="#">Forms</a>
+                  <span>Basic Inputs</span>
+                </div>
+                <div class="col-md-6 d-md-flex d-none align-items-center justify-content-end">
+                  <button class="btn btn-sm btn-primary-soft br-3 p-x-15 mr-2">Export</button>
+                  <button class="btn btn-sm btn-primary br-3 p-x-15 mr-2">Report</button>
+                </div>
+              </div>
+            </div>
+            <!--.page-title end-->
+
+            <div class="row">
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Basic Form</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+
+                      <form method="" accept-charset="utf-8">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail" required="required">
+                          <small id="emailHelp" class="form-text text-muted">We will never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required="required">
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1">
+                          <label class="custom-control-label" for="customCheck1">Remember Me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                      </form>
+
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                              <code class="language-html">
+                                  &lt;form&gt;
+                                    &lt;div class="form-group"&gt;
+                                      &lt;label for="exampleinputemail1"&gt;email address&lt;/label&gt;
+                                      &lt;input type="email" class="form-control" id="exampleinputemail1" placeholder="e-mail" required="required"&gt;
+                                      &lt;small id="emailhelp" class="form-text text-muted"&gt;we will never share your email with anyone else.&lt;/small&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="form-group"&gt;
+                                      &lt;label for="exampleinputpassword1"&gt;password&lt;/label&gt;
+                                      &lt;input type="password" class="form-control" id="exampleinputpassword1" placeholder="password" required="required"&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="custom-control custom-checkbox"&gt;
+                                      &lt;input type="checkbox" class="custom-control-input" id="customcheck1"&gt;
+                                      &lt;label class="custom-control-label" for="customcheck1"&gt;remember me&lt;/label&gt;
+                                    &lt;/div&gt;
+                                    &lt;button type="submit" class="btn btn-primary mt-2"&gt;submit&lt;/button&gt;
+                                  &lt;/form&gt;
+                                </code>
+                              </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Form Inline</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <form method="" class="form-inline">
+                        <div class="form-group mb-2">
+                          <label for="staticemail2" class="sr-only">Email</label>
+                          <input type="email" class="form-control" id="staticemail2" placeholder="e-mail">
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                          <label for="inputpassword2" class="sr-only">Password</label>
+                          <input type="password" class="form-control" id="inputpassword2" placeholder="password">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+                      </form>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                              <code class="language-html">
+                                 &lt;form class="form-inline"&gt;
+                                  &lt;div class="form-group mb-2"&gt;
+                                      &lt;label for="staticemail2" class="sr-only"&gt;email&lt;/label&gt;
+                                      &lt;input type="email" class="form-control" id="staticemail2" placeholder="e-mail"&gt;
+                                  &lt;/div&gt;
+                                  &lt;div class="form-group mx-sm-3 mb-2"&gt;
+                                      &lt;label for="inputpassword2" class="sr-only"&gt;password&lt;/label&gt;
+                                      &lt;input type="password" class="form-control" id="inputpassword2" placeholder="password"&gt;
+                                  &lt;/div&gt;
+                                  &lt;button type="submit" class="btn btn-primary mb-2"&gt;confirm identity&lt;/button&gt;
+                                &lt;/form&gt;
+                              </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Form Inline Column-sizing</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <form method="">
+                        <div class="form-row align-items-center">
+                          <div class="col-7">
+                            <label class="sr-only" for="inlineforminput">Name</label>
+                            <input type="text" class="form-control mb-2" id="inlineforminput" placeholder="jane doe">
+                          </div>
+                          <div class="col-auto">
+                            <label class="sr-only" for="inlineforminputgroup">Username</label>
+                            <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                              </div>
+                              <input type="text" class="form-control" id="inlineforminputgroup" placeholder="username">
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                              <code class="language-html">
+                                 &lt;form&gt;
+                                  &lt;div class="form-row align-items-center"&gt;
+                                      &lt;div class="col-7"&gt;
+                                        &lt;label class="sr-only" for="inlineforminput"&gt;name&lt;/label&gt;
+                                        &lt;input type="text" class="form-control mb-2" id="inlineforminput" placeholder="jane doe"&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class="col-auto"&gt;
+                                        &lt;label class="sr-only" for="inlineforminputgroup"&gt;username&lt;/label&gt;
+                                        &lt;div class="input-group mb-2"&gt;
+                                          &lt;div class="input-group-prepend"&gt;
+                                            &lt;div class="input-group-text"&gt;@&lt;/div&gt;
+                                          &lt;/div&gt;
+                                          &lt;input type="text" class="form-control" id="inlineforminputgroup" placeholder="username"&gt;
+                                        &lt;/div&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class="col-auto"&gt;
+                                          &lt;button type="submit" class="btn btn-primary mb-2"&gt;submit&lt;/button&gt;
+                                      &lt;/div&gt;
+                                  &lt;/div&gt;
+                                &lt;/form&gt;
+                              </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Bootstrap Validation</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <form class="needs-validation" novalidate="novalidate">
+                        <div class="form-row">
+                          <div class="col-md-4 mb-3">
+                            <label for="validationcustom01">First name</label>
+                            <input type="text" class="form-control" id="validationcustom01" placeholder="First name" value="mark" required="required">
+                            <div class="valid-feedback">
+                              looks good!
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="validationcustom02">Last name</label>
+                            <input type="text" class="form-control" id="validationcustom02" placeholder="Last name" value="otto" required="required">
+                            <div class="valid-feedback">
+                              looks good!
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="validationcustom03">City</label>
+                            <input type="text" class="form-control" id="validationcustom03" placeholder="Last name" value="" required="required">
+                            <div class="invalid-feedback">
+                              insert your City name!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="validationtextarea">textarea</label>
+                          <textarea class="form-control" id="validationtextarea" placeholder="required example textarea" required="required"></textarea>
+                          <div class="invalid-feedback">
+                            please enter a message in the textarea.
+                          </div>
+                        </div>
+                        <div class="custom-control custom-checkbox checkbox-primary mb-3">
+                          <input type="checkbox" class="custom-control-input" id="customcontrolvalidation1" required="required">
+                          <label class="custom-control-label" for="customcontrolvalidation1">Check this custom checkbox</label>
+                          <div class="invalid-feedback">example invalid feedback text</div>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" id="customcontrolvalidation2" name="radio-stacked" required="required" checked="checked">
+                          <label class="custom-control-label" for="customcontrolvalidation2">custom radio</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-3">
+                          <input type="radio" class="custom-control-input" id="customcontrolvalidation3" name="radio-stacked" required="required">
+                          <label class="custom-control-label" for="customcontrolvalidation3">another custom radio</label>
+                          <div class="invalid-feedback">more example invalid feedback text</div>
+                        </div>
+                        <div class="form-group">
+                          <div class="form-group">
+                            <label for="exampleformcontrolselect4">Example select</label>
+                            <select class="form-control" id="exampleformcontrolselect4" required="required">
+                              <option value="">open this select menu</option>
+                              <option name="1">1</option>
+                              <option name="2">2</option>
+                              <option name="3">3</option>
+                              <option name="4">4</option>
+                              <option name="5">5</option>
+                            </select>
+                          </div>
+                          <div class="invalid-feedback">example invalid custom select feedback</div>
+                        </div>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="validatedcustomfile" required="required">
+                          <label class="custom-file-label" for="validatedcustomfile">choose file...</label>
+                          <div class="invalid-feedback">example invalid custom file feedback</div>
+                        </div>
+                        <button class="btn btn-primary mgn-t-25" type="submit">submit form</button>
+                      </form>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                                <code class="language-html">
+                                  &lt;form class="needs-validation" novalidate&gt;
+                                    &lt;div class="form-row"&gt;
+                                      &lt;div class="col-md-4 mb-3"&gt;
+                                        &lt;label for="validationcustom01"&gt;first name&lt;/label&gt;
+                                        &lt;input type="text" class="form-control" id="validationcustom01" placeholder="first name" value="mark" required&gt;
+                                        &lt;div class="valid-feedback"&gt;
+                                          looks good!
+                                        &lt;/div&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class="col-md-4 mb-3"&gt;
+                                        &lt;label for="validationcustom02"&gt;last name&lt;/label&gt;
+                                        &lt;input type="text" class="form-control" id="validationcustom02" placeholder="last name" value="otto" required&gt;
+                                        &lt;div class="valid-feedback"&gt;
+                                          looks good!
+                                        &lt;/div&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class="col-md-4 mb-3"&gt;
+                                        &lt;label for="validationcustom02"&gt;city&lt;/label&gt;
+                                        &lt;input type="text" class="form-control" id="validationcustom02" placeholder="last name" value="" required&gt;
+                                        &lt;div class="invalid-feedback"&gt;
+                                          insert your city name!
+                                        &lt;/div&gt;
+                                      &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="mb-3"&gt;
+                                        &lt;label for="validationtextarea"&gt;textarea&lt;/label&gt;
+                                        &lt;textarea class="form-control" id="validationtextarea" placeholder="required example textarea" required&gt;&lt;/textarea&gt;
+                                        &lt;div class="invalid-feedback"&gt;
+                                          please enter a message in the textarea.
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="custom-control custom-checkbox checkbox-primary mb-3"&gt;
+                                      &lt;input type="checkbox" class="custom-control-input" id="customcontrolvalidation1" required&gt;
+                                      &lt;label class="custom-control-label" for="customcontrolvalidation1"&gt;check this custom checkbox&lt;/label&gt;
+                                      &lt;div class="invalid-feedback"&gt;example invalid feedback text&lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="custom-control custom-radio"&gt;
+                                      &lt;input type="radio" class="custom-control-input" id="customcontrolvalidation2" name="radio-stacked" required checked&gt;
+                                      &lt;label class="custom-control-label" for="customcontrolvalidation2"&gt;custom radio&lt;/label&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="custom-control custom-radio mb-3"&gt;
+                                      &lt;input type="radio" class="custom-control-input" id="customcontrolvalidation3" name="radio-stacked" required&gt;
+                                      &lt;label class="custom-control-label" for="customcontrolvalidation3"&gt;another custom radio&lt;/label&gt;
+                                      &lt;div class="invalid-feedback"&gt;more example invalid feedback text&lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="form-group"&gt;
+                                      &lt;div class="form-group"&gt;
+                                        &lt;label for="exampleformcontrolselect1"&gt;example select&lt;/label&gt;
+                                        &lt;select class="form-control" id="exampleformcontrolselect1" required&gt;
+                                          &lt;option value=""&gt;open this select menu&lt;/option&gt;
+                                            &lt;option name="1"&gt;1&lt;/option&gt;
+                                            &lt;option name="2"&gt;2&lt;/option&gt;
+                                            &lt;option name="3"&gt;3&lt;/option&gt;
+                                            &lt;option name="4"&gt;4&lt;/option&gt;
+                                            &lt;option name="5"&gt;5&lt;/option&gt;
+                                        &lt;/select&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class="invalid-feedback"&gt;example invalid custom select feedback&lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="custom-file"&gt;
+                                      &lt;input type="file" class="custom-file-input" id="validatedcustomfile" required&gt;
+                                      &lt;label class="custom-file-label" for="validatedcustomfile"&gt;choose file...&lt;/label&gt;
+                                      &lt;div class="invalid-feedback"&gt;example invalid custom file feedback&lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;button class="btn btn-primary mgn-t-25" type="submit"&gt;submit form&lt;/button&gt;
+                                  &lt;/form&gt;
+                                </code>
+                              </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Checkboxes</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12 mgn-b-0 mgn-b-sm-25">
+                          <div class="custom-control custom-checkbox checkbox-primary m-2">
+                            <input type="checkbox" class="custom-control-input" id="checkbox1" checked="checked">
+                            <label class="custom-control-label" for="checkbox1">Checkbox primary</label>
+                          </div>
+                          <div class="custom-control custom-checkbox checkbox-secondary m-2">
+                            <input type="checkbox" class="custom-control-input" id="checkbox2" checked="checked">
+                            <label class="custom-control-label" for="checkbox2">Checkbox secondary</label>
+                          </div>
+                          <div class="custom-control custom-checkbox checkbox-success m-2">
+                            <input type="checkbox" class="custom-control-input" id="checkbox3" checked="checked">
+                            <label class="custom-control-label" for="checkbox3">Checkbox success</label>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 mgn-b-0 mgn-b-sm-25">
+                          <div class="custom-control custom-checkbox checkbox-danger m-2">
+                            <input type="checkbox" class="custom-control-input" id="checkbox4" checked="checked">
+                            <label class="custom-control-label" for="checkbox4">Checkbox danger</label>
+                          </div>
+                          <div class="custom-control custom-checkbox checkbox-warning m-2">
+                            <input type="checkbox" class="custom-control-input" id="checkbox5" checked="checked">
+                            <label class="custom-control-label" for="checkbox5">Checkbox warning</label>
+                          </div>
+                          <div class="custom-control custom-checkbox checkbox-info m-2">
+                            <input type="checkbox" class="custom-control-input" id="checkbox6" checked="checked">
+                            <label class="custom-control-label" for="checkbox6">Checkbox info</label>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 mgn-b-25">
+                          <div class="custom-control custom-checkbox checkbox-light m-2">
+                            <input type="checkbox" class="custom-control-input" id="checkbox4" checked="checked">
+                            <label class="custom-control-label" for="checkbox4">Checkbox light</label>
+                          </div>
+                          <div class="custom-control custom-checkbox checkbox-dark m-2">
+                            <input type="checkbox" class="custom-control-input" id="checkbox5" checked="checked">
+                            <label class="custom-control-label" for="checkbox5">Checkbox dark</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                               <code class="language-html">
+                                  &lt;div class="custom-control custom-checkbox checkbox-primary m-2"&gt;
+                                    &lt;input type="checkbox" class="custom-control-input" id="checkbox1" checked&gt;
+                                    &lt;label class="custom-control-label" for="checkbox1"&gt;checkbox primary&lt;/label&gt;
+                                  &lt;/div&gt;
+                               </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Checkbox States</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="row">
+                        <div class="col-12">
+                          <form action="">
+                            <div class="custom-control custom-checkbox checkbox-warning m-2">
+                              <input type="checkbox" class="custom-control-input" id="checkbox9" name="check_one">
+                              <label class="custom-control-label" for="checkbox9">Checkbox unchecked</label>
+                            </div>
+                            <div class="custom-control custom-checkbox checkbox-warning m-2">
+                              <input type="checkbox" class="custom-control-input" id="checkbox10" name="check_one" checked="checked">
+                              <label class="custom-control-label" for="checkbox10">Checkbox checked</label>
+                            </div>
+                            <div class="custom-control custom-checkbox checkbox-warning m-2">
+                              <input type="checkbox" class="custom-control-input" id="checkbox_disabled" name="check_disabled" disabled="disabled">
+                              <label class="custom-control-label" for="checkbox_disabled">Checkbox disabled</label>
+                            </div>
+                            <div class="custom-control custom-checkbox checkbox-warning m-2">
+                              <input type="checkbox" class="custom-control-input" id="checkbox_disabled_selected" name="check_disabled_selected" checked="checked" disabled="disabled">
+                              <label class="custom-control-label" for="checkbox_disabled_selected">Checkbox disabled checked</label>
+                            </div>
+                          </form>
+                          <div class="row no-gutters mgn-t-25">
+                            <div class="col-12">
+                              <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                                <pre>
+                                  <code class="language-html">
+                                      &lt;form action=""&gt;
+                                        &lt;div class="custom-control custom-checkbox checkbox-warning m-2"&gt;
+                                            &lt;input type="checkbox" class="custom-control-input" id="checkbox9" name="check_one"&gt;
+                                            &lt;label class="custom-control-label" for="checkbox9"&gt;checkbox unchecked&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="custom-control custom-checkbox checkbox-warning m-2"&gt;
+                                            &lt;input type="checkbox" class="custom-control-input" id="checkbox10" name="check_one" checked&gt;
+                                            &lt;label class="custom-control-label" for="checkbox10"&gt;checkbox checked&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="custom-control custom-checkbox checkbox-warning m-2"&gt;
+                                            &lt;input type="checkbox" class="custom-control-input" id="checkbox_disabled" name="check_disabled" disabled&gt;
+                                            &lt;label class="custom-control-label" for="checkbox_disabled"&gt;checkbox disabled&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="custom-control custom-checkbox checkbox-warning m-2"&gt;
+                                            &lt;input type="checkbox" class="custom-control-input" id="checkbox_disabled_selected" name="check_disabled_selected" checked disabled&gt;
+                                            &lt;label class="custom-control-label" for="checkbox_disabled_selected"&gt;checkbox disabled checked&lt;/label&gt;
+                                        &lt;/div&gt;
+                                      &lt;/form&gt;
+                                  </code>
+                                </pre>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Inline Checkboxes</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="row">
+                        <div class="col-12">
+                          <form action="">
+                            <div class="custom-control custom-control-inline custom-checkbox checkbox-danger m-2">
+                              <input type="checkbox" class="custom-control-input" id="checkbox11" name="check_two">
+                              <label class="custom-control-label" for="checkbox11">Checkbox unchecked</label>
+                            </div>
+                            <div class="custom-control custom-control-inline custom-checkbox checkbox-danger m-2">
+                              <input type="checkbox" class="custom-control-input" id="checkbox12" name="check_two" checked="checked">
+                              <label class="custom-control-label" for="checkbox12">Checkbox checked</label>
+                            </div>
+                          </form>
+                          <div class="row no-gutters mgn-t-25">
+                            <div class="col-12">
+                              <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                                <pre>
+                                  <code class="language-html">
+                                    &lt;form action=""&gt;
+                                      &lt;div class="custom-control custom-control-inline custom-checkbox checkbox-danger m-2"&gt;
+                                          &lt;input type="checkbox" class="custom-control-input" id="checkbox11" name="check_two"&gt;
+                                          &lt;label class="custom-control-label" for="checkbox11"&gt;checkbox unchecked&lt;/label&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class="custom-control custom-control-inline custom-checkbox checkbox-danger m-2"&gt;
+                                          &lt;input type="checkbox" class="custom-control-input" id="checkbox12" name="check_two" checked&gt;
+                                          &lt;label class="custom-control-label" for="checkbox12"&gt;checkbox checked&lt;/label&gt;
+                                      &lt;/div&gt;
+                                    &lt;/form&gt;
+                                  </code>
+                                </pre>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Radios</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12 mgn-b-0 mgn-b-sm-25">
+                          <div class="custom-control custom-radio radio-primary m-2">
+                            <input type="radio" id="radio1" name="radio1" class="custom-control-input" checked="checked">
+                            <label class="custom-control-label" for="radio1">Radio primary</label>
+                          </div>
+                          <div class="custom-control custom-radio radio-secondary m-2">
+                            <input type="radio" id="radio2" name="radio2" class="custom-control-input" checked="checked">
+                            <label class="custom-control-label" for="radio2">Radio secondary</label>
+                          </div>
+                          <div class="custom-control custom-radio radio-success m-2">
+                            <input type="radio" id="radio3" name="radio3" class="custom-control-input" checked="checked">
+                            <label class="custom-control-label" for="radio3">Radio success</label>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 mgn-b-0 mgn-b-sm-25">
+                          <div class="custom-control custom-radio radio-danger m-2">
+                            <input type="radio" id="radio4" name="radio4" class="custom-control-input" checked="checked">
+                            <label class="custom-control-label" for="radio4">Radio danger</label>
+                          </div>
+                          <div class="custom-control custom-radio radio-warning m-2">
+                            <input type="radio" id="radio5" name="radio5" class="custom-control-input" checked="checked">
+                            <label class="custom-control-label" for="radio5">Radio warning</label>
+                          </div>
+                          <div class="custom-control custom-radio radio-info m-2">
+                            <input type="radio" id="radio6" name="radio6" class="custom-control-input" checked="checked">
+                            <label class="custom-control-label" for="radio6">Radio info</label>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 mgn-b-25">
+                          <div class="custom-control custom-radio radio-light m-2">
+                            <input type="radio" id="radio7" name="radio7" class="custom-control-input" checked="checked">
+                            <label class="custom-control-label" for="radio7">Radio light</label>
+                          </div>
+                          <div class="custom-control custom-radio radio-dark m-2">
+                            <input type="radio" id="radio8" name="radio8" class="custom-control-input" checked="checked">
+                            <label class="custom-control-label" for="radio8">Radio dark</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                              <code class="language-html">
+                                  &lt;div class="custom-control custom-radio radio-primary m-2"&gt;
+                                    &lt;input type="radio" id="radio1" name="radio1" class="custom-control-input" checked&gt;
+                                    &lt;label class="custom-control-label" for="radio1"&gt;radio primary&lt;/label&gt;
+                                  &lt;/div&gt;
+                              </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Toggle Radio</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="row">
+                        <div class="col-12">
+                          <form action="">
+                            <div class="custom-control custom-radio radio-danger">
+                              <input type="radio" id="radio9" name="toggle" class="custom-control-input">
+                              <label class="custom-control-label" for="radio9">Radio first</label>
+                            </div>
+                            <div class="custom-control custom-radio radio-danger">
+                              <input type="radio" id="radio10" name="toggle" class="custom-control-input">
+                              <label class="custom-control-label" for="radio10">Radio second</label>
+                            </div>
+                            <div class="custom-control custom-radio radio-danger">
+                              <input type="radio" id="radio11" name="toggle" class="custom-control-input" disabled="disabled">
+                              <label class="custom-control-label" for="radio11">Radio third</label>
+                            </div>
+                            <div class="custom-control custom-radio radio-danger">
+                              <input type="radio" id="radio12" name="toggle" class="custom-control-input" disabled="disabled" checked="checked">
+                              <label class="custom-control-label" for="radio12">Radio fourth</label>
+                            </div>
+                          </form>
+                          <div class="row no-gutters mgn-t-25">
+                            <div class="col-12">
+                              <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                                <pre>
+                                    <code class="language-html">
+                                      &lt;form action=""&gt;
+                                        &lt;div class="custom-control custom-radio radio-danger"&gt;
+                                            &lt;input type="radio" id="radio9" name="toggle" class="custom-control-input"&gt;
+                                            &lt;label class="custom-control-label" for="radio9"&gt;radio first&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="custom-control custom-radio radio-danger"&gt;
+                                            &lt;input type="radio" id="radio10" name="toggle" class="custom-control-input"&gt;
+                                            &lt;label class="custom-control-label" for="radio10"&gt;radio second&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="custom-control custom-radio radio-danger"&gt;
+                                            &lt;input type="radio" id="radio11" name="toggle" class="custom-control-input" disabled&gt;
+                                            &lt;label class="custom-control-label" for="radio11"&gt;radio third&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="custom-control custom-radio radio-danger"&gt;
+                                            &lt;input type="radio" id="radio12" name="toggle" class="custom-control-input" disabled checked&gt;
+                                            &lt;label class="custom-control-label" for="radio12"&gt;radio fourth&lt;/label&gt;
+                                        &lt;/div&gt;
+                                     &lt;/form&gt;
+                                   </code>
+                                 </pre>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Inline Radio</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="row">
+                        <div class="col-12">
+                          <form action="">
+                            <div class="custom-control custom-radio custom-control-inline">
+                              <input type="radio" id="radio13" name="inline-example" class="custom-control-input" checked="checked">
+                              <label class="custom-control-label" for="radio13">Radio inline one</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                              <input type="radio" id="radio14" name="inline-example" class="custom-control-input">
+                              <label class="custom-control-label" for="radio14">Radio inline two</label>
+                            </div>
+                          </form>
+                          <div class="row no-gutters mgn-t-25">
+                            <div class="col-12">
+                              <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                                <pre>
+                                    <code class="language-html">
+                                      &lt;form action=""&gt;
+                                        &lt;div class="custom-control custom-radio custom-control-inline"&gt;
+                                            &lt;input type="radio" id="radio13" name="inline-example" class="custom-control-input" checked&gt;
+                                            &lt;label class="custom-control-label" for="radio13"&gt;radio inline one&lt;/label&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="custom-control custom-radio custom-control-inline"&gt;
+                                            &lt;input type="radio" id="radio14" name="inline-example" class="custom-control-input"&gt;
+                                            &lt;label class="custom-control-label" for="radio14"&gt;radio inline two&lt;/label&gt;
+                                        &lt;/div&gt;
+                                      &lt;/form&gt;
+                                    </code>
+                                 </pre>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Select Options</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="row">
+                        <div class="col-12">
+                          <form class="" method="">
+                            <div class="form-group">
+                              <label for="exampleformcontrolselect3">Example form-control select</label>
+                              <select class="form-control" id="exampleformcontrolselect3">
+                                <option name="1">1</option>
+                                <option name="2">2</option>
+                                <option name="3">3</option>
+                                <option name="4">4</option>
+                                <option name="5">5</option>
+                              </select>
+                            </div>
+                          </form>
+                          <div class="row no-gutters mgn-t-25">
+                            <div class="col-12">
+                              <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                                <pre>
+                                    <code class="language-html">
+                                      &lt;form&gt;
+                                        &lt;div class="form-group"&gt;
+                                            &lt;label for="exampleformcontrolselect1"&gt;example form-control select&lt;/label&gt;
+                                            &lt;select class="form-control" id="exampleformcontrolselect1"&gt;
+                                                &lt;option name="1"&gt;1&lt;/option&gt;
+                                                &lt;option name="2"&gt;2&lt;/option&gt;
+                                                &lt;option name="3"&gt;3&lt;/option&gt;
+                                                &lt;option name="4"&gt;4&lt;/option&gt;
+                                                &lt;option name="5"&gt;5&lt;/option&gt;
+                                            &lt;/select&gt;
+                                        &lt;/div&gt;
+                                      &lt;/form&gt;
+                                    </code>
+                                 </pre>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pdn-sm-55 pdn-15 bdr mgn-t-15">
+                      <div class="row">
+                        <div class="col-12">
+                          <form method="">
+                            <div class="form-group">
+                              <label for="exampleformcontrolselect3">Custom select</label>
+                              <select class="custom-select">
+                                <option selected="selected">Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleformcontrolselect3">Custom select large</label>
+                              <select class="custom-select custom-select-lg">
+                                <option selected="selected">Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </form>
+                          <div class="row no-gutters mgn-t-25">
+                            <div class="col-12">
+                              <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                                <pre>
+                                    <code class="language-html">
+                                      &lt;form&gt;
+                                        &lt;div class="form-group"&gt;
+                                            &lt;label for="exampleformcontrolselect1"&gt;custom select&lt;/label&gt;
+                                            &lt;select class="custom-select"&gt;
+                                              &lt;option selected&gt;open this select menu&lt;/option&gt;
+                                              &lt;option value="1"&gt;one&lt;/option&gt;
+                                              &lt;option value="2"&gt;two&lt;/option&gt;
+                                              &lt;option value="3"&gt;three&lt;/option&gt;
+                                            &lt;/select&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="form-group"&gt;
+                                            &lt;label for="exampleformcontrolselect1"&gt;custom select large&lt;/label&gt;
+                                            &lt;select class="custom-select custom-select-lg"&gt;
+                                              &lt;option selected&gt;open this select menu&lt;/option&gt;
+                                              &lt;option value="1"&gt;one&lt;/option&gt;
+                                              &lt;option value="2"&gt;two&lt;/option&gt;
+                                              &lt;option value="3"&gt;three&lt;/option&gt;
+                                            &lt;/select&gt;
+                                        &lt;/div&gt;
+                                      &lt;/form&gt;
+                                    </code>
+                                 </pre>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Select Multiple Options</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="row">
+                        <div class="col-12">
+                          <form method="">
+                            <div class="form-group">
+                              <label for="exampleformcontrolselect5">Example multiple select</label>
+                              <select multiple="multiple" class="form-control" id="exampleformcontrolselect5">
+                                <option name="1">1</option>
+                                <option name="2">2</option>
+                                <option name="3">3</option>
+                                <option name="4">4</option>
+                              </select>
+                            </div>
+                          </form>
+                          <div class="row no-gutters mgn-t-25">
+                            <div class="col-12">
+                              <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                                <pre>
+                                   <code class="language-html">
+                                      &lt;form&gt;
+                                        &lt;div class="form-group"&gt;
+                                            &lt;label for="exampleformcontrolselect2"&gt;example multiple select&lt;/label&gt;
+                                            &lt;select multiple class="form-control" id="exampleformcontrolselect2"&gt;
+                                                &lt;option name="1"&gt;1&lt;/option&gt;
+                                                &lt;option name="2"&gt;2&lt;/option&gt;
+                                                &lt;option name="3"&gt;3&lt;/option&gt;
+                                                &lt;option name="4"&gt;4&lt;/option&gt;
+                                            &lt;/select&gt;
+                                        &lt;/div&gt;
+                                      &lt;/form&gt;
+                                  </code>
+                                </pre>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Range Selector</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="row">
+                        <div class="col-12">
+                          <form method="">
+                            <div class="form-group">
+                              <label for="formcontrolrange">Form control range input</label>
+                              <input type="range" class="form-control-range" id="formcontrolrange">
+                            </div>
+                            <div class="form-group">
+                              <label for="customrange3">Custom range</label>
+                              <input type="range" class="custom-range" min="0" max="5" step="0.5" id="customrange3">
+                            </div>
+                          </form>
+                          <div class="row no-gutters mgn-t-25">
+                            <div class="col-12">
+                              <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                                <pre>
+                                  <code class="language-html">
+                                      &lt;form&gt;
+                                        &lt;div class="form-group"&gt;
+                                            &lt;label for="formcontrolrange"&gt;form control range input&lt;/label&gt;
+                                            &lt;input type="range" class="form-control-range" id="formcontrolrange"&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="form-group"&gt;
+                                            &lt;label for="customrange3"&gt;custom range&lt;/label&gt;
+                                            &lt;input type="range" class="custom-range" min="0" max="5" step="0.5" id="customrange3"&gt;
+                                        &lt;/div&gt;
+                                     &lt;/form&gt;
+                                  </code>
+                                </pre>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Custom File Input</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="row">
+                        <div class="col-12">
+                          <form method="">
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text">Upload</span>
+                              </div>
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputgroupfile01">
+                                <label class="custom-file-label" for="inputgroupfile01">Choose file</label>
+                              </div>
+                            </div>
+                            <div class="input-group mb-3">
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputgroupfile02">
+                                <label class="custom-file-label" for="inputgroupfile02">Choose file</label>
+                              </div>
+                              <div class="input-group-append">
+                                <span class="input-group-text">Upload</span>
+                              </div>
+                            </div>
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <button class="btn btn-primary" type="button">Button</button>
+                              </div>
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputgroupfile03">
+                                <label class="custom-file-label" for="inputgroupfile03">Choose file</label>
+                              </div>
+                            </div>
+                            <div class="input-group">
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputgroupfile04">
+                                <label class="custom-file-label" for="inputgroupfile04">Choose file</label>
+                              </div>
+                              <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">Button</button>
+                              </div>
+                            </div>
+                          </form>
+                          <div class="row no-gutters mgn-t-25">
+                            <div class="col-12">
+                              <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                                <pre>
+                                   <code class="language-html">
+                                      &lt;form&gt;
+                                        &lt;div class="input-group mb-3"&gt;
+                                          &lt;div class="input-group-prepend"&gt;
+                                              &lt;span class="input-group-text"&gt;upload&lt;/span&gt;
+                                          &lt;/div&gt;
+                                          &lt;div class="custom-file"&gt;
+                                              &lt;input type="file" class="custom-file-input" id="inputgroupfile01"&gt;
+                                              &lt;label class="custom-file-label" for="inputgroupfile01"&gt;choose file&lt;/label&gt;
+                                          &lt;/div&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class="input-group mb-3"&gt;
+                                        &lt;div class="input-group-prepend"&gt;
+                                            &lt;button class="btn btn-primary" type="button"&gt;button&lt;/button&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="custom-file"&gt;
+                                            &lt;input type="file" class="custom-file-input" id="inputgroupfile03"&gt;
+                                            &lt;label class="custom-file-label" for="inputgroupfile03"&gt;choose file&lt;/label&gt;
+                                        &lt;/div&gt;
+                                      &lt;/div&gt;
+                                    &lt;/form&gt;
+                                   </code>
+                                </pre>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Multiple Image Upload</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="row">
+                        <div class="col-12">
+                          <form method="">
+                            <div class="row mb-2">
+                              <div class="col-12 preview-img">
+                                <div class="image-preview clearfix"></div>
+                                <label for="preview_image" class="custom-file-upload bg-warning">
+                                  Upload Image</label>
+                                <input type="file" multiple="multiple" id="preview_image" name="preview_image[]" required="required">
+                              </div>
+                            </div>
+                          </form>
+                          <div class="row no-gutters mgn-t-25">
+                            <div class="col-12">
+                              <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                                <pre>
+                                   <code class="language-html">
+                                       &lt;div class="col-12 preview-img"&gt;
+                                         &lt;div class="image-preview clearfix"&gt;&lt;/div&gt;
+                                         &lt;label for="preview_image" class="custom-file-upload"&gt;
+                                           upload image&lt;/label&gt;
+                                         &lt;input type="file" multiple="multiple" id="preview_image" name="preview_image[]" required="required"&gt;
+                                       &lt;/div&gt;
+                                   </code>
+                                </pre>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Switches</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <form method="" accept-charset="utf-8">
+                        <div class="custom-control custom-switch">
+                          <input type="checkbox" class="custom-control-input" id="customswitch1">
+                          <label class="custom-control-label" for="customswitch1">Toggle this switch element</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                          <input type="checkbox" class="custom-control-input" disabled="disabled" id="customswitch2">
+                          <label class="custom-control-label" for="customswitch2">Disabled switch element</label>
+                        </div>
+                      </form>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                               <code class="language-html">
+                                    &lt;form method="post" accept-charset="utf-8"&gt;
+                                      &lt;div class="custom-control custom-switch"&gt;
+                                        &lt;input type="checkbox" class="custom-control-input" id="customswitch1"&gt;
+                                        &lt;label class="custom-control-label" for="customswitch1"&gt;toggle this switch element&lt;/label&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class="custom-control custom-switch"&gt;
+                                        &lt;input type="checkbox" class="custom-control-input" disabled id="customswitch2"&gt;
+                                        &lt;label class="custom-control-label" for="customswitch2"&gt;disabled switch element&lt;/label&gt;
+                                      &lt;/div&gt;
+                                    &lt;/form&gt;
+                                </code>
+                             </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Colorpicker</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <form method="">
+                        <div class="form-group">
+                          <label for="formcontrolrange">Color picker</label>
+                          <input type="color" class="form-control-range" id="formcontrolcolor" value="#ff0000">
+                        </div>
+                      </form>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                              <code class="language-html">
+                                &lt;form&gt;
+                                  &lt;div class="form-group"&gt;
+                                      &lt;label for="formcontrolrange"&gt;color picker&lt;/label&gt;
+                                      &lt;input type="color" class="form-control-range" id="formcontrolcolor" value="#ff0000"&gt;
+                                  &lt;/div&gt;
+                                &lt;/form&gt;
+                              </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Textarea</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <form method="" accept-charset="utf-8">
+                        <div class="form-group">
+                          <label for="exampleformcontroltextarea1">Example textarea</label>
+                          <textarea class="form-control" id="exampleformcontroltextarea1" rows="5"></textarea>
+                        </div>
+                      </form>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                                <code class="language-html">
+                                    &lt;form method="post" accept-charset="utf-8"&gt;
+                                      &lt;div class="form-group"&gt;
+                                          &lt;label for="exampleformcontroltextarea1"&gt;example textarea&lt;/label&gt;
+                                          &lt;textarea class="form-control" id="exampleformcontroltextarea1" rows="5"&gt;&lt;/textarea&gt;
+                                      &lt;/div&gt;
+                                    &lt;/form&gt;
+                                </code>
+                              </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Sizing</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <form method="" accept-charset="utf-8">
+                        <div class="form-group">
+                          <label for="exampleinputemail1">Email address</label>
+                          <input type="email" class="form-control form-control-lg" id="exampleinputemail1" placeholder="form-control-lg" required="required">
+                        </div>
+                        <div class="form-group">
+                          <label for="examplecompanyinput">Company</label>
+                          <input type="text" class="form-control form-control-sm" id="examplecompanyinput" placeholder="form-control-sm" required="required">
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                      </form>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                                <code class="language-html">
+                                    &lt;form method="post" accept-charset="utf-8"&gt;
+                                      &lt;div class="form-group"&gt;
+                                          &lt;label for="exampleinputemail1"&gt;email address&lt;/label&gt;
+                                          &lt;input type="email" class="form-control form-control-lg" id="exampleinputemail1" placeholder="form-control-lg" required&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class="form-group"&gt;
+                                          &lt;label for="examplecompanyinput"&gt;company&lt;/label&gt;
+                                          &lt;input type="text" class="form-control form-control-sm" id="examplecompanyinput" placeholder="form-control-sm" required&gt;
+                                      &lt;/div&gt;
+                                      &lt;button type="submit" class="btn btn-primary mt-2"&gt;submit&lt;/button&gt;
+                                    &lt;/form&gt;
+                                </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Readonly</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <form method="">
+                        <div class="form-group">
+                          <label for="exampleemail">Email address</label>
+                          <input type="email" class="form-control form-control-lg" id="exampleemail" placeholder="readonly" readonly="readonly">
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                      </form>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-15 pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                                <code class="language-html">
+                                    &lt;form method="post" accept-charset="utf-8"&gt;
+                                      &lt;div class="form-group"&gt;
+                                          &lt;label for="exampleemail"&gt;email address&lt;/label&gt;
+                                          &lt;input type="email" class="form-control form-control-lg" id="exampleemail" placeholder="readonly" readonly&gt;
+                                      &lt;/div&gt;
+                                      &lt;button type="submit" class="btn btn-primary mt-2"&gt;submit&lt;/button&gt;
+                                    &lt;/form&gt;
+                                </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+            </div>
+            <!-- ./row -->
+
+          </div>
+        </div>
+        <!-- ./container -->
+
+        <!-- .footer start -->
+        <footer class="footer">
+          <div class="left-footer">
+            &copy; 2019
+            <a href="https://www.madcoderz.com/" target="_blank">madcoderz</a>
+          </div>
+          <div class="right-footer">
+            <ul class="d-flex">
+              <li>
+                <a href="#">about us</a>
+              </li>
+              <li>
+                <a href="#">contact</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+        <!-- .footer end -->
+
+      </div>
+      <!-- .content-wrapper end -->
+
+    </div>
+    <!-- #app end -->
+
+    <!-- placed at the end of the document so the pages load faster -->
+    <script src="assets/js/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <!--plugin-->
+    <script src="assets/js/vendor/prism/prism.js"></script>
+
+    <!--script-->
+    <script src="assets/js/components/aside.js"></script>
+    <script src="assets/js/components/main.js"></script>
+    <script src="assets/js/components/form-init.js"></script>
+
+  </body>
+
+</html>

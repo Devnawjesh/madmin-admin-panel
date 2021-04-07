@@ -1,0 +1,25 @@
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 0 15px 0 rgba(82, 63, 105, 0.10);
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: $dark;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.dropdown-item {
+    color: $dark;
+
+    a {
+        letter-spacing: 0.1px;
+    }
+}
+
+.dropdown-item:hover {
+    color: $dark;
+    text-decoration: none;
+    background-color: $light-light;
+}

@@ -1,0 +1,59 @@
+// Dotted numbering helper element
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot-xs {
+    width: 5px;
+    height: 5px;
+}
+
+.dot-sm {
+    width: 7px;
+    height: 7px;
+}
+
+.dot-lg {
+    width: 12px;
+    height: 12px;
+}
+
+.dot-xl {
+    width: 15px;
+    height: 15px;
+}
+
+.dot-primary {
+    background-color: $primary;
+}
+
+.dot-secondary {
+    background-color: $secondary;
+}
+
+.dot-success {
+    background-color: $success;
+}
+
+.dot-danger {
+    background-color: $danger;
+}
+
+.dot-warning {
+    background-color: $warning;
+}
+
+.dot-info {
+    background-color: $info;
+}
+
+.dot-light {
+    background-color: $light;
+}
+
+.dot-dark {
+    background-color: $dark;
+}

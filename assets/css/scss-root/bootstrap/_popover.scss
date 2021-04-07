@@ -1,0 +1,94 @@
+.popover {
+    font-family: $font-family-base;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+
+    &.popover-primary {
+        .popover-header {
+            background-color: $primary;
+            color: #fff;
+        }
+    }
+
+    &.popover-secondary {
+        .popover-header {
+            background-color: $secondary;
+            color: #fff;
+        }
+    }
+
+    &.popover-success {
+        .popover-header {
+            background-color: $success;
+            color: #fff;
+        }
+    }
+
+    &.popover-danger {
+        .popover-header {
+            background-color: $danger;
+            color: #fff;
+        }
+    }
+
+    &.popover-warning {
+        .popover-header {
+            background-color: $warning;
+            color: #000;
+        }
+    }
+
+    &.popover-dark {
+        .popover-header {
+            background-color: $dark;
+            color: #fff;
+        }
+    }
+
+    &.popover-light {
+        .popover-header {
+            background-color: $light;
+            color: #000;
+        }
+    }
+}
+
+.popover-header {
+    border-bottom: 1px solid $border-color;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: $dark;
+    font-weight: 400;
+}
+
+.popover-body {
+    color: $dark;
+    font-weight: 400;
+}
+
+.tooltip-inner {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.bs-popover-auto[x-placement^="right"] .arrow::before,
+.bs-popover-right .arrow::before {
+    border-right-color: $border-color;
+}
+
+.bs-popover-auto[x-placement^="left"] .arrow::before,
+.bs-popover-left .arrow::before {
+    border-left-color: $border-color;
+}
+
+.bs-popover-auto[x-placement^="top"] .arrow::before,
+.bs-popover-top .arrow::before {
+    border-top-color: $border-color;
+}
+
+.bs-popover-auto[x-placement^="bottom"] .arrow::before,
+.bs-popover-bottom .arrow::before {
+    border-bottom-color: $border-color;
+}

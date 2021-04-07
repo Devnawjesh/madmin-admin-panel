@@ -1,0 +1,68 @@
+.jsgrid {
+    .jsgrid-header-row {
+        > .jsgrid-header-cell {
+            background-color: #fff;
+            border-color: $border-color;
+            font-weight: 400;
+        }
+
+        .jsgrid-button {}
+    }
+
+    .jsgrid-filter-row {
+        .jsgrid-cell {
+            background: #fff;
+
+            input,
+            select,
+            textarea {
+                border: 1px solid $border-color;
+            }
+        }
+    }
+
+    .jsgrid-grid-body {
+        .jsgrid-table {
+            .jsgrid-row {
+                .jsgrid-cell {
+                    border-color: $border-color;
+                }
+            }
+
+            .jsgrid-alt-row {
+                .jsgrid-cell {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    .jsgrid-pager-container {
+        .jsgrid-pager {
+            margin-top: 5px;
+
+            .jsgrid-pager-nav-inactive-button {
+                text-transform: uppercase;
+                font-size: 12px !important;
+            }
+
+            .jsgrid-pager-page {
+                padding: 0 !important;
+
+                a {
+                    border: 1px solid $light;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    padding: 0 7px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .jsgrid-pager-current-page {
+                margin: 0 10px !important;
+            }
+        }
+    }
+}

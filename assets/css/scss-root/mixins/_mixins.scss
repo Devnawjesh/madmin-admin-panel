@@ -1,0 +1,39 @@
+// Text hover
+@mixin hover-color($color) {
+  &:hover,
+  &:focus { color: $color; }
+}
+
+// Hover with important
+@mixin hover-color-force($color) {
+  &:hover,
+  &:focus { color: $color !important; }
+}
+
+// Tooltip color version
+@mixin tooltip-variant($color, $text-color: #fff) {
+  .tooltip-inner {
+    background-color: $color;
+    color: rgba(50, 57, 74, 0.70);
+  }
+
+  &.bs-tooltip-top,
+  &.bs-tooltip-auto[x-placement^="top"] {
+    .arrow::before { border-top-color: $color; }
+  }
+
+  &.bs-tooltip-bottom,
+  &.bs-tooltip-auto[x-placement^="bottom"] {
+    .arrow::before { border-bottom-color: $color; }
+  }
+
+  &.bs-tooltip-left,
+  &.bs-tooltip-auto[x-placement^="left"] {
+    .arrow::before { border-left-color: $color; }
+  }
+
+  &.bs-tooltip-right,
+  &.bs-tooltip-auto[x-placement^="right"] {
+    .arrow::before { border-right-color: $color; }
+  }
+}

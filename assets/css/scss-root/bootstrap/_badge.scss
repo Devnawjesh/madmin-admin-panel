@@ -1,0 +1,130 @@
+.badge {
+    padding: 0.3em .5em;
+    font-weight: 500 !important;
+}
+
+.badge-pill {
+    border-radius: 50px;
+    padding: 0.3em 0.7em;
+}
+
+%badge-rounded {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.badge-rounded {
+    @extend %badge-rounded;
+    width: 18px;
+    height: 18px;
+    font-size: .7rem;
+}
+
+.badge-rounded-md {
+    @extend %badge-rounded;
+    width: 25px;
+    height: 25px;
+    font-size: .9rem;
+}
+
+.badge-rounded-lg {
+    @extend %badge-rounded;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+}
+
+.badge-rounded-xl {
+    @extend %badge-rounded;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+}
+
+.badge-outline {
+    background: transparent;
+}
+
+.badge-primary.badge-outline {
+    border: 1px solid $primary;
+    color: $primary;
+}
+
+.badge-secondary.badge-outline {
+    border: 1px solid $secondary;
+    color: $secondary;
+}
+
+.badge-success.badge-outline {
+    border: 1px solid $success;
+    color: $success;
+}
+
+.badge-danger.badge-outline {
+    border: 1px solid $danger;
+    color: $danger;
+}
+
+.badge-warning.badge-outline {
+    border: 1px solid $warning;
+    color: $warning;
+}
+
+.badge-info.badge-outline {
+    border: 1px solid $info;
+    color: $info;
+}
+
+.badge-light.badge-outline {
+    border: 1px solid $light;
+    color: $light;
+}
+
+.badge-dark.badge-outline {
+    border: 1px solid $dark;
+    color: $dark;
+}
+
+.badge-primary-soft {
+    background-color: rgba($primary,0.1);
+    color: $primary;
+}
+
+.badge-secondary-soft {
+    background-color: rgba($secondary,0.1);
+    color: $secondary;
+}
+
+.badge-success-soft {
+    background-color: rgba($success,0.1);
+    color: $success;
+}
+
+.badge-warning-soft {
+    background-color: rgba($warning,0.1);
+    color: $warning;
+}
+
+.badge-danger-soft {
+    background-color: rgba($danger,0.1);
+    color: $danger;
+}
+
+.badge-info-soft {
+    background-color: rgba($info,0.1);
+    color: $info;
+}
+
+.badge-light-soft {
+    background-color: rgba($light,0.1);
+    color: $light;
+}
+
+.badge-dark-soft {
+    background-color: rgba($dark,0.1);
+    color: $dark;
+}

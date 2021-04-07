@@ -1,0 +1,54 @@
+// Custom file upload button with preview image
+.preview-img {
+    .image-preview {
+        margin-bottom: 15px;
+
+        .upload-wrapper {
+            display: inline-block;
+            position: relative;
+            margin-right: 5px;
+            margin-bottom: 5px;
+
+            .upload-wrapper-delete {
+                position: absolute;
+                color: $secondary;
+                top: 5px;
+                right: 5px;
+                background: #fff;
+                padding: 4px 8px;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                z-index: 5;
+                font-weight: 500;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 3px 6px 0 rgba(0,0,0,.1), 0 1px 3px 0 rgba(0,0,0,.08);
+            }
+        }
+
+        img {
+            width: auto;
+            height: 100px;
+            max-height: 100px;
+        }
+    }
+
+    .custom-file-upload {
+        display: block;
+        padding: 7px 10px;
+        cursor: pointer;
+        border: 1px solid #ececec;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    input[type="file"] {
+        position: fixed;
+        top: -1000px;
+        visibility: hidden;
+        opacity: 0;
+    }
+}

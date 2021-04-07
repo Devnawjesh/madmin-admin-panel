@@ -1,0 +1,178 @@
+.alert {
+    padding: 12px 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.alert-primary {
+    color: darken($primary-light, 55%);
+    background-color: $primary-light;
+    border-color: darken($primary-light, 10%);
+}
+
+.alert-secondary {
+    color: darken($secondary-light, 55%);
+    background-color: $secondary-light;
+    border-color: darken($secondary-light, 10%);
+}
+
+.alert-success {
+    color: darken($success-light, 55%);
+    background-color: $success-light;
+    border-color: darken($success-light, 10%);
+}
+
+.alert-warning {
+    color: darken($warning-light, 55%);
+    background-color: $warning-light;
+    border-color: darken($warning-light, 10%);
+}
+
+.alert-danger {
+    color: darken($danger-light, 55%);
+    background-color: $danger-light;
+    border-color: darken($danger-light, 10%);
+}
+
+.alert-info {
+    color: darken($info-light, 55%);
+    background-color: $info-light;
+    border-color: darken($info-light, 10%);
+}
+
+.alert-light {
+    color: darken($light-light, 55%);
+    background-color: $light-light;
+    border-color: darken($light-light, 10%);
+}
+
+.alert-dark {
+    color: darken($dark-light, 55%);
+    background-color: $dark-light;
+    border-color: darken($dark-light, 10%);
+}
+
+.alert-outline {
+    background-color: transparent;
+    border-width: 2px;
+    font-weight: 600;
+}
+
+.alert-outline {
+    &.alert-primary {
+        color: darken($primary-light, 55%);
+        border-color: darken($primary-light, 10%);
+    }
+
+    &.alert-secondary {
+        color: darken($secondary-light, 55%);
+        border-color: darken($secondary-light, 10%);
+    }
+
+    &.alert-success {
+        color: darken($success-light, 55%);
+        border-color: darken($success-light, 10%);
+    }
+
+    &.alert-danger {
+        color: darken($danger-light, 55%);
+        border-color: darken($danger-light, 10%);
+    }
+
+    &.alert-warning {
+        color: darken($warning-light, 55%);
+        border-color: darken($warning-light, 10%);
+    }
+
+    &.alert-info {
+        color: darken($info-light, 55%);
+        border-color: darken($info-light, 10%);
+    }
+
+    &.alert-light {
+        color: darken($light-light, 55%);
+        border-color: darken($light-light, 10%);
+    }
+
+    &.alert-dark {
+        color: darken($dark-light, 55%);
+        border-color: darken($dark-light, 10%);
+    }
+}
+
+.solid.alert-primary {
+    color: darken($primary, 55%);
+    background-color: $primary;
+    border-color: darken($primary, 10%);
+}
+
+.solid.alert-secondary {
+    color: darken($secondary, 55%);
+    background-color: $secondary;
+    border-color: darken($secondary, 10%);
+}
+
+.solid.alert-success {
+    color: darken($success, 55%);
+    background-color: $success;
+    border-color: darken($success, 10%);
+}
+
+.solid.alert-warning {
+    color: darken($warning, 55%);
+    background-color: $warning;
+    border-color: darken($warning, 10%);
+}
+
+.solid.alert-danger {
+    color: darken($danger, 55%);
+    background-color: $danger;
+    border-color: darken($danger, 10%);
+}
+
+.solid.alert-info {
+    color: darken($info, 55%);
+    background-color: $info;
+    border-color: darken($info, 10%);
+}
+
+.solid.alert-light {
+    color: darken($light, 55%);
+    background-color: $light;
+    border-color: darken($light, 10%);
+}
+
+.solid.alert-dark {
+    color: darken($dark, 55%);
+    background-color: $dark;
+    border-color: darken($dark, 10%);
+}
+
+.solid.alert-outline {
+    background-color: transparent;
+    border-width: 2px;
+    font-weight: 600;
+}
+
+.alert-dismissible .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px 17px;
+    color: inherit;
+    text-shadow: none;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.alert-heading {
+    color: inherit;
+}
+
+.alert-link {
+    color: #00255a;
+}
+
+.alert-borderless {
+    border: none !important;
+}

@@ -1,0 +1,121 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 28px;
+
+    input {
+        display: none;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $light-light;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        border-radius: 4px;
+
+        &:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 20px;
+            left: 3px;
+            bottom: 5px;
+            background-color: #fff;
+            transition: 0.4s;
+            border-radius: 2px;
+        }
+
+        &.round-switch {
+            border-radius: 34px;
+
+            &:before {
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+input:checked + .slider {
+    background-color: $primary;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px $primary;
+}
+
+input:checked + .slider-primary {
+    background-color: $primary;
+}
+
+input:focus + .slider-primary {
+    box-shadow: 0 0 1px $primary;
+}
+
+input:checked + .slider-secondary {
+    background-color: $secondary;
+}
+
+input:focus + .slider-secondary {
+    box-shadow: 0 0 1px $secondary;
+}
+
+input:checked + .slider-success {
+    background-color: $success;
+}
+
+input:focus + .slider-success {
+    box-shadow: 0 0 1px $success;
+}
+
+input:checked + .slider-warning {
+    background-color: $warning;
+}
+
+input:focus + .slider-warning {
+    box-shadow: 0 0 1px $warning;
+}
+
+input:checked + .slider-danger {
+    background-color: $danger;
+}
+
+input:focus + .slider-danger {
+    box-shadow: 0 0 1px $danger;
+}
+
+input:checked + .slider-info {
+    background-color: $info;
+}
+
+input:focus + .slider-info {
+    box-shadow: 0 0 1px $info;
+}
+
+input:checked + .slider-light {
+    background-color: $light;
+}
+
+input:focus + .slider-light {
+    box-shadow: 0 0 1px $light;
+}
+
+input:checked + .slider-dark {
+    background-color: $dark;
+}
+
+input:focus + .slider-dark {
+    box-shadow: 0 0 1px $dark;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}

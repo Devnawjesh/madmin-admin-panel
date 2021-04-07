@@ -1,0 +1,70 @@
+/* ------------------------------------------ */
+/* ############### Background ############### */
+/* ------------------------------------------ */
+
+.bgd-transparent { background-color: transparent; }
+.bgd-inherit {  background-color: inherit; }
+.bgd-initial {  background-color: initial; }
+
+.bgd-white-1 { background-color: rgba(#fff, .1); }
+.bgd-white-2 { background-color: rgba(#fff, .2); }
+.bgd-white-3 { background-color: rgba(#fff, .3); }
+.bgd-white-4 { background-color: rgba(#fff, .4); }
+.bgd-white-5 { background-color: rgba(#fff, .5); }
+.bgd-white-6 { background-color: rgba(#fff, .6); }
+.bgd-white-7 { background-color: rgba(#fff, .7); }
+.bgd-white-8 { background-color: rgba(#fff, .8); }
+.bgd-white-9 { background-color: rgba(#fff, .9); }
+
+.bgd-gray-1 { background-color: #f8f9fa; }
+.bgd-gray-2 { background-color: #e9ecef; }
+.bgd-gray-3 { background-color: #dee2e6; }
+.bgd-gray-4 { background-color: #ced4da; }
+.bgd-gray-5 { background-color: #adb5bd; }
+.bgd-gray-6 { background-color: #6c757d; }
+.bgd-gray-7 { background-color: #495057; }
+.bgd-gray-8 { background-color: #343a40; }
+.bgd-gray-9 { background-color: #212529; }
+
+.bgd-black-1 { background-color: rgba(#000, .1); }
+.bgd-black-2 { background-color: rgba(#000, .2); }
+.bgd-black-3 { background-color: rgba(#000, .3); }
+.bgd-black-4 { background-color: rgba(#000, .4); }
+.bgd-black-5 { background-color: rgba(#000, .5); }
+.bgd-black-6 { background-color: rgba(#000, .6); }
+.bgd-black-7 { background-color: rgba(#000, .7); }
+.bgd-black-8 { background-color: rgba(#000, .8); }
+.bgd-black-9 { background-color: rgba(#000, .9); }
+
+.bgd-blue { background-color: #007bff; }
+.bgd-indigo { background-color: #6610f2; }
+.bgd-purple { background-color: #6f42c1; }
+.bgd-pink { background-color: #e83e8c; }
+.bgd-red { background-color: #dc3545; }
+.bgd-orange { background-color: #fd7e14; }
+.bgd-yellow { background-color: #ffc107; }
+.bgd-green { background-color: #28a745; }
+.bgd-teal { background-color: #20c997; }
+.bgd-cyan { background-color: #17a2b8; }
+
+// background gradient
+.bgd-roseanna { @include gradient-x(#ffafbd, #ffc3a0); }
+.bgd-sexyblue { @include gradient-x(#2193b0, #6dd5ed); }
+.bgd-purple { @include gradient-x(#cc2b5e , #753a88); }
+.bgd-mauve { @include gradient-x(#42275a, #734b6d); }
+.bgd-cherry { @include gradient-x(#eb3349, #f45c43); }
+.bgd-kashmir { @include gradient-x(#614385, #516395); }
+.bgd-tranquil { @include gradient-x(#eecda3, #ef629f); }
+.bgd-green-beach { @include gradient-x(#02aab0, #00cdac); }
+.bgd-frost { @include gradient-x(#000428, #004e92); }
+.bgd-virgin-america { @include gradient-x(#7b4397, #185a9d); }
+.bgd-bloody-mary { @include gradient-x(#ff512f, #dd2476); }
+.bgd-blue-purple { @include gradient-x(#4568dc, #b06ab3); }
+.bgd-neon-light { @include gradient-x(#12FFF7, #B3FFAB); }
+.bgd-decent { @include gradient-x(#4ca1af, #c4e0e5); }
+.bgd-sweet-morning { @include gradient-x(#ff5f6d, #ffc371); }
+.bgd-scooter { @include gradient-x(#36d1dc, #5b86e5); }
+.bgd-celestial { @include gradient-x(#c33764, #1d2671); }
+.bgd-royal { @include gradient-x(#141e30, #243b55); }
+.bgd-sea-blue { @include gradient-x(#2b5876, #4e4376); }
+.bgd-aubergine { @include gradient-x(#aa076b, #61045f); }

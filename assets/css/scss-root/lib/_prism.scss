@@ -1,0 +1,11 @@
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+    background: #fbfbfb;
+}
+
+pre[class*="language-"] {
+    padding: 7px 10px;
+}
+
+pre[class*="language-"]:first-child {
+    margin-top: 0;
+}

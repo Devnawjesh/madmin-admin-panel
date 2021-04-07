@@ -1,0 +1,98 @@
+/* ------------------------------------- */
+/* ############### Width ############### */
+/* ------------------------------------- */
+
+
+//width mixin
+@mixin generate-width($num, $viewport: "") {
+  $p: $num + "%";
+
+  @if $viewport == "" {
+    $viewport: "-";
+  } @else {
+    $viewport: "-" + $viewport + "-";
+  }
+
+  .wth#{$viewport}#{$num} { width: #{$num}px; }
+  .wth#{$viewport}#{$num}p { width: #{$p}; }
+  .mx-wth#{$viewport}#{$num}p { max-width: #{$p}; }
+  .mn-wth#{$viewport}#{$num}p { min-width: #{$p}; }
+
+  .wth#{$viewport}#{$num}-imp { width: #{$num}px !important; }
+  .wth#{$viewport}#{$num}p-imp { width: #{$p} !important; }
+  .mx-wth#{$viewport}#{$num}p-imp { max-width: #{$p} !important; }
+  .mn-wth#{$viewport}#{$num}p-imp { min-width: #{$p} !important; }
+}
+
+$num: 5;
+@while $num <= 100 {
+  @include generate-width($num);
+  $num: $num + 5;
+}
+
+$num: 150;
+@while $num <= 1000 {
+  .wth-#{$num} { width: #{$num}px; }
+  .wth-#{$num}-imp { width: #{$num}px !important; }
+  $num: $num + 50;
+}
+
+@mixin generate-width-with-steps($viewport, $num, $max, $plus) {
+  @while $num <= $max {
+    @include generate-width($num,$viewport);
+    $num: $num + $plus;
+  }
+}
+
+@media (min-width: 480px) {
+  @include generate-width-with-steps("xs",5,100,5);
+  @include generate-width-with-steps("xs",150,1000,50);
+
+  .wth-xs-auto { width: auto; }
+  .wth-xs-auto-force { width: auto !important; }
+}
+
+@include media-breakpoint-up(sm) {
+  @include generate-width-with-steps("sm",5,100,5);
+  @include generate-width-with-steps("sm",150,1000,50);
+
+  .wth-sm-auto { width: auto; }
+  .wth-sm-auto-force { width: auto !important; }
+}
+
+@include media-breakpoint-up(md) {
+  @include generate-width-with-steps("md",5,100,5);
+  @include generate-width-with-steps("md",150,1000,50);
+
+  .wth-md-auto { width: auto; }
+  .wth-md-auto-force { width: auto !important; }
+}
+
+@include media-breakpoint-up(lg) {
+  @include generate-width-with-steps("lg",5,100,5);
+  @include generate-width-with-steps("lg",150,1000,50);
+
+  .wth-lg-auto { width: auto; }
+  .wth-lg-auto-force { width: auto !important; }
+}
+
+@include media-breakpoint-up(xl) {
+  @include generate-width-with-steps("xl",5,100,5);
+  @include generate-width-with-steps("xl",150,1000,50);
+
+  .wth-xl-auto { width: auto; }
+  .wth-xl-auto { width: auto !important; }
+}
+
+// Viewport width
+.wth-100v { width: 100vw; }
+
+
+// some additional custom widths
+
+$num: 0;
+@while $num <= 15 {
+  .wth-#{$num}    { width: #{$num}px;  }
+  $num: $num + 1;
+}
+

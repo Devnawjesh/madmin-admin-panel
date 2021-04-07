@@ -1,0 +1,13 @@
+.ql-editor {
+    min-height: 250px;
+    border: none !important;
+}
+
+.ql-toolbar.ql-snow {
+    border: 1px solid $border-color;
+    font-family: $font-family-base;
+}
+
+.ql-container.ql-snow {
+    border: 1px solid $border-color;
+}

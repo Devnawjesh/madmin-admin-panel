@@ -1,0 +1,127 @@
+.shop-card {
+    position: relative;
+    width: auto;
+    margin-bottom: 5px;
+
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .btn {
+        opacity: 0;
+        padding: 10px 10px;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    &:hover .btn {
+        @include transition(0.5s);
+        opacity: 1;
+    }
+
+    .item {
+        position: absolute;
+        top: 40%;
+        left: 20px;
+        right: 20px;
+    }
+
+    .btn-card {
+        color: rgba(50, 57, 74, 0.70);
+        background-color: #ffffff;
+        border-color: #ffffff;
+        padding: 10px 10px !important;
+
+        &:hover {
+            color: #fff;
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+}
+
+.shop-card-content {
+    width: 100%;
+    overflow: hidden;
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .shop-item-title {
+        font-size: 14px;
+        font-weight: 400;
+        display: block;
+        line-height: 1;
+        color: #05353e;
+        margin-bottom:4px;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .shop-item-price {
+        color: $light;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.2;
+        display: block;
+        margin-top: 0px;
+    }
+}
+
+.shop-cart {
+    height: 460px;
+}
+
+.search-cart-right input {
+    width: 230px;
+    height: 40px;
+}
+
+table.pos_table-2 input {
+    display: block;
+    width: 100%;
+    border: 0;
+    color: #05353e;
+    font-size: 15px;
+}
+
+.pos_table-2.table > thead {
+    border: 1px solid #f7f7f7;
+}
+
+.pos_table-2 th,
+.pos_table-2 thead th {
+    border: 0px;
+    background-color: #f7f7f7;
+    color: $primary;
+    font-weight: 300;
+    font-size: 12px;
+}
+table.pos_table-2 thead th {
+    vertical-align: middle;
+    padding: 7px 10px !important;
+    font-family: $font-family-base;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+}
+.sub-total {
+    .col-form-label {
+        font-size: 14px;
+        color: #05353e;
+        margin-left: 18px;
+        }
+
+}
+
+@media (max-width: 576px) {
+    .search-cart-left {
+        margin-bottom: 10px;
+    }
+}

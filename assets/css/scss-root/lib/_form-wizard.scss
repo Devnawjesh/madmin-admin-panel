@@ -1,0 +1,325 @@
+.wizard {
+    > .steps {
+        padding: 15px 0;
+        @include media-breakpoint-up(md) {
+            padding: 15px 20px;
+        }
+
+        > ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            list-style: none;
+
+            li {
+                & + li {
+                    margin-left: 10px;
+                }
+
+                a,
+                a:active,
+                a:hover {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    outline: none;
+                    padding: 5px;
+                    background: transparent;
+                    border-radius: 50px;
+                    @include media-breakpoint-up(md) {
+                        background: $light-light;
+                    }
+
+                    .number {
+                        font-size: 14px;
+                        display: flex;
+                        flex-shrink: 0;
+                        justify-content: center;
+                        align-items: center;
+                        width: 25px;
+                        height: 25px;
+                        border: 2px solid $primary;
+                        @include border-radius(50px);
+                        color: $primary;
+                        margin-right: 10px;
+                    }
+
+                    .title {
+                        display: inline-block;
+                        color: $primary;
+                        margin-right: 10px;
+                        display: none;
+                        white-space: nowrap;
+                        font-size: 14px;
+                        font-weight: 500;
+                        @include media-breakpoint-up(md) {
+                            display: block;
+                        }
+                    }
+
+                    .current-info {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .current {
+            a,
+            a:active,
+            a:hover {
+                background: $primary;
+
+                .number {
+                    border: 2px solid #fff;
+                    color: #fff;
+                }
+
+                .title {
+                    display: inline-block;
+                    color: #fff;
+                    margin-right: 10px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .disabled {
+            .title {
+                display: none;
+                @include media-breakpoint-up(md) {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .done {
+            a,
+            a:active,
+            a:hover {
+                color: #fff;
+                background-color: $dark;
+
+                .title {
+                    display: none;
+                    color: #fff;
+                    @include media-breakpoint-up(md) {
+                        display: inline-block;
+                    }
+                }
+
+                .number {
+                    color: #fff;
+                    border-color: #fff;
+                }
+            }
+        }
+    }
+
+    > .content {
+        min-height: 150px;
+        padding: 20px;
+
+        > .title {
+            display: none;
+            margin-bottom: 5px;
+
+            &.current {
+                display: block;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+
+        .instruction {
+            font-size: 14px;
+        }
+
+        > .body {
+            float: none;
+            position: static;
+        }
+
+        input,
+        select,
+        textarea {
+            font-size: inherit;
+        }
+    }
+
+    > .actions {
+        padding: 10px 15px;
+        @include media-breakpoint-up(md) {
+            padding: 15px 20px;
+        }
+
+        > ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+
+            > li {
+                &:last-child {
+                    a {
+                        color: #ffffff;
+                        background-color: $light;
+                    }
+                }
+            }
+
+            a,
+            a:active,
+            a:hover {
+                display: block;
+                background-color: $primary;
+                padding: 7px 20px;
+                color: #fff;
+                border-radius: 0.25rem;
+            }
+        }
+
+        .disabled {
+            a,
+            a:active,
+            a:hover {
+                background-color: $light;
+            }
+        }
+    }
+
+    &.vertical {
+        > .steps {
+            padding: 15px 0;
+            @include media-breakpoint-up(sm) {
+                float: left;
+                width: 20%;
+            }
+            @include media-breakpoint-up(md) {
+                width: 15%;
+            }
+            @include media-breakpoint-up(lg) {
+                width: 30%;
+            }
+
+            ul {
+                flex-direction: column;
+
+                li {
+                    + li {
+                        margin-top: 10px;
+                        margin-left: 0;
+                    }
+
+                    .title {
+                        display: none;
+                        @include media-breakpoint-down(xs) {
+                            display: block;
+                        }
+                        @include media-breakpoint-up(lg) {
+                            display: block;
+                        }
+                    }
+
+                    a {
+                        justify-content: flex-start;
+                    }
+                }
+            }
+
+            .current {
+                a {
+                    .title {
+                        display: block;
+                        @include media-breakpoint-up(sm) {
+                            display: none;
+                        }
+                        @include media-breakpoint-up(lg) {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+
+        > .content {
+            @include media-breakpoint-up(sm) {
+                width: 80%;
+                float: right;
+            }
+            @include media-breakpoint-up(md) {
+                width: 85%;
+                float: right;
+            }
+            @include media-breakpoint-up(lg) {
+                width: 70%;
+                float: right;
+            }
+        }
+
+        > .actions {
+            padding: 10px 15px;
+            @include media-breakpoint-up(sm) {
+                width: 80%;
+                float: right;
+            }
+            @include media-breakpoint-up(md) {
+                width: 85%;
+            }
+            @include media-breakpoint-up(lg) {
+                width: 70%;
+            }
+
+            ul {
+                float: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.wizard-fullwidth {
+    > .steps {
+        > ul {
+            width: 100%;
+
+            > li {
+                flex: 1;
+
+                a,
+                a:active,
+                a:hover {
+                    border-radius: 0;
+                    padding: 7px 10px;
+                    justify-content: flex-start;
+                    @include media-breakpoint-up(md) {
+                        padding: 10px 15px;
+                    }
+                }
+
+                + li {
+                    margin-left: 2px;
+                }
+            }
+        }
+        @include media-breakpoint-up(md) {
+            .first {
+                a,
+                a:active,
+                a:hover {
+                    border-top-left-radius: 15px !important;
+                }
+            }
+
+            .last {
+                a,
+                a:active,
+                a:hover {
+                    border-top-right-radius: 15px !important;
+                }
+            }
+        }
+    }
+}

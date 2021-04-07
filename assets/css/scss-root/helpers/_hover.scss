@@ -1,0 +1,21 @@
+/* ------------------------------------- */
+/* ############### Hover ############### */
+/* ------------------------------------- */
+
+// Hover for colored anchor
+
+a.hvr-txt-primary { @include hover-color(#007bff); }
+a.hvr-txt-primary { @include hover-color(#6c757d); }
+a.hvr-txt-success { @include hover-color(#28a745); }
+a.hvr-txt-danger { @include hover-color(#dc3545); }
+a.hvr-txt-info { @include hover-color(#17a2b8); }
+a.hvr-txt-white { @include hover-color(#fff); }
+
+
+// Hover property to anchor
+a.hvr-btn-primary { @include hover-color(#007bff); }
+a.hvr-btn-primary { @include hover-color(#6c757d); }
+a.hvr-btn-success { @include hover-color(#28a745); }
+a.hvr-btn-danger { @include hover-color(#dc3545); }
+a.hvr-btn-info { @include hover-color(#17a2b8); }
+a.hvr-btn-white { @include hover-color(#fff); }

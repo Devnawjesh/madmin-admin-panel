@@ -1,0 +1,75 @@
+.irs--flat {
+    .irs {
+        .irs-line {
+            height: 3px;
+            background: $danger;
+            @include border-radius();
+
+            .irs-line-left {}
+
+            .irs-line-mid {}
+
+            .irs-line-right {}
+        }
+
+        .irs-min,
+        .irs-max {
+            color: #000;
+            background-color: $light;
+            @include border-radius();
+        }
+
+        .irs-from,
+        .irs-to,
+        .irs-single {
+            font-size: 12px;
+            background: $primary;
+            @include border-radius();
+            &::before {
+                border-top-color: transparent;
+            }
+        }
+    }
+
+    .irs-grid {
+        .irs-grid-pol {
+            .small {}
+        }
+
+        .irs-grid-text {}
+    }
+
+    .irs-bar {
+        background: $primary;
+        height: 3px;
+        border: none;
+    }
+
+    .irs-bar-edge {
+        border: none;
+        background: $danger;
+        height: 3px;
+    }
+
+    .irs-handle {
+        width: 18px;
+        height: 18px;
+        background-color: $primary;
+        border: none;
+        border-radius: 50%;
+        top: 18px;
+        cursor: pointer;
+
+        > i:first-child {
+            background-color: $primary;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          > i:first-child {
+              background-color: $primary;
+          }
+        }
+    }
+}

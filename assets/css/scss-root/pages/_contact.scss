@@ -1,0 +1,42 @@
+.contact-img img {
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.contact-profile-icon {
+    color: rgba(50, 57, 74, 0.70);
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover {
+        color: $info;
+    }
+}
+
+.contact-item {
+    padding: 0;
+
+    .card-text {
+        padding-top: 10px;
+        color: $secondary;
+
+        h6 {
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        span {
+            font-size: 13px;
+            color: #607D8B;
+        }
+    }
+
+    .card-footer {
+        border-top: 1px solid #f3f1f1;
+        margin-top: 25px;
+    }
+}

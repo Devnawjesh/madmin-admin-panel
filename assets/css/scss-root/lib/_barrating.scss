@@ -1,0 +1,33 @@
+.br-theme-fontawesome-stars-o .br-widget a {
+	font-size: 14px;
+}
+
+.br-theme-fontawesome-stars .br-widget a {
+	font-family: "Font Awesome 5 Free";
+}
+
+.br-theme-fontawesome-stars-o .br-widget a {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	text-decoration: none;
+	margin-right: 2px;
+}
+
+.br-theme-fontawesome-stars-o .br-widget a:after {
+	content: '\f005';
+}
+
+.br-theme-fontawesome-stars-o .br-widget a.br-fractional {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	text-decoration: none;
+	margin-right: 2px;
+}
+
+.br-theme-fontawesome-stars-o .br-widget a.br-fractional:after {
+	content: '\f089';
+}

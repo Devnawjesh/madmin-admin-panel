@@ -1,0 +1,165 @@
+.faq-form-title {
+	h4 {
+		color: $secondary;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	p {
+		color: #607D8B;
+		font-size: 12px;
+		font-weight: 400;
+	}
+}
+// Sass placeholder selectors declaration
+
+%faq-icon-plus {
+	content: "+";
+	position: absolute;
+	right: 0;
+	top: -3px;
+	font-weight: 500;
+	color: #d4cfcf;
+	padding: 10px;
+}
+
+%faq-icon-minus {
+	content: "-";
+	position: absolute;
+	right: 0;
+	top: -3px;
+	font-weight: 500;
+	color: #d4cfcf;
+	padding: 10px;
+}
+
+.faq-default {
+	.card-header {
+		background-color: #fff;
+		padding: 0 20px;
+		border: 0;
+
+		button {
+			text-decoration: none;
+			font-size: 14px;
+			color: $dark;
+		}
+
+		button[aria-expanded="true"]:after {
+			@extend %faq-icon-minus;
+		}
+
+		button[aria-expanded="false"]:after {
+			@extend %faq-icon-plus;
+		}
+	}
+}
+
+.faq-v1 {
+	.card-body {
+		padding-left: 30px;
+	}
+}
+
+.faq-v2 {
+	.card-header {
+		~div .card-body {
+			border-top: 1px solid $border-color;
+		}
+	}
+
+	.card-body {
+		padding-left: 30px;
+	}
+}
+
+.faq-v3 {
+	.card {
+		border: 0;
+		margin-bottom: 0;
+
+		.card-header {
+			padding: 10px 0 0;
+			margin-bottom: 10px;
+			border-bottom: 1px solid $border-color;
+
+			button {
+				padding-left: 0;
+				font-weight: 500;
+
+				&[aria-expanded="true"]:after,
+				&[aria-expanded="false"]:after {
+					top: 7px;
+				}
+			}
+		}
+
+		.card-body {
+			padding-top: 0;
+			padding-left: 0;
+		}
+	}
+}
+
+.faq-v4 {
+	.card {
+		border: 0;
+
+		.card-header {
+			background-color: $success-light;
+			padding: 0 18px;
+			border: none;
+			color: #000;
+
+			button {
+				font-weight: 500;
+			}
+
+			button:after {
+				content: "" !important;
+			}
+		}
+
+		.card-body {
+			padding-top: 15px;
+			padding-left: 30px;
+		}
+	}
+}
+
+.faq-v5 {
+	.card {
+		border: 0;
+
+		.card-header {
+			border: 1px solid $border-color;
+			padding: 0 18px;
+			border: none;
+			color: #000;
+
+			button {
+				font-weight: 500;
+			}
+
+			button:after {
+				content: "" !important;
+			}
+		}
+
+		.card-body {
+			padding-top: 15px;
+			padding-left: 30px;
+
+			&::first-letter {
+				color: $warning;
+				float: left;
+				font-size: 60px;
+				font-weight: bold;
+				line-height: 1;
+				margin-right: 12px;
+				text-shadow: 3px 5px 0 $light-light;
+				transform: rotate(-2deg);
+			}
+		}
+	}
+}

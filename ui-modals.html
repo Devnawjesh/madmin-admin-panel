@@ -1,0 +1,1971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="assets/images/favicon.ico">
+
+    <title>UI Elements | UI Modals</title>
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/js/vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/js/vendor/prism/prism.css">
+
+    <!-- Madmin CSS -->
+    <link rel="stylesheet" href="assets/css/scss-root/main.css">
+
+  </head>
+
+  <body class="vertical">
+
+    <!-- #app start -->
+    <div id="app">
+
+      <!-- header.topbar start-->
+      <header class="topbar">
+
+        <!--navbar Logo section left-->
+        <div class="topbar-left">
+          <div class="main-logo">
+            <a href="index.html" class="madmin-logo-link">
+              <img src="assets/images/madmin-logo-icon.png" class="logo" alt="Madmin logo">
+            </a>
+            <a href="index.html" class="logo-text">Madmin</a>
+          </div>
+        </div>
+        <!--Topbar Logo section end-->
+
+        <!--navbar menu section right-->
+        <nav class="navbar-main navbar-full d-flex flex-nowrap flex-row">
+
+          <!-- .nav-left start -->
+          <ul class="navbar-inner nav-left d-flex flex-row pl-0 mb-0 order-1 bdr-l">
+            <li class="text-center">
+              <a href="#" id="show-menubar" class="nav-link text-center">
+                <i class="icon-menu"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- .nav-left end -->
+
+          <!-- .navbar-inner start -->
+          <ul class="navbar-inner d-flex flex-row ml-auto mb-0 m-20 order-2">
+            <li class="search-dropin">
+
+              <a href="#" id="searchIcon" class="nav-link search-icon">
+                <i class="icon-magnifier"></i>
+              </a>
+
+              <!-- .search-input-field start -->
+              <div class="search-input-field">
+                <input type="search" class="form-control form-field" placeholder="Type to search...">
+                <button class="btn">
+                  <i class="icon-magnifier"></i>
+                </button>
+                <a id="closeSearchBox" href="" class="">
+                  <i class=" icon-close"></i>
+                </a>
+              </div>
+              <!-- .search-input-field end -->
+
+            </li>
+            <li class="dropdown">
+
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link notification-icon">
+                <i class="icon-grid"></i>
+              </a>
+
+              <!-- .boxed-dropdown start -->
+              <div class="dropdown-menu pdn-8" aria-labelledby="dropdownMenuButton">
+                <div class="boxed-dropdown">
+                  <a class="dropdown-icon-menu pt-3 pb-3 " href="mail-inbox.html">
+                    <i class="icon-envelope-open d-block"></i>
+                    <span>Mail</span>
+                  </a>
+                  <a class="dropdown-icon-menu pt-3 pb-3" href="chat.html">
+                    <i class="icon-bubbles d-block"></i>
+                    <span>Messages</span>
+                  </a>
+                  <a class="dropdown-icon-menu pt-3 pb-3" href="#">
+                    <i class="icon-bag d-block"></i>
+                    <span>Orders</span>
+                  </a>
+                  <a class="dropdown-icon-menu pt-3 pb-3" href="fullcalendar.html">
+                    <i class="icon-calendar d-block"></i>
+                    <span>Calender</span>
+                  </a>
+                </div>
+              </div>
+              <!-- .boxed-dropdown end -->
+
+            </li>
+            <li class="dropdown">
+
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link">
+                <i class="icon-bell"></i>
+                <span class="notify"></span>
+                <span class="heartbeat"></span>
+              </a>
+
+              <!-- .notification-dropdown start -->
+              <div class="dropdown-menu pdn-8" aria-labelledby="dropdownMenuButton">
+                <div class="notification-dropdown list-group-notification list-group list-group-borderless">
+                  <div class="notification-wrapper">
+                    <div class="d-flex flex-row list-group-item">
+                      <img src="assets/images/user/thumb/default.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                      <div class="info">
+                        <p class="top">John Snow commented</p>
+                        <span class="bottom">02 minutes ago</span>
+                      </div>
+                      <div class="buttons ml-auto">
+                        <a href="#">
+                          <div class="icon-wrapper">
+                            <i class="icon-trash"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row list-group-item">
+                      <img src="assets/images/user/thumb/user-thumb-1.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                      <div class="info">
+                        <p class="top">Era Lara reacted on a post you posted yesterday.</p>
+                        <span class="bottom">15 minutes ago.</span>
+                      </div>
+                      <div class="buttons ml-auto">
+                        <a href="#">
+                          <div class="icon-wrapper">
+                            <i class="icon-trash"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row list-group-item">
+                      <img src="assets/images/user/thumb/user-thumb-2.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                      <div class="info">
+                        <p class="top">John Snow wrote on your wall.</p>
+                        <span class="bottom">01 hour ago</span>
+                      </div>
+                      <div class="buttons ml-auto">
+                        <a href="#">
+                          <div class="icon-wrapper">
+                            <i class="icon-trash"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row list-group-item">
+                      <img src="assets/images/user/thumb/user-thumb-8.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                      <div class="info">
+                        <p class="top">Jhon Censoria commented on an image.</p>
+                        <span class="bottom">06 hours ago</span>
+                      </div>
+                      <div class="buttons ml-auto">
+                        <a href="#">
+                          <div class="icon-wrapper">
+                            <i class="icon-trash"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row list-group-item">
+                      <img src="assets/images/user/thumb/user-thumb-1.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                      <div class="info">
+                        <p class="top">Diago Estallo commented on an image.</p>
+                        <span class="bottom">20 hours ago</span>
+                      </div>
+                      <div class="buttons ml-auto">
+                        <a href="#">
+                          <div class="icon-wrapper">
+                            <i class="icon-trash"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row list-group-item list-group-footer">
+                    <a href="#">
+                      <span class="text-uppercase">View All</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- .notification-dropdown end -->
+
+            </li>
+            <li class="dropdown">
+
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link user-dropdown-icon">
+                <img src="assets/images/user/thumb/default.png" alt="Notification" class="list-thumbnail  rounded-circle">
+              </a>
+
+              <!-- .user-dropdown start -->
+              <div class="user-dropdown dropdown-menu pdn-15" aria-labelledby="dropdownMenuButton">
+                <div class="media">
+                  <img src="assets/images/user/thumb/default.png" alt="Notification" class="user-thumb rounded-circle mr-3">
+                  <div class="media-body">
+                    <h5 class="mgn-0">Sirus Holding</h5>
+                    sirus@neonmail.com
+                  </div>
+                </div>
+                <ul class="list-group list-group-borderless mgn-t-15">
+                  <li class="list-group-item pdn-y-5 pdn-x-0">
+                    <i class="icon-user"></i>
+                    <a href="#">
+                      <span class="mgn-l-10">Profile</span>
+                    </a>
+                  </li>
+                  <li class="list-group-item pdn-y-5 pdn-x-0">
+                    <i class="icon-key"></i>
+                    <a href="#">
+                      <span class="mgn-l-10">Change password</span>
+                    </a>
+                  </li>
+                  <li class="list-group-item pdn-y-5 pdn-x-0">
+                    <i class="icon-settings"></i>
+                    <a href="#">
+                      <span class="mgn-l-10">Settings</span>
+                    </a>
+                  </li>
+                  <li class="list-group-item pdn-y-5 pdn-x-0">
+                    <i class="icon-logout"></i>
+                    <a href="#">
+                      <span class="mgn-l-10">Signout</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- .user-dropdown end -->
+
+            </li>
+
+          </ul>
+          <!-- .navbar-inner end -->
+
+        </nav>
+        <!--navbar menu section right end-->
+
+      </header>
+      <!-- header.topbar end-->
+
+      <!-- .aside-wrapper start -->
+      <aside class="aside-wrapper">
+
+        <!-- .aside-inner start -->
+        <div class="aside-inner">
+
+          <!-- .aisde-header start -->
+          <div class="aisde-header">
+            <img src="./assets/images/user/thumb/user-thumb-7.png" alt="User image">
+            <h6 class="user-name mgn-t-15">Vela Holdooing</h6>
+          </div>
+          <!-- .aisde-header end -->
+
+          <!-- .aside-body start -->
+          <div class="aside-body">
+
+            <!-- .aside-menu start -->
+            <div class="aside-menu">
+
+              <!-- ul.aside-nav start -->
+              <ul class="nav aside-nav">
+                <!-- Index Dashboard -->
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">
+                    <i class="icon-grid"></i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <!-- Analytics -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-calculator"></i>
+                    <span>Analytics</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="analytics-dashboard.html">
+                        Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="analytics-customers.html">
+                        Customers
+                      </a>
+                    </li>
+                    <li>
+                      <a href="analytics-reports.html">
+                        Reports
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Ecommerce -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-basket-loaded"></i>
+                    <span>Ecommerce</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="ecom-dashboard.html">
+                        Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-products.html">
+                        Products
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-list-product.html">
+                        Products List
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-single-product.html">
+                        Single Product
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-add-product.html">
+                        Add Product
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-add-customer.html">
+                        Add Customer
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-client-profile.html">
+                        Customer Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-shopping-cart.html">
+                        Cart
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-checkout.html">
+                        Checkout
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-invoice.html">
+                        Invoice
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- CRM -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-diamond"></i>
+                    <span>CRM</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="crm-dashboard.html">
+                        Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-add-client.html">
+                        Add Client
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-clients.html">
+                        Client List
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-contact-list.html">
+                        Contacts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-client-profile.html">
+                        Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-invoice.html">
+                        Invoice
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-projects.html">
+                        Projects
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-tasks.html">
+                        Tasks
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-invoice.html">
+                        Invoice
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-payments.html">
+                        Payments
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-attendance.html">
+                        Attendance
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-leaves.html">
+                        Leaves
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-payroll.html">
+                        Payroll
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-tickets.html">
+                        Tickets
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Crypto -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-energy"></i>
+                    <span>Cryptocurrency</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="crypto-dashboard.html">
+                        Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crypto-exchange.html">
+                        Exchange
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crypto-wallet.html">
+                        Wallet
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crypto-news.html">
+                        News
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crypto-settings.html">
+                        Settings
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- POS -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-bag"></i>
+                    <span>POS</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="pos1.html">
+                        POS 1
+                      </a>
+                    </li>
+                    <li>
+                      <a href="pos2.html">
+                        POS 2
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-title">
+                  Elements
+                </li>
+                <!-- UI Elements -->
+                <li class="nav-item has-submenu drop-down">
+                  <a href="#" class="nav-link">
+                    <i class="icon-tag"></i>
+                    <span>UI Elements</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="ui-alerts.html">
+                        Alerts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-avatars.html">
+                        Avatars
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-badge.html">
+                        Badges
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-buttons.html">
+                        Buttons
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-cards.html">
+                        Cards
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-carrousel.html">
+                        Carrousel
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-owl-carousel.html">
+                        Owl Carousel
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-clipboard.html">
+                        Clipboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-collapse.html">
+                        Collapse
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-dropdowns.html">
+                        Dropdowns
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-nestable.html">
+                        Nestable
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-li-groups.html">
+                        List Group
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-modals.html" class="active">
+                        Modals
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-navs-navbar.html">
+                        Navs & Navbar
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-paginations.html">
+                        Paginations
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-progress-bars.html">
+                        Progress Bars
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-progressbar-lib.html">
+                        Progressbar Library
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-popovers-tooltips.html">
+                        Popovers & Tooltips
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-preloaders.html">
+                        Presloaders
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-scrollspy.html">
+                        Scrollspy
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-sweetAlert.html">
+                        SweetAlert
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-typography.html">
+                        Typography
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Charts -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-chart"></i>
+                    <span>Charts</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="chart-apexcharts.html">
+                        Apex Charts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-chartjs.html">
+                        Chartjs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-morris.html">
+                        Morris Charts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-c3chart.html">
+                        C3 Charts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-chartist.html">
+                        Chartist
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-jquery-sparkline.html">
+                        Jquery Sparkline
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-peity.html">
+                        Peity Charts
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Forms -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-notebook"></i>
+                    <span>Forms</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="form-basic-inputs.html">
+                        Basic Inputs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-checkbox-radio.html">
+                        Checkbox & Radio
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-input-groups.html">
+                        Input Groups
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-groups.html">
+                        Form Groups
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-grid.html">
+                        Form Grid
+                      </a>
+                    </li>
+                    <li>
+                      <a href="repeater.html">
+                        Repeater
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-basic-validation.html">
+                        Basic Validation
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-jquery-validation.html">
+                        Jquery Validation
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Advanced elements -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-rocket"></i>
+                    <span>Advanced UI</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="animate.html">
+                        Animate
+                      </a>
+                    </li>
+                    <li>
+                      <a href="dragula.html">
+                        Dragula
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-pickers.html">
+                        Form Pickers
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-Select2.html">
+                        Select2
+                      </a>
+                    </li>
+                    <li>
+                      <a href="toastr.html">
+                        Toastr
+                      </a>
+                    </li>
+                    <li>
+                      <a href="treeview.html">
+                        Treeview
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-range-sliders.html">
+                        Range Sliders
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-switches.html">
+                        Switches
+                      </a>
+                    </li>
+                    <li>
+                      <a href="rating.html">
+                        Rating
+                      </a>
+                    </li>
+                    <li>
+                      <a href="jquery-knob.html">
+                        Jquery-knob
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-editors.html">
+                        Form Editors
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-dropzone.html">
+                        Dropzone
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-autocomplete.html">
+                        Autocomplete
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-wizards.html">
+                        Form Wizard
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Table -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-list"></i>
+                    <span>Tables</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="basic-tables.html">
+                        Basic Tables
+                      </a>
+                    </li>
+                    <li>
+                      <a href="custom-tables.html">
+                        Custom Tables
+                      </a>
+                    </li>
+                    <li>
+                      <a href="data-tables.html">
+                        Data Tables
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ajax-source-tables.html">
+                        Ajax-sourced Table
+                      </a>
+                    </li>
+                    <li>
+                      <a href="editable-tables.html">
+                        Editable Tables
+                      </a>
+                    </li>
+                    <li>
+                      <a href="jsgrid.html">
+                        JSgrid
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Icons -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-diamond"></i>
+                    <span>Icons</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="icons-fontawesome.html">
+                        Fontawesome
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icon-feather-icons.html">
+                        Feather Icon
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icon-ionicons.html">
+                        Ionicons
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icon-mdi.html">
+                        MDI Icons
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icons-flag-icons.html">
+                        Flag Icons
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icons-simple-line-icons.html">
+                        Simple Line Icons
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icons-themify-icon.html">
+                        Themify icon
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-title">
+                  Apps
+                </li>
+                <!-- Mail -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-envelope"></i>
+                    <span>Mail</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="mail-inbox.html">
+                        Mail Inbox
+                      </a>
+                    </li>
+                    <li class="horizontal-subnav-lvl2-item">
+                      <a href="mail-reply.html">
+                        Mail Reply
+                      </a>
+                    </li>
+                    <li class="horizontal-subnav-lvl2-item">
+                      <a href="mail-compose.html">
+                        Mail Compose
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Messages -->
+                <li class="nav-item">
+                  <a href="chat.html" class="nav-link">
+                    <i class="icon-bubbles"></i>
+                    <span>Chat</span>
+                  </a>
+                </li>
+                <!-- File manager -->
+                <li class="nav-item">
+                  <a href="file-manager.html" class="nav-link">
+                    <i class="icon-folder"></i>
+                    <span>File Manager</span>
+                  </a>
+                </li>
+                <!-- Jkanban -->
+                <li class="nav-item">
+                  <a href="jkanban.html" class="nav-link">
+                    <i class="icon-target"></i>
+                    <span>jKanban</span>
+                  </a>
+                </li>
+                <!-- Calendar -->
+                <li class="nav-item">
+                  <a href="fullcalendar.html" class="nav-link">
+                    <i class="icon-calendar"></i>
+                    <span>Calender</span>
+                  </a>
+                </li>
+                <!-- Widgets -->
+                <li class="nav-item">
+                  <a href="widgets-1.html" class="nav-link">
+                    <i class="icon-drawer"></i>
+                    <span>Widgets 1</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="widgets-2.html" class="nav-link">
+                    <i class="icon-drawer"></i>
+                    <span>Widgets 2</span>
+                  </a>
+                </li>
+                <!-- Maps -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-globe"></i>
+                    <span>Maps</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="map-google.html">
+                        Google Map
+                      </a>
+                    </li>
+                    <li>
+                      <a href="map-jqvmap.html">
+                        JQVMap
+                      </a>
+                    </li>
+                    <li>
+                      <a href="map-vector.html">
+                        Vector Map
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-lock"></i>
+                    <span>Authentication</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="login.html">
+                        Login
+                      </a>
+                    </li>
+                    <li>
+                      <a href="register.html">
+                        Register
+                      </a>
+                    </li>
+                    <li>
+                      <a href="lock-screen.html">
+                        Lock Screen
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Pages -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-docs"></i>
+                    <span>Extra Pages</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="blank-page.html">
+                        Blank
+                      </a>
+                    </li>
+                    <li>
+                      <a href="faq.html">
+                        FAQ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="404.html">
+                        Errors 404
+                      </a>
+                    </li>
+                    <li>
+                      <a href="500.html">
+                        Errors 500
+                      </a>
+                    </li>
+                    <li>
+                      <a href="profile-v1.html">
+                        Profile V1
+                      </a>
+                    </li>
+                    <li>
+                      <a href="profile-v2.html">
+                        Profile V2
+                      </a>
+                    </li>
+                    <li>
+                      <a href="single-product.html">
+                        Single Product
+                      </a>
+                    </li>
+                    <li>
+                      <a href="shopping-cart.html">
+                        Cart
+                      </a>
+                    </li>
+                    <li>
+                      <a href="checkout.html">
+                        Checkout
+                      </a>
+                    </li>
+                    <li>
+                      <a href="invoice-v1.html">
+                        Invoice V1
+                      </a>
+                    </li>
+                    <li>
+                      <a href="invoice-v2.html">
+                        Invoice V2
+                      </a>
+                    </li>
+                    <li>
+                      <a href="pricing-tables.html">
+                        Pricing Tables
+                      </a>
+                    </li>
+                    <li>
+                      <a href="gallery.html">
+                        Gallery
+                      </a>
+                    </li>
+                    <li>
+                      <a href="search-result.html">
+                        Search Result
+                      </a>
+                    </li>
+                    <li>
+                      <a href="search-list.html">
+                        Search List
+                      </a>
+                    </li>
+                    <li>
+                      <a href="search-grid.html">
+                        Search Grid
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Helper Classes -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-magic-wand"></i>
+                    <span>Helper Classes</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="helper-background.html">
+                        Background
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-border.html">
+                        Border
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-height.html">
+                        Height
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-margin.html">
+                        Margin
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-padding.html">
+                        Padding
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-position.html">
+                        Position
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-radius.html">
+                        Radius
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-typography.html">
+                        Typography
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-width.html">
+                        Width
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- ul.aside-nav end -->
+
+            </div>
+            <!-- .aside-menu end -->
+
+          </div>
+          <!-- .aside-body end -->
+
+        </div>
+        <!-- .aside-inner end -->
+
+      </aside>
+      <!-- .aside-wrapper end -->
+
+      <!-- .content-wrapper start -->
+      <div class="content-wrapper">
+
+        <div class="container">
+          <div class="page-content">
+
+            <!--.page-title start-->
+            <div class="page-title">
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="#">UI Elements</a>
+                  <span>Modals</span>
+                </div>
+                <div class="col-md-6 d-md-flex d-none align-items-center justify-content-end">
+                  <button class="btn btn-sm btn-primary-soft br-3 p-x-15 mr-2">Export</button>
+                  <button class="btn btn-sm btn-primary br-3 p-x-15 mr-2">Report</button>
+                </div>
+              </div>
+            </div>
+            <!--.page-title end-->
+
+            <div class="row">
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Examples</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <p class="card-text mb-3 wth-sm-70p">Below is a
+                      <em>static</em>
+                      modal example (meaning its
+                      <code>position</code>
+                      and
+                      <code>display</code>
+                      have been overridden). Included are the modal header, modal body (required for
+                      <code>padding</code>), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.</p>
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="displayed-example-modal pdn-y-25">
+                        <div class="modal" tabindex="-1" role="dialog">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h6 class="modal-title">Modal title</h6>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">×</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Modal body text goes here.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Modal Demo</h6>
+                  </div>
+
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="pdn-sm-20 bdr d-flex flex-column">
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModal">
+                              Live demo
+                            </button>
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModalLong">
+                              Scrolling
+                            </button>
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModalCenter">
+                              Vertically centered
+                            </button>
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModalgrid">
+                              Grid modal
+                            </button>
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModalinput" data-whatever="@mdo">Input modal</button>
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#example-modal-lg">Large modal</button>
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#example-modal-sm">Small modal</button>
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModalright">
+                              Right modal
+                            </button>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-9">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                                <code class="language-html">
+                                    &lt;div class="modal fade"&gt;
+                                      &lt;div class="modal-dialog"&gt;
+                                        content.....
+                                      &lt;/div&gt;
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
+                            <div class="table-responsive">
+                              <table class="table table-bordered mgn-t-25 mgn-b-0">
+                                <thead>
+                                  <tr>
+                                    <th class="wd-40p">Class</th>
+                                    <th class="wd-60p">Value</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <code class="pd-0 bg-transparent">class="modal-dialog [value]"</code>
+                                    </td>
+                                    <td class="txt-mini">
+                                      modal-dialog-centered | modal-lg | modal-sm
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <code class="pd-0 bg-transparent">class="modal fade [value]"</code>
+                                    </td>
+                                    <td class="txt-mini">
+                                      modal-right (<small>Modal docked on the right side</small>)
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ./card-body -->
+
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Modal Animated Demo</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="pdn-sm-20 bdr d-flex flex-column">
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#animated-zoom">
+                              Zoom
+                            </button>
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#animated-enter-right">
+                              Enter right
+                            </button>
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#animated-enter-bottom">
+                              Enter bottom
+                            </button>
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#animated-enter-left">
+                              Enter left
+                            </button>
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#animated-flip-horizontal">
+                              Flip horizontal
+                            </button>
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#animated-flip-vertical">
+                              Flip vertical
+                            </button>
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#animated-drop-in">
+                              Drop in
+                            </button>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-9">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                                <code class="language-html">
+                                    &lt;div class="modal fade"&gt;
+                                      &lt;div class="modal-dialog"&gt;
+                                        content.....
+                                      &lt;/div&gt;
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
+                            <div class="table-responsive">
+                              <table class="table table-bordered mgn-t-25 mgn-b-0">
+                                <thead>
+                                  <tr>
+                                    <th class="wd-40p">Class</th>
+                                    <th class="wd-60p">Value</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <code class="pd-0 bg-transparent">class="modal fade [value]"</code>
+                                    </td>
+                                    <td class="txt-mini">
+                                      zoom | enter-right | enter-bottom | enter-left
+                                      <br>
+                                      flip-horizontal | flip-vertical | drop-in
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Fancy Modals</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="pdn-sm-20 bdr d-flex flex-column">
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-login">
+                              Login
+                            </button>
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-colorful">
+                              Colorful Header
+                            </button>
+                            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modal-content">
+                              Other Content
+                            </button>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-9">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                                <code class="language-html">
+                                    &lt;div class="modal fade" id="" tabindex="-1" role="dialog" aria-hidden="true"&gt;
+                                      &lt;div class="modal-dialog modal-dialog-centered" role="document"&gt;
+                                          &lt;div class="modal-header bg-primary"&gt;
+                                            ...
+                                          &lt;/div&gt;
+                                        &lt;div class="modal-content bdr-0 bg-transparent"&gt;
+                                          &lt;div class="modal-body bg-white"&gt;
+                                              happy contents...
+                                          &lt;/div&gt;
+                                          &lt;div class="modal-footer bg-light"&gt;
+                                            ...
+                                          &lt;/div&gt;
+                                        &lt;/div&gt;
+                                      &lt;/div&gt;
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+            </div>
+            <!-- ./row -->
+
+          </div>
+        </div>
+        <!-- ./container -->
+
+        <!-- .footer start -->
+        <footer class="footer">
+          <div class="left-footer">
+            &copy; 2019
+            <a href="https://www.madcoderz.com/" target="_blank">madCoderz</a>
+          </div>
+          <div class="right-footer">
+            <ul class="d-flex">
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+        <!-- .footer end -->
+
+      </div>
+      <!-- .content-wrapper end -->
+
+    </div>
+    <!-- #app end -->
+
+    <!---Modal content--->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Modal title</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal basic -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title">Modal title</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal dialog centered -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title">Modal title</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal dialogue grid -->
+    <div class="modal fade" id="exampleModalgrid" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-primary">
+            <h6 class="modal-title">Modal title</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal input -->
+    <div class="modal fade" id="exampleModalinput" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal lg -->
+    <div class="modal fade" id="example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ....
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal sm -->
+    <div class="modal fade" id="example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ....
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal right -->
+    <div class="modal fade modal-right" id="exampleModalright" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Right Modal</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" class="form-control" id="firstname" placeholder="First Name" required="required">
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name" required="required">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail" required="required">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required="required">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content animated -->
+    <!-- Modal Zoom -->
+    <div class="modal fade zoom" id="animated-zoom" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Modal title</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque necessitatibus laborum, nesciunt, commodi, pariatur, modi quo velit iure soluta qui eos!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal enter-right -->
+    <div class="modal fade enter-right" id="animated-enter-right" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Modal title</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque necessitatibus laborum, nesciunt, commodi, pariatur, modi quo velit iure soluta qui eos!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal enter-bottom -->
+    <div class="modal fade enter-bottom" id="animated-enter-bottom" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Modal title</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque necessitatibus laborum, nesciunt, commodi, pariatur, modi quo velit iure soluta qui eos!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal enter-left -->
+    <div class="modal fade enter-left" id="animated-enter-left" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Modal title</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque necessitatibus laborum, nesciunt, commodi, pariatur, modi quo velit iure soluta qui eos!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal flip-horizontal -->
+    <div class="modal fade flip-horizontal" id="animated-flip-horizontal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Modal title</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque necessitatibus laborum, nesciunt, commodi, pariatur, modi quo velit iure soluta qui eos!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal flip-vertical -->
+    <div class="modal fade flip-vertical" id="animated-flip-vertical" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Modal title</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque necessitatibus laborum, nesciunt, commodi, pariatur, modi quo velit iure soluta qui eos!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal animate-drop-in -->
+    <div class="modal fade drop-in" id="animated-drop-in" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Modal title</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque necessitatibus laborum, nesciunt, commodi, pariatur, modi quo velit iure soluta qui eos!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fancy Modals -->
+    <!-- Modal login -->
+    <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bdr-0 bg-transparent">
+          <div class="modal-header bg-danger">
+            <h6 class="modal-title">Login</h6>
+            <button type="button" class="close text-white txt-normal" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body bg-white">
+            <form>
+              <div class="text-center my-3">
+                <img src="assets/images/user/thumb/default.png" class="rounded-circle wth-120 hgt-120 pdn-y-15" alt="thumbnail">
+                <h6 class="txt-16 mt-3 mgn-b-0">Vesa Helenius</h6>
+                <p>Admin</p>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword10" placeholder="Password">
+              </div>
+
+              <div class="form-group mt-20 mb-3 row">
+                <div class="col-12 text-right">
+                  <input type="submit" class="btn btn-primary btn-block" data-id="dashboard" value="Login">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer bg-light">
+            <p class="txt-12 mgn-0 wth-100p text-white text-center">
+              Thank you!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal colorful -->
+    <div class="modal fade" id="modal-colorful" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bdr-0 bg-transparent">
+          <div class="modal-header bg-primary">
+            <h6 class="modal-title">Love it!</h6>
+            <button type="button" class="close text-white txt-normal" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body bg-white">
+            <div class="container-fluid">
+              <div class="row no-gutter">
+                <div class="col-6">
+                  <div class="card bdr-0">
+                    <div class="card-body">
+                      <div class="d-flex flex-column text-center">
+                        <i class="fab fa-reddit-square txt-30 text-danger mgn-b-15"></i>
+                        <h5 class="txt-32 txt-gray-5">5,478</h5>
+                        <div class="progress mt-2 hgt-3">
+                          <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="card bdr-0">
+                    <div class="card-body">
+                      <div class="d-flex flex-column text-center">
+                        <i class="fab fa-git-square txt-30 text-dark mgn-b-15"></i>
+                        <h5 class="txt-32 txt-gray-5">2,564</h5>
+                        <div class="progress mt-2 hgt-3">
+                          <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div class="modal fade" id="modal-content" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bdr-0 bg-transparent">
+          <div class="modal-body bg-white">
+            <div class="card bdr-0">
+              <div class="d-flex justify-content-between align-items-center pdn-y-13 pdn-x-20">
+                <h5 class="mgn-b-0 txt-14">Monthly Report</h5>
+                <button class="btn btn-primary-soft btn-sm">Export</button>
+              </div>
+              <div class="card-body">
+                <div class="progress-listing">
+                  <div class="mt-o">
+                    <label>12,320 products sold</label>
+                    <span class="right-info float-right">59% of supply</span>
+                    <div class="progress hgt-2 mgn-b-14">
+                      <div class="progress-bar bg-primary" role="progressbar" style="width: 59%;" aria-valuenow="59" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="mt-o">
+                    <label>12,320 orders completed</label>
+                    <span class="right-info float-right">100/320 done</span>
+                    <div class="progress hgt-2 mgn-b-14">
+                      <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="mt-o">
+                    <label>32,000 clients reached</label>
+                    <span class="right-info float-right">100% of target</span>
+                    <div class="progress hgt-2 mgn-b-14">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-light d-flex justify-content-center">
+            <div class="avatar avatar-md">
+              <img src="./assets/images/user/user-8.png" class="rounded-circle" alt="user">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <!--Plugin-->
+    <script src="assets/js/vendor/prism/prism.js"></script>
+
+    <!--script-->
+    <script src="assets/js/components/aside.js"></script>
+    <script src="assets/js/components/main.js"></script>
+
+  </body>
+
+</html>

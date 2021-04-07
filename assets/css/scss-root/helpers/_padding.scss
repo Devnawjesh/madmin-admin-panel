@@ -1,0 +1,89 @@
+/* --------------------------------------- */
+/* ############### Padding ############### */
+/* --------------------------------------- */
+
+@mixin generate-padding($num, $viewport:"") {
+
+  @if $viewport == "" {
+    $viewport: "-";
+  } @else {
+    $viewport: "-" + $viewport + "-";
+  }
+
+  //ie. .pd-sm-0
+  //ie. .pd-sm-0-imp
+  .pdn#{$viewport}#{$num} { padding: #{$num}px; }
+  .pdn#{$viewport}#{$num}-imp { padding: #{$num}px !important; }
+
+  //ie. .pd-sm-y-0
+  .pdn#{$viewport}y-#{$num} {
+    padding-top: #{$num}px;
+    padding-bottom: #{$num}px;
+  }
+
+  //ie. .pd-sm-y-0-imp
+  .pdn#{$viewport}y-#{$num}-imp {
+    padding-top: #{$num}px !important;
+    padding-bottom: #{$num}px !important;
+  }
+
+  //ie. .pd-sm-x-0
+  .pdn#{$viewport}x-#{$num} {
+    padding-left: #{$num}px;
+    padding-right: #{$num}px;
+  }
+
+  //ie. .pd-sm-x-0-imp
+  .pdn#{$viewport}x-#{$num}-imp {
+    padding-left: #{$num}px !important;
+    padding-right: #{$num}px !important;
+  }
+
+  //ie. .pd-sm-t-0
+  .pdn#{$viewport}t-#{$num} { padding-top: #{$num}px; }
+  .pdn#{$viewport}r-#{$num} { padding-right: #{$num}px; }
+  .pdn#{$viewport}b-#{$num} { padding-bottom: #{$num}px; }
+  .pdn#{$viewport}l-#{$num} { padding-left: #{$num}px; }
+
+  //ie. .pd-sm-t-0-imp
+  .pdn#{$viewport}t-#{$num}-imp { padding-top: #{$num}px !important; }
+  .pdn#{$viewport}r-#{$num}-imp { padding-right: #{$num}px !important; }
+  .pdn#{$viewport}b-#{$num}-imp { padding-bottom: #{$num}px !important; }
+  .pdn#{$viewport}l-#{$num}-imp { padding-left: #{$num}px !important; }
+}
+
+@mixin generate-padding-responsive($viewport) {
+  //padding: 0px to 9px
+  $num: 0;
+  @while $num < 15 {
+    @include generate-padding($num,$viewport);
+    $num: $num + 1;
+  }
+
+  //padding: 10px to 95px with step of 5px
+  $num: 15;
+  @while $num < 100 {
+    @include generate-padding($num,$viewport);
+    $num: $num + 5;
+  }
+}
+
+//padding: 0px to 9px
+$num: 0;
+@while $num < 15 {
+  @include generate-padding($num);
+  $num: $num + 1;
+}
+
+//padding: 10px to 95px with step of 5px
+$num: 15;
+@while $num < 100 {
+  @include generate-padding($num);
+  $num: $num + 5;
+}
+
+@media (min-width: 480px) { @include generate-padding-responsive("xs"); }
+@include media-breakpoint-up(sm) { @include generate-padding-responsive("sm"); }
+@include media-breakpoint-up(md) { @include generate-padding-responsive("md"); }
+@include media-breakpoint-up(lg) { @include generate-padding-responsive("lg"); }
+@include media-breakpoint-up(xl) { @include generate-padding-responsive("xl"); }

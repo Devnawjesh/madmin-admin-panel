@@ -1,0 +1,45 @@
+.jqvmap-label {
+    padding: 4px 8px;
+}
+
+.jqvmap-zoomin,
+.jqvmap-zoomout {
+    font-size: 16px;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.jqvmap-zoomout {
+    top: 32px;
+}
+// Hide specific labels
+
+#jqvmap1_dc_pin {
+    display: none;
+}
+// Resize pin font responsively
+@include media-breakpoint-up(sm) {
+    .jqvmap-pin {
+        font-size: 6px;
+    }
+}
+@include media-breakpoint-up(md) {
+    .jqvmap-pin {
+        font-size: 10px;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .jqvmap-pin {
+        font-size: 12px;
+    }
+}
+@include media-breakpoint-up(xl) {
+    .jqvmap-pin {
+        font-size: 14px;
+    }
+}

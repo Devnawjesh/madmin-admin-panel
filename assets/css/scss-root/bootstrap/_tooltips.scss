@@ -1,0 +1,13 @@
+.tooltip-inner {
+  font-size: 12px;
+  padding: 5px 10px;
+  color: #fff !important;
+}
+
+.tooltip-primary { @include tooltip-variant($primary); }
+.tooltip-secondary { @include tooltip-variant($secondary); }
+.tooltip-success { @include tooltip-variant($success); }
+.tooltip-danger { @include tooltip-variant($danger); }
+.tooltip-warning { @include tooltip-variant($warning); }
+.tooltip-light { @include tooltip-variant($light); }
+.tooltip-dark { @include tooltip-variant($dark); }

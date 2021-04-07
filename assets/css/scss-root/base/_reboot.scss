@@ -1,0 +1,91 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-base;
+    background-color: #f4f7f9;
+    font-weight: 400;
+    color: $text-dark;
+    font-size: 14px;
+
+    #app {
+        width: 100%;
+        position: relative;
+    }
+}
+
+// Input focus
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+input[type="checkbox"]:focus,
+.uneditable-input:focus {
+    border: 1px solid $primary-light;
+    box-shadow: none;
+    outline: 0;
+}
+
+// Change placeholder style
+input::-webkit-input-placeholder {
+    color: rgba(50, 57, 74, 0.70) !important;
+    font-family: $font-family-base;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+}
+
+input:-moz-placeholder {
+    color: rgba(50, 57, 74, 0.70) !important;
+    font-family: $font-family-base;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+}
+
+input:-ms-input-placeholder {
+    color: rgba(50, 57, 74, 0.70) !important;
+    font-family: $font-family-base;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+}
+
+// Reboot
+.row-xs {
+    margin-left: -7px;
+    margin-right: -7px;
+}
+
+.row-xs > div {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.va-middle {
+    vertical-align: middle;
+}
+
+hr {
+  border-color: $border-color;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}

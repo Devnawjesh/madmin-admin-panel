@@ -1,0 +1,79 @@
+.radio-primary {
+    .custom-control-input:checked ~ .custom-control-label,
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::before {
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+}
+
+.radio-secondary {
+    .custom-control-input:checked ~ .custom-control-label,
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::before {
+            background-color: $secondary;
+            border-color: $secondary;
+        }
+    }
+}
+
+.radio-success {
+    .custom-control-input:checked ~ .custom-control-label,
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::before {
+            background-color: $success;
+            border-color: $success;
+        }
+    }
+}
+
+.radio-danger {
+    .custom-control-input:checked ~ .custom-control-label,
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::before {
+            background-color: $danger;
+            border-color: $danger;
+        }
+    }
+}
+
+.radio-warning {
+    .custom-control-input:checked ~ .custom-control-label,
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::before {
+            background-color: $warning;
+            border-color: $warning;
+        }
+    }
+}
+
+.radio-info {
+    .custom-control-input:checked ~ .custom-control-label,
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::before {
+            background-color: $info;
+            border-color: $info;
+        }
+    }
+}
+
+.radio-light {
+    .custom-control-input:checked ~ .custom-control-label,
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::before {
+            background-color: $light;
+            border-color: $light;
+        }
+    }
+}
+
+.radio-dark {
+    .custom-control-input:checked ~ .custom-control-label,
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::before {
+            background-color: $dark;
+            border-color: $dark;
+        }
+    }
+}

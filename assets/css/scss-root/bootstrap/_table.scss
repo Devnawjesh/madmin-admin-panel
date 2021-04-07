@@ -1,0 +1,111 @@
+.table {
+    td {
+        border-color: $border-color;
+    }
+}
+
+.table {
+    thead {
+        tr {
+            th {
+                vertical-align: middle !important;
+                font-weight: 400;
+                font-size: 14px;
+                border-bottom-width: 0px;
+                padding: 14px 10px;
+                border-top-color: $border-color;
+                white-space: nowrap;
+
+                &:first-child {
+                    padding-left: 20px !important;
+                }
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                vertical-align: middle !important;
+                padding: 8px 10px !important;
+                border-top-color: $border-color;
+                white-space: nowrap;
+
+                &:first-child {
+                    padding-left: 20px !important;
+                }
+
+                img.thumb-xs {
+                    width: 25px;
+                    height: 25px;
+                }
+
+                img.thumb-sm {
+                    width: 35px;
+                    height: 35px;
+                }
+
+                img.thumb-md {
+                    width: 45px;
+                    height: 45px;
+                }
+
+                img.thumb-ls {
+                    width: 55px;
+                    height: 55px;
+                }
+            }
+        }
+    }
+
+    tfoot {
+        tr {
+            th {
+                border-color: $border-color !important;
+                font-weight: 400;
+                font-size: 14px;
+                white-space: nowrap;
+                padding: 14px 10px;
+
+                &:first-child {
+                    padding-left: 20px !important;
+                }
+            }
+        }
+    }
+}
+
+.table-striped {
+    tbody {
+        tr {
+            &:nth-of-type(odd) {
+                background-color: $light-light !important;
+            }
+        }
+    }
+}
+
+.table-hover {
+    tbody {
+        tr {
+            &:hover {
+                background-color: $light-light !important;
+            }
+        }
+    }
+}
+
+.table-bordered {
+    border: 1px solid $border-color;
+    td,
+    th {
+        border: 1px solid $border-color;
+    }
+}
+
+.table-borderless {
+    td,
+    th {
+        border: none;
+    }
+}

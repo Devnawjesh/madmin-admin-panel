@@ -1,0 +1,28 @@
+.todo-box {
+    padding-top: 15px;
+
+    .todo-list {
+        width: auto;
+        list-style: none;
+        margin: 0;
+        padding: 0 0 0 20px;
+
+        .todo-item {
+            padding: 0;
+            cursor: pointer;
+
+            input[type="checkbox"]:checked + label {
+                text-decoration: line-through;
+            }
+        }
+
+        .checkbox,
+        .radio {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            min-height: 27px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}

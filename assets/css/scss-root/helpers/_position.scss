@@ -1,0 +1,142 @@
+/* ---------------------------------------- */
+/* ############### Position ############### */
+/* ---------------------------------------- */
+
+// Position
+.pos-static { position: static; }
+.pos-relative { position: relative; }
+.pos-absolute { position: absolute; }
+.pos-fixed { position: fixed; }
+
+.pos-static-imp { position: static !important; }
+.pos-relative-imp { position: relative !important; }
+.pos-absolute-imp { position: absolute !important; }
+.pos-fixed-imp { position: fixed !important; }
+
+
+// Top,Right,Bottom,Left Position
+$num: 0;
+@while $num <= 15 {
+  .t-#{$num} { top: #{$num}px; }
+  .r-#{$num} { right: #{$num}px; }
+  .b-#{$num} { bottom: #{$num}px; }
+  .l-#{$num} { left: #{$num}px; }
+
+  .t--#{$num} { top: -#{$num}px; }
+  .r--#{$num} { right: -#{$num}px; }
+  .b--#{$num} { bottom: -#{$num}px; }
+  .l--#{$num} { left: -#{$num}px; }
+
+  .all-#{$num} {
+    top: #{$num}px;
+    right: #{$num}px;
+    bottom: #{$num}px;
+    left: #{$num}px;
+  }
+
+  .x-#{$num} {
+    left: #{$num}px;
+    right: #{$num}px;
+  }
+
+  .y-#{$num} {
+    left: #{$num}px;
+    right: #{$num}px;
+  }
+
+  $num: $num + 1;
+}
+
+$num: 15;
+@while $num <= 100 {
+  .t-#{$num} { top: #{$num}px; }
+  .r-#{$num} { right: #{$num}px; }
+  .b-#{$num} { bottom: #{$num}px; }
+  .l-#{$num} { left: #{$num}px; }
+
+  .t--#{$num} { top: -#{$num}px; }
+  .r--#{$num} { right: -#{$num}px; }
+  .b--#{$num} { bottom: -#{$num}px; }
+  .l--#{$num} { left: -#{$num}px; }
+
+  .all-#{$num} {
+    top: #{$num}px;
+    right: #{$num}px;
+    bottom: #{$num}px;
+    left: #{$num}px;
+  }
+
+  .x-#{$num} {
+    left: #{$num}px;
+    right: #{$num}px;
+  }
+
+  .y-#{$num} {
+    left: #{$num}px;
+    right: #{$num}px;
+  }
+
+  $num: $num + 5;
+}
+
+// z-index property
+.z-index-1  { z-index: 1;  }
+.z-index-5  { z-index: 5;  }
+.z-index-10  { z-index: 10;  }
+.z-index-50  { z-index: 50;  }
+.z-index-100 { z-index: 100; }
+.z-index-150 { z-index: 150; }
+.z-index-200 { z-index: 200; }
+.z-index-999 { z-index: 999; }
+.z-index--1 { z-index: -1; }
+.z-index-10 { z-index: -10; }
+.z-index--100 { z-index: -100; }
+.z-index--999 { z-index: -999; }
+.z-index--9999 { z-index: -9999; }
+
+@mixin do-position($viewport) {
+
+  $viewport: "-" + $viewport + "-";
+
+  $num: 0;
+  @while $num <= 15 {
+    .t#{$viewport}#{$num} { top: #{$num}px; }
+    .r#{$viewport}#{$num} { right: #{$num}px; }
+    .b#{$viewport}#{$num} { bottom: #{$num}px; }
+    .l#{$viewport}#{$num} { left: #{$num}px; }
+
+    .t#{$viewport}-#{$num} { top: -#{$num}px; }
+    .r#{$viewport}-#{$num} { right: -#{$num}px; }
+    .b#{$viewport}-#{$num} { bottom: -#{$num}px; }
+    .l#{$viewport}-#{$num} { left: -#{$num}px; }
+
+    .all#{$viewport}#{$num} {
+      top: #{$num}px;
+      right: #{$num}px;
+      bottom: #{$num}px;
+      left: #{$num}px;
+    }
+
+    .x#{$viewport}#{$num} {
+      left: #{$num}px;
+      right: #{$num}px;
+    }
+
+    .y#{$viewport}#{$num} {
+      left: #{$num}px;
+      right: #{$num}px;
+    }
+
+    $num: $num + 1;
+  }
+  .pos-#{$viewport}-static { position: static; }
+  .pos-#{$viewport}-relative { position: relative; }
+  .pos-#{$viewport}-absolute { position: absolute; }
+  .pos-#{$viewport}-fixed { position: fixed; }
+}
+
+@media (min-width: 480px) { @include do-position("xs"); }
+@include media-breakpoint-up(sm) { @include do-position("sm"); }
+@include media-breakpoint-up(md) { @include do-position("md"); }
+@include media-breakpoint-up(lg) { @include do-position("lg"); }
+@include media-breakpoint-up(xl) { @include do-position("xl"); }

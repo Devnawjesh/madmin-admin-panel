@@ -1,0 +1,78 @@
+.wrapper-login {
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 450px;
+}
+
+.login-form {
+    max-width: 380px;
+    margin: 12% auto;
+    background-color: #f8f8f8;
+
+    .main-logo {
+        img {
+            height: 50px;
+            width: 130px;
+        }
+    }
+
+    h6 {
+        font-size: 18px;
+        color: #05353e;
+    }
+
+    p {
+        font-size: 14px;
+        color: #808080;
+        margin: 2px 0;
+    }
+
+    .card {
+        border: none;
+        box-shadow: 0 -3px 31px 0 rgba(3, 22, 245, 0.04), 0 6px 20px 0 rgba(0, 123, 255, 0.05);
+        margin-bottom: 1.875rem;
+        @include transition(.3s ease);
+
+        .custom-control-label {
+            font-size: 13px;
+            padding-top: 2px;
+        }
+
+        .text-forgot {
+            font-size: 13px;
+        }
+
+        .text-signup {
+            font-size: 13px;
+        }
+    }
+}
+
+.divider {
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: $light;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        margin: 15px 0;
+
+        &::before {
+            content: '';
+            display: block;
+            flex: 1;
+            height: 1px;
+            background-color: $border-color;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            flex: 1;
+            height: 1px;
+            background-color: $border-color;
+        }
+}

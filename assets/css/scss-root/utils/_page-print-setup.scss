@@ -1,0 +1,31 @@
+@media print {
+    // Remove non-printable items
+  .aside-wrapper,
+  .footer,
+  .invoice-print-options,
+  .navbar-custom,
+  .page-title,
+  .topbar {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  // Make the printable area fill the page
+  .container,
+  .content-wrapper,
+  .page-content {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  // Center align and remove unnecessary margins/paddings 
+  .invoice-v2 {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100%;
+  }
+}

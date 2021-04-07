@@ -1,0 +1,72 @@
+.search-header {
+    background-color: $primary-light;
+    padding: 65px 25px;
+
+    h2 {
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .search-box {
+        max-width: 450px;
+        margin: 0 auto;
+
+        button {
+            top: 6px;
+            right: 5px;
+            background: transparent;
+            border: none;
+            font-size: 16px;
+            color: #e6e9ec;
+        }
+    }
+}
+
+.search-product {
+    h5 {
+        color: $secondary;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 13px;
+        font-weight: 400;
+        color: #607d8b;
+    }
+
+    small {
+        font-size: 14px;
+        color: $primary;
+        font-weight: 400;
+    }
+}
+
+.search-result-info {
+    small {
+        font-size: 13px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        border: 0;
+    }
+}
+
+.search-heading {
+    h5 {
+        color: $secondary;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    span {
+        color: #607b8d;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,154 @@
+// Buttons
+@mixin btn-floating($shadow) {
+    box-shadow: 0 5px 10px #{$shadow} !important;
+    &:hover {
+        box-shadow: 0 12px 15px #{$shadow} !important;
+    }
+}
+
+.btn-floating {
+    // Basic mode
+    &.btn-primary {
+        @include btn-floating(#dcd9fd);
+    }
+
+    &.btn-secondary {
+        @include btn-floating(#eae9e9);
+    }
+
+    &.btn-success {
+        @include btn-floating(#bef3e7);
+    }
+
+    &.btn-danger {
+        @include btn-floating(#fedee3);
+    }
+
+    &.btn-warning {
+        @include btn-floating(#fcefc6);
+    }
+
+    &.btn-info {
+        @include btn-floating(#c1dcf9);
+    }
+
+    &.btn-dark {
+        @include btn-floating(#c8ced4);
+    }
+
+    &.btn-light {
+        @include btn-floating(#e8e8e8);
+    }
+
+    // Outline mode
+    &.btn-outline-primary {
+        @include btn-floating(#dcd9fd);
+    }
+
+    &.btn-outline-secondary {
+        @include btn-floating(#eae9e9);
+    }
+
+    &.btn-outline-success {
+        @include btn-floating(#bef3e7);
+    }
+
+    &.btn-outline-danger {
+        @include btn-floating(#fedee3);
+    }
+
+    &.btn-outline-warning {
+        @include btn-floating(#fcefc6);
+    }
+
+    &.btn-outline-info {
+        @include btn-floating(#c1dcf9);
+    }
+
+    &.btn-outline-dark {
+        @include btn-floating(#c8ced4);
+    }
+
+    &.btn-outline-light {
+        @include btn-floating(#e8e8e8);
+    }
+}
+
+// Sizing and misc. helpers
+.btn {
+    &.btn-icon {
+        width: 42px;
+        height: 42px;
+        padding: 0 !important;
+    }
+
+    &.btn-xs {
+        font-size: 10px;
+        padding: 0.1875rem;
+        border-radius: 0.25rem;
+    }
+
+    &.btn-xl {
+        padding: 0.9rem 1.5rem;
+        font-size: 20px;
+        line-height: 1.5;
+        border-radius: 0.25rem;
+    }
+
+    &.btn-rounded {
+        border-radius: 50px !important;
+        padding: 8px 25px;
+    }
+
+    &.btn-fullwidth {
+        width: 100%;
+    }
+
+    &.btn-primary {
+        a {
+            color: #fff;
+        }
+    }
+}
+
+// Soft buttons
+.btn-primary-soft {
+    color: $primary;
+    background-color: rgba($primary, 0.1);
+}
+
+.btn-secondary-soft {
+    color: $secondary;
+    background-color: rgba($secondary, 0.1);
+}
+
+.btn-success-soft {
+    color: $success;
+    background-color: rgba($success, 0.1);
+}
+
+.btn-warning-soft {
+    color: $warning;
+    background-color: rgba($warning, 0.1);
+}
+
+.btn-danger-soft {
+    color: $danger;
+    background-color: rgba($danger, 0.1);
+}
+
+.btn-info-soft {
+    color: $info;
+    background-color: rgba($info, 0.1);
+    border-color: rgba($info, 0);
+}
+
+.btn-light-soft {
+    color: $light;
+    background-color: rgba($light, 0.1);
+}
+
+.btn-dark-soft {
+    color: $dark;
+    background-color: rgba($dark, 0.1);
+}

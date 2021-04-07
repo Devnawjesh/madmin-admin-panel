@@ -1,0 +1,31 @@
+.shopping-cart {
+  table {
+    thead {
+      tr {
+        th {
+          &:last-child {
+            text-align: right;
+          }
+        }
+      }
+    }
+    
+    tbody {
+      tr {
+        td {
+          &.change-amount {
+            width: 1%;
+            white-space: nowrap;
+
+            .input-group {
+              flex-wrap: nowrap;
+            }
+          }
+          &:last-child {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}

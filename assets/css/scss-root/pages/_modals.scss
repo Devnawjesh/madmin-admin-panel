@@ -1,0 +1,27 @@
+.displayed-example-modal {
+    position: relative;
+    background-color: #fbfbfb;
+
+    @media (min-width: 576px) {
+        .displayed-example-modal {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        z-index: 1;
+        display: block;
+    }
+
+    .modal-dialog {
+        left: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

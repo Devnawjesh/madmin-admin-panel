@@ -1,0 +1,16 @@
+.dropify-font-upload:before {
+    content: '';
+}
+
+.dropify-wrapper {
+    border: 1px solid $border-color;
+
+    .dropify-message {
+        span.file-icon {
+            display: none;
+            &:before {
+                content: '';
+            }
+        }
+    }
+}

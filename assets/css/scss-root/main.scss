@@ -1,0 +1,287 @@
+/*
+* Madmin v1.0.0 (https://madcoderz.com/madmin)
+* Copyright 2019 MadCoderz
+* Licensed under ThemeForest License
+*
+* ---------- TABLE OF CONTENTS ----------
+*
+* 1. GOOGLE FONTS IMPORT
+* 2. FONT ICONS IMPORT
+* 3. VARIABLES
+* 4. BOOTSTRAP FRAMEWORK
+* 5. MIXINS
+* 6. GLOBAL CLASSES IMPORT
+* 7. BOOTSTRAP OVERRIDES
+*    7.1  alert
+*    7.2  background
+*    7.3  badge
+*    7.4  border
+*    7.5  button
+*    7.6  card
+*    7.7  checkbox
+*    7.8  dropdown
+*    7.9  forms
+*    7.10 input-group
+*    7.11 list-group
+*    7.12 modal
+*    7.13 nav
+*    7.14 pagination
+*    7.15 popover
+*    7.16 tooltips
+*    7.17 progress
+*    7.18 radio
+*    7.19 scrollspy
+*    7.20 table
+*    7.21 typography
+*    7.22 collapse
+
+
+* 8. CUSTOM VENDOR STYLES
+*    8.1  apexcharts
+*    8.2  barrating
+*    8.3  chartist
+*    8.4  datepicker
+*    8.5  dropify
+*    8.6  dropzone
+*    8.7  datatable
+*    8.8  form-wizard
+*    8.9  ion-range
+*    8.10 jconveyor-tickr
+*    8.11 jkanban
+*    8.12 jqvmap
+*    8.13 jquery-validation
+*    8.14 jsgrid
+*    8.15 nestable
+*    8.16 owl-carousel
+*    8.17 /quill-editor
+*    8.18 progressbar
+*    8.19 prism
+*    8.20 select2
+*    8.21 sweet-alert
+*    8.22 switch
+*    8.23 summernote
+*    8.23 tagify
+*
+* 9. TEMPLATE LAYOUT STYLES
+*    9.1  header
+*    9.2  sidebar
+*    9.3  topnav-custom
+*    9.4  main-contents
+*    9.5  footer
+*
+* 10. TEMPLATE PAGES STYLES
+*    10.1  authentication
+*    10.2  barrating
+*    10.3  calendar
+*    10.4  cart
+*    10.5  chat
+*    10.6  contact
+*    10.7  contact-list
+*    10.8  email
+*    10.9  errors
+*    10.10 faq
+*    10.11 file-manager
+*    10.12 gallery
+*    10.13 invoice
+*    10.14 icons
+*    10.15 modals
+*    10.16 pos1
+*    10.17 pos2
+*    10.18 pricing
+*    10.19 product
+*    10.20 profile
+*    10.21 search
+*    10.22 todos
+*    10.23 widgets
+* 11. MADMIN UTILITY CLASSES
+*    11.1  avatar
+*    11.2  button
+*    11.3  colored-dots
+*    11.4  custom-table
+*    11.5  file-upload
+*    11.6  links
+*    11.7  loader
+*    11.8  page-print-setup
+*    11.9  social-icons
+*    11.10 spinner
+*    11.11 timeline
+*
+* 12. UTILITIES / HELPER CLASSES
+*    12.1  background
+*    12.2  border
+*    12.3  height
+*    12.4  hover
+*    12.5  margin
+*    12.6  misc
+*    12.7  padding
+*    12.8  position
+*    12.9  radius
+*    12.10 typography
+*    12.11 width
+*/
+
+/* ------------------------------------------------------ */
+/* ############### 1. GOOGLE FONTS IMPORT ############### */
+/* ------------------------------------------------------ */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+
+/* ------------------------------------------------------ */
+/* ############### 2. FONT ICONS IMPORT ############### */
+/* ------------------------------------------------------ */
+
+@import url(../../css/icons/simple-line-icons/css/simple-line-icons.css);
+@import url(../../css/icons/themify-icons/themify-icons.css);
+@import url(../../css/icons/flag-icon-css/flag-icon.min.css);
+@import url(../../css/icons/cryptocoins/cryptocoins.css);
+@import url(../../css/icons/cryptocoins/cryptocoins-colors.css);
+@import url(../../css/icons/fontawesome/css/all.min.css);
+
+/* ------------------------------------------------------ */
+/* ############### 3. VARIABLES ############### */
+/* ------------------------------------------------------ */
+
+@import "variables/variables";
+
+/* ------------------------------------------------------ */
+/* ############### 4. BOOTSTRAP FRAMEWORK ############### */
+/* ------------------------------------------------------ */
+
+@import "bootstrap-root/bootstrap.scss";
+
+//* ------------------------------------------------------ */
+/* ############### 5. MIXINS ############### */
+/* ------------------------------------------------------ */
+
+@import "mixins/mixins";
+
+
+/* ------------------------------------------------------ */
+/* ############### 6. GLOBAL CLASSES IMPORT ############### */
+/* ------------------------------------------------------ */
+
+@import "base/reboot";
+
+/* ------------------------------------------------------ */
+/* ############### 7. BOOTSTRAP OVERRIDES ############### */
+/* ------------------------------------------------------ */
+
+@import "bootstrap/alert";
+@import "bootstrap/background";
+@import "bootstrap/badge";
+@import "bootstrap/border";
+@import "bootstrap/button";
+@import "bootstrap/card";
+@import "bootstrap/checkbox";
+@import "bootstrap/dropdown";
+@import "bootstrap/forms";
+@import "bootstrap/input-group";
+@import "bootstrap/list-group";
+@import "bootstrap/modal";
+@import "bootstrap/nav";
+@import "bootstrap/pagination";
+@import "bootstrap/popover";
+@import "bootstrap/tooltips";
+@import "bootstrap/progress";
+@import "bootstrap/radio";
+@import "bootstrap/scrollspy";
+@import "bootstrap/table";
+@import "bootstrap/typography";
+@import "bootstrap/collapse";
+
+/* ------------------------------------------------------- */
+/* ############### 8. CUSTOM VENDOR STYLES ############### */
+/* ------------------------------------------------------- */
+
+@import "lib/apexcharts";
+@import "lib/barrating";
+@import "lib/chartist";
+@import "lib/datepicker";
+@import "lib/dropify";
+@import "lib/dropzone";
+@import "lib/datatable";
+@import "lib/form-wizard";
+@import "lib/ion-range";
+@import "lib/jconveyor-tickr";
+@import "lib/jkanban";
+@import "lib/jqvmap";
+@import "lib/jquery-validation";
+@import "lib/jsgrid";
+@import "lib/nestable";
+@import "lib/owl-carousel";
+@import "lib/quill-editor";
+@import "lib/progressbar";
+@import "lib/prism";
+@import "lib/select2";
+@import "lib/sweet-alert";
+@import "lib/switch";
+@import "lib/summernote";
+@import "lib/tagify";
+
+/* --------------------------------------------------------- */
+/* ############### 9. TEMPLATE LAYOUT STYLES ############### */
+/* --------------------------------------------------------- */
+
+@import "layout/header"; // General header
+@import "layout/sidebar"; // vertical version main navigation
+@import "layout/topnav-custom"; // Horizontal version main navigation
+@import "layout/main-contents"; // Page content
+@import "layout/footer"; // Footer
+
+/* -------------------------------------------------------- */
+/* ############### 10. TEMPLATE PAGES STYLES ############### */
+/* -------------------------------------------------------- */
+
+@import "pages/authentication";
+@import "pages/barrating";
+@import "pages/calendar";
+@import "pages/cart";
+@import "pages/chat";
+@import "pages/contact";
+@import "pages/contact-list";
+@import "pages/email";
+@import "pages/errors";
+@import "pages/faq";
+@import "pages/file-manager";
+@import "pages/gallery";
+@import "pages/invoice";
+@import "pages/icons";
+@import "pages/modals";
+@import "pages/pos1";
+@import "pages/pos2";
+@import "pages/pricing";
+@import "pages/product";
+@import "pages/profile";
+@import "pages/search";
+@import "pages/todos";
+@import "pages/widgets";
+
+/* ------------------------------------------------------------- */
+/* ############### 11. MADMIN UTILITY CLASSES ############### */
+/* ------------------------------------------------------------- */
+@import "utils/avatar";
+@import "utils/button";
+@import "utils/colored-dots";
+@import "utils/custom-table";
+@import "utils/file-upload";
+@import "utils/links";
+@import "utils/loader";
+@import "utils/page-print-setup";
+@import "utils/social-icons";
+@import "utils/spinner";
+@import "utils/timeline";
+
+/* ------------------------------------------------------------- */
+/* ############### 12. UTILITIES / HELPER CLASSES ############### */
+/* ------------------------------------------------------------- */
+@import "helpers/background";
+@import "helpers/border";
+@import "helpers/height";
+@import "helpers/hover";
+@import "helpers/margin";
+@import "helpers/misc";
+@import "helpers/padding";
+@import "helpers/position";
+@import "helpers/radius";
+@import "helpers/typography";
+@import "helpers/width";

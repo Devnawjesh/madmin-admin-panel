@@ -1,0 +1,2876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="assets/images/favicon.ico">
+
+    <title>UI Elements | List group</title>
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/js/vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/js/vendor/prism/prism.css">
+
+    <!-- Madmin CSS -->
+    <link rel="stylesheet" href="assets/css/scss-root/main.css">
+
+  </head>
+
+  <body class="vertical">
+
+    <!-- #app start -->
+    <div id="app">
+
+      <!-- header.topbar start-->
+      <header class="topbar">
+
+        <!--navbar Logo section left-->
+        <div class="topbar-left">
+          <div class="main-logo">
+            <a href="index.html" class="madmin-logo-link">
+              <img src="assets/images/madmin-logo-icon.png" class="logo" alt="Madmin logo">
+            </a>
+            <a href="index.html" class="logo-text">Madmin</a>
+          </div>
+        </div>
+        <!--Topbar Logo section end-->
+
+        <!--navbar menu section right-->
+        <nav class="navbar-main navbar-full d-flex flex-nowrap flex-row">
+
+          <!-- .nav-left start -->
+          <ul class="navbar-inner nav-left d-flex flex-row pl-0 mb-0 order-1 bdr-l">
+            <li class="text-center">
+              <a href="#" id="show-menubar" class="nav-link text-center">
+                <i class="icon-menu"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- .nav-left end -->
+
+          <!-- .navbar-inner start -->
+          <ul class="navbar-inner d-flex flex-row ml-auto mb-0 m-20 order-2">
+            <li class="search-dropin">
+
+              <a href="#" id="searchIcon" class="nav-link search-icon">
+                <i class="icon-magnifier"></i>
+              </a>
+
+              <!-- .search-input-field start -->
+              <div class="search-input-field">
+                <input type="search" class="form-control form-field" placeholder="Type to search...">
+                <button class="btn">
+                  <i class="icon-magnifier"></i>
+                </button>
+                <a id="closeSearchBox" href="" class="">
+                  <i class=" icon-close"></i>
+                </a>
+              </div>
+              <!-- .search-input-field end -->
+
+            </li>
+            <li class="dropdown">
+
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link notification-icon">
+                <i class="icon-grid"></i>
+              </a>
+
+              <!-- .boxed-dropdown start -->
+              <div class="dropdown-menu pdn-8" aria-labelledby="dropdownMenuButton">
+                <div class="boxed-dropdown">
+                  <a class="dropdown-icon-menu pt-3 pb-3 " href="mail-inbox.html">
+                    <i class="icon-envelope-open d-block"></i>
+                    <span>Mail</span>
+                  </a>
+                  <a class="dropdown-icon-menu pt-3 pb-3" href="chat.html">
+                    <i class="icon-bubbles d-block"></i>
+                    <span>Messages</span>
+                  </a>
+                  <a class="dropdown-icon-menu pt-3 pb-3" href="#">
+                    <i class="icon-bag d-block"></i>
+                    <span>Orders</span>
+                  </a>
+                  <a class="dropdown-icon-menu pt-3 pb-3" href="fullcalendar.html">
+                    <i class="icon-calendar d-block"></i>
+                    <span>Calender</span>
+                  </a>
+                </div>
+              </div>
+              <!-- .boxed-dropdown end -->
+
+            </li>
+            <li class="dropdown">
+
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link">
+                <i class="icon-bell"></i>
+                <span class="notify"></span>
+                <span class="heartbeat"></span>
+              </a>
+
+              <!-- .notification-dropdown start -->
+              <div class="dropdown-menu pdn-8" aria-labelledby="dropdownMenuButton">
+                <div class="notification-dropdown list-group-notification list-group list-group-borderless">
+                  <div class="notification-wrapper">
+                    <div class="d-flex flex-row list-group-item">
+                      <img src="assets/images/user/thumb/default.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                      <div class="info">
+                        <p class="top">John Snow commented</p>
+                        <span class="bottom">02 minutes ago</span>
+                      </div>
+                      <div class="buttons ml-auto">
+                        <a href="#">
+                          <div class="icon-wrapper">
+                            <i class="icon-trash"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row list-group-item">
+                      <img src="assets/images/user/thumb/user-thumb-1.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                      <div class="info">
+                        <p class="top">Era Lara reacted on a post you posted yesterday.</p>
+                        <span class="bottom">15 minutes ago.</span>
+                      </div>
+                      <div class="buttons ml-auto">
+                        <a href="#">
+                          <div class="icon-wrapper">
+                            <i class="icon-trash"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row list-group-item">
+                      <img src="assets/images/user/thumb/user-thumb-2.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                      <div class="info">
+                        <p class="top">John Snow wrote on your wall.</p>
+                        <span class="bottom">01 hour ago</span>
+                      </div>
+                      <div class="buttons ml-auto">
+                        <a href="#">
+                          <div class="icon-wrapper">
+                            <i class="icon-trash"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row list-group-item">
+                      <img src="assets/images/user/thumb/user-thumb-8.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                      <div class="info">
+                        <p class="top">Jhon Censoria commented on an image.</p>
+                        <span class="bottom">06 hours ago</span>
+                      </div>
+                      <div class="buttons ml-auto">
+                        <a href="#">
+                          <div class="icon-wrapper">
+                            <i class="icon-trash"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row list-group-item">
+                      <img src="assets/images/user/thumb/user-thumb-1.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                      <div class="info">
+                        <p class="top">Diago Estallo commented on an image.</p>
+                        <span class="bottom">20 hours ago</span>
+                      </div>
+                      <div class="buttons ml-auto">
+                        <a href="#">
+                          <div class="icon-wrapper">
+                            <i class="icon-trash"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row list-group-item list-group-footer">
+                    <a href="#">
+                      <span class="text-uppercase">View All</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- .notification-dropdown end -->
+
+            </li>
+            <li class="dropdown">
+
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link user-dropdown-icon">
+                <img src="assets/images/user/thumb/default.png" alt="Notification" class="list-thumbnail  rounded-circle">
+              </a>
+
+              <!-- .user-dropdown start -->
+              <div class="user-dropdown dropdown-menu pdn-15" aria-labelledby="dropdownMenuButton">
+                <div class="media">
+                  <img src="assets/images/user/thumb/default.png" alt="Notification" class="user-thumb rounded-circle mr-3">
+                  <div class="media-body">
+                    <h5 class="mgn-0">Sirus Holding</h5>
+                    sirus@neonmail.com
+                  </div>
+                </div>
+                <ul class="list-group list-group-borderless mgn-t-15">
+                  <li class="list-group-item pdn-y-5 pdn-x-0">
+                    <i class="icon-user"></i>
+                    <a href="#">
+                      <span class="mgn-l-10">Profile</span>
+                    </a>
+                  </li>
+                  <li class="list-group-item pdn-y-5 pdn-x-0">
+                    <i class="icon-key"></i>
+                    <a href="#">
+                      <span class="mgn-l-10">Change password</span>
+                    </a>
+                  </li>
+                  <li class="list-group-item pdn-y-5 pdn-x-0">
+                    <i class="icon-settings"></i>
+                    <a href="#">
+                      <span class="mgn-l-10">Settings</span>
+                    </a>
+                  </li>
+                  <li class="list-group-item pdn-y-5 pdn-x-0">
+                    <i class="icon-logout"></i>
+                    <a href="#">
+                      <span class="mgn-l-10">Signout</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- .user-dropdown end -->
+
+            </li>
+
+          </ul>
+          <!-- .navbar-inner end -->
+
+        </nav>
+        <!--navbar menu section right end-->
+
+      </header>
+      <!-- header.topbar end-->
+
+      <!-- .aside-wrapper start -->
+      <aside class="aside-wrapper">
+
+        <!-- .aside-inner start -->
+        <div class="aside-inner">
+
+          <!-- .aisde-header start -->
+          <div class="aisde-header">
+            <img src="./assets/images/user/thumb/user-thumb-7.png" alt="User image">
+            <h6 class="user-name mgn-t-15">Vela Holdooing</h6>
+          </div>
+          <!-- .aisde-header end -->
+
+          <!-- .aside-body start -->
+          <div class="aside-body">
+
+            <!-- .aside-menu start -->
+            <div class="aside-menu">
+
+              <!-- ul.aside-nav start -->
+              <ul class="nav aside-nav">
+                <!-- Index Dashboard -->
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">
+                    <i class="icon-grid"></i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <!-- Analytics -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-calculator"></i>
+                    <span>Analytics</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="analytics-dashboard.html">
+                        Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="analytics-customers.html">
+                        Customers
+                      </a>
+                    </li>
+                    <li>
+                      <a href="analytics-reports.html">
+                        Reports
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Ecommerce -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-basket-loaded"></i>
+                    <span>Ecommerce</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="ecom-dashboard.html">
+                        Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-products.html">
+                        Products
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-list-product.html">
+                        Products List
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-single-product.html">
+                        Single Product
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-add-product.html">
+                        Add Product
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-add-customer.html">
+                        Add Customer
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-client-profile.html">
+                        Customer Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-shopping-cart.html">
+                        Cart
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-checkout.html">
+                        Checkout
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ecom-invoice.html">
+                        Invoice
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- CRM -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-diamond"></i>
+                    <span>CRM</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="crm-dashboard.html">
+                        Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-add-client.html">
+                        Add Client
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-clients.html">
+                        Client List
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-contact-list.html">
+                        Contacts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-client-profile.html">
+                        Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-invoice.html">
+                        Invoice
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-projects.html">
+                        Projects
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-tasks.html">
+                        Tasks
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-invoice.html">
+                        Invoice
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-payments.html">
+                        Payments
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-attendance.html">
+                        Attendance
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-leaves.html">
+                        Leaves
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-payroll.html">
+                        Payroll
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crm-tickets.html">
+                        Tickets
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Crypto -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-energy"></i>
+                    <span>Cryptocurrency</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="crypto-dashboard.html">
+                        Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crypto-exchange.html">
+                        Exchange
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crypto-wallet.html">
+                        Wallet
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crypto-news.html">
+                        News
+                      </a>
+                    </li>
+                    <li>
+                      <a href="crypto-settings.html">
+                        Settings
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- POS -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-bag"></i>
+                    <span>POS</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="pos1.html">
+                        POS 1
+                      </a>
+                    </li>
+                    <li>
+                      <a href="pos2.html">
+                        POS 2
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-title">
+                  Elements
+                </li>
+                <!-- UI Elements -->
+                <li class="nav-item has-submenu drop-down">
+                  <a href="#" class="nav-link">
+                    <i class="icon-tag"></i>
+                    <span>UI Elements</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="ui-alerts.html">
+                        Alerts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-avatars.html">
+                        Avatars
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-badge.html">
+                        Badges
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-buttons.html">
+                        Buttons
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-cards.html">
+                        Cards
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-carrousel.html">
+                        Carrousel
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-owl-carousel.html">
+                        Owl Carousel
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-clipboard.html">
+                        Clipboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-collapse.html">
+                        Collapse
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-dropdowns.html">
+                        Dropdowns
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-nestable.html">
+                        Nestable
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-li-groups.html" class="active">
+                        List Group
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-modals.html">
+                        Modals
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-navs-navbar.html">
+                        Navs & Navbar
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-paginations.html">
+                        Paginations
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-progress-bars.html">
+                        Progress Bars
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-progressbar-lib.html">
+                        Progressbar Library
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-popovers-tooltips.html">
+                        Popovers & Tooltips
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-preloaders.html">
+                        Presloaders
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-scrollspy.html">
+                        Scrollspy
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-sweetAlert.html">
+                        SweetAlert
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ui-typography.html">
+                        Typography
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Charts -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-chart"></i>
+                    <span>Charts</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="chart-apexcharts.html">
+                        Apex Charts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-chartjs.html">
+                        Chartjs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-morris.html">
+                        Morris Charts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-c3chart.html">
+                        C3 Charts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-chartist.html">
+                        Chartist
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-jquery-sparkline.html">
+                        Jquery Sparkline
+                      </a>
+                    </li>
+                    <li>
+                      <a href="chart-peity.html">
+                        Peity Charts
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Forms -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-notebook"></i>
+                    <span>Forms</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="form-basic-inputs.html">
+                        Basic Inputs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-checkbox-radio.html">
+                        Checkbox & Radio
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-input-groups.html">
+                        Input Groups
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-groups.html">
+                        Form Groups
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-grid.html">
+                        Form Grid
+                      </a>
+                    </li>
+                    <li>
+                      <a href="repeater.html">
+                        Repeater
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-basic-validation.html">
+                        Basic Validation
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-jquery-validation.html">
+                        Jquery Validation
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Advanced elements -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-rocket"></i>
+                    <span>Advanced UI</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="animate.html">
+                        Animate
+                      </a>
+                    </li>
+                    <li>
+                      <a href="dragula.html">
+                        Dragula
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-pickers.html">
+                        Form Pickers
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-Select2.html">
+                        Select2
+                      </a>
+                    </li>
+                    <li>
+                      <a href="toastr.html">
+                        Toastr
+                      </a>
+                    </li>
+                    <li>
+                      <a href="treeview.html">
+                        Treeview
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-range-sliders.html">
+                        Range Sliders
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-switches.html">
+                        Switches
+                      </a>
+                    </li>
+                    <li>
+                      <a href="rating.html">
+                        Rating
+                      </a>
+                    </li>
+                    <li>
+                      <a href="jquery-knob.html">
+                        Jquery-knob
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-editors.html">
+                        Form Editors
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-dropzone.html">
+                        Dropzone
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-autocomplete.html">
+                        Autocomplete
+                      </a>
+                    </li>
+                    <li>
+                      <a href="form-wizards.html">
+                        Form Wizard
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Table -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-list"></i>
+                    <span>Tables</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="basic-tables.html">
+                        Basic Tables
+                      </a>
+                    </li>
+                    <li>
+                      <a href="custom-tables.html">
+                        Custom Tables
+                      </a>
+                    </li>
+                    <li>
+                      <a href="data-tables.html">
+                        Data Tables
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ajax-source-tables.html">
+                        Ajax-sourced Table
+                      </a>
+                    </li>
+                    <li>
+                      <a href="editable-tables.html">
+                        Editable Tables
+                      </a>
+                    </li>
+                    <li>
+                      <a href="jsgrid.html">
+                        JSgrid
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Icons -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-diamond"></i>
+                    <span>Icons</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="icons-fontawesome.html">
+                        Fontawesome
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icon-feather-icons.html">
+                        Feather Icon
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icon-ionicons.html">
+                        Ionicons
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icon-mdi.html">
+                        MDI Icons
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icons-flag-icons.html">
+                        Flag Icons
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icons-simple-line-icons.html">
+                        Simple Line Icons
+                      </a>
+                    </li>
+                    <li>
+                      <a href="icons-themify-icon.html">
+                        Themify icon
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-title">
+                  Apps
+                </li>
+                <!-- Mail -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-envelope"></i>
+                    <span>Mail</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="mail-inbox.html">
+                        Mail Inbox
+                      </a>
+                    </li>
+                    <li class="horizontal-subnav-lvl2-item">
+                      <a href="mail-reply.html">
+                        Mail Reply
+                      </a>
+                    </li>
+                    <li class="horizontal-subnav-lvl2-item">
+                      <a href="mail-compose.html">
+                        Mail Compose
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Messages -->
+                <li class="nav-item">
+                  <a href="chat.html" class="nav-link">
+                    <i class="icon-bubbles"></i>
+                    <span>Chat</span>
+                  </a>
+                </li>
+                <!-- File manager -->
+                <li class="nav-item">
+                  <a href="file-manager.html" class="nav-link">
+                    <i class="icon-folder"></i>
+                    <span>File Manager</span>
+                  </a>
+                </li>
+                <!-- Jkanban -->
+                <li class="nav-item">
+                  <a href="jkanban.html" class="nav-link">
+                    <i class="icon-target"></i>
+                    <span>jKanban</span>
+                  </a>
+                </li>
+                <!-- Calendar -->
+                <li class="nav-item">
+                  <a href="fullcalendar.html" class="nav-link">
+                    <i class="icon-calendar"></i>
+                    <span>Calender</span>
+                  </a>
+                </li>
+                <!-- Widgets -->
+                <li class="nav-item">
+                  <a href="widgets-1.html" class="nav-link">
+                    <i class="icon-drawer"></i>
+                    <span>Widgets 1</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="widgets-2.html" class="nav-link">
+                    <i class="icon-drawer"></i>
+                    <span>Widgets 2</span>
+                  </a>
+                </li>
+                <!-- Maps -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-globe"></i>
+                    <span>Maps</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="map-google.html">
+                        Google Map
+                      </a>
+                    </li>
+                    <li>
+                      <a href="map-jqvmap.html">
+                        JQVMap
+                      </a>
+                    </li>
+                    <li>
+                      <a href="map-vector.html">
+                        Vector Map
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-lock"></i>
+                    <span>Authentication</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="login.html">
+                        Login
+                      </a>
+                    </li>
+                    <li>
+                      <a href="register.html">
+                        Register
+                      </a>
+                    </li>
+                    <li>
+                      <a href="lock-screen.html">
+                        Lock Screen
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Pages -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-docs"></i>
+                    <span>Extra Pages</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="blank-page.html">
+                        Blank
+                      </a>
+                    </li>
+                    <li>
+                      <a href="faq.html">
+                        FAQ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="404.html">
+                        Errors 404
+                      </a>
+                    </li>
+                    <li>
+                      <a href="500.html">
+                        Errors 500
+                      </a>
+                    </li>
+                    <li>
+                      <a href="profile-v1.html">
+                        Profile V1
+                      </a>
+                    </li>
+                    <li>
+                      <a href="profile-v2.html">
+                        Profile V2
+                      </a>
+                    </li>
+                    <li>
+                      <a href="single-product.html">
+                        Single Product
+                      </a>
+                    </li>
+                    <li>
+                      <a href="shopping-cart.html">
+                        Cart
+                      </a>
+                    </li>
+                    <li>
+                      <a href="checkout.html">
+                        Checkout
+                      </a>
+                    </li>
+                    <li>
+                      <a href="invoice-v1.html">
+                        Invoice V1
+                      </a>
+                    </li>
+                    <li>
+                      <a href="invoice-v2.html">
+                        Invoice V2
+                      </a>
+                    </li>
+                    <li>
+                      <a href="pricing-tables.html">
+                        Pricing Tables
+                      </a>
+                    </li>
+                    <li>
+                      <a href="gallery.html">
+                        Gallery
+                      </a>
+                    </li>
+                    <li>
+                      <a href="search-result.html">
+                        Search Result
+                      </a>
+                    </li>
+                    <li>
+                      <a href="search-list.html">
+                        Search List
+                      </a>
+                    </li>
+                    <li>
+                      <a href="search-grid.html">
+                        Search Grid
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- Helper Classes -->
+                <li class="nav-item has-submenu">
+                  <a href="#" class="nav-link">
+                    <i class="icon-magic-wand"></i>
+                    <span>Helper Classes</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="helper-background.html">
+                        Background
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-border.html">
+                        Border
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-height.html">
+                        Height
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-margin.html">
+                        Margin
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-padding.html">
+                        Padding
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-position.html">
+                        Position
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-radius.html">
+                        Radius
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-typography.html">
+                        Typography
+                      </a>
+                    </li>
+                    <li>
+                      <a href="helper-width.html">
+                        Width
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- ul.aside-nav end -->
+
+            </div>
+            <!-- .aside-menu end -->
+
+          </div>
+          <!-- .aside-body end -->
+
+        </div>
+        <!-- .aside-inner end -->
+
+      </aside>
+      <!-- .aside-wrapper end -->
+
+      <!-- .content-wrapper start -->
+      <div class="content-wrapper">
+
+        <div class="container">
+          <div class="page-content">
+
+            <!--.page-title start-->
+            <div class="page-title">
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="#">UI Elements</a>
+                  <span>List Groups</span>
+                </div>
+                <div class="col-md-6 d-md-flex d-none align-items-center justify-content-end">
+                  <button class="btn btn-sm btn-primary-soft br-3 p-x-15 mr-2">Export</button>
+                  <button class="btn btn-sm btn-primary br-3 p-x-15 mr-2">Report</button>
+                </div>
+              </div>
+            </div>
+            <!--.page-title end-->
+
+            <div class="row">
+
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Basic List</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                                <code class="language-html">
+                                   &lt;ul class="list-group"&gt;
+                                        &lt;li class="list-group-item"&gt;cras justo odio&lt;/li&gt;
+                                        &lt;li class="list-group-item"&gt;dapibus ac facilisis in&lt;/li&gt;
+                                        &lt;li class="list-group-item"&gt;morbi leo risus&lt;/li&gt;
+                                        &lt;li class="list-group-item"&gt;porta ac consectetur ac&lt;/li&gt;
+                                        &lt;li class="list-group-item"&gt;vestibulum at eros&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="card-text mb-3 pdn-t-25 wth-sm-70p">A tight and contracted version to have the list look thinner and smoother.</p>
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <ul class="list-group list-group-contracted">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                                <code class="language-html">
+                                    &lt;ul class="list-group list-group-contracted"&gt;
+                                        &lt;li class="list-group-item"&gt;cras justo odio&lt;/li&gt;
+                                        &lt;li class="list-group-item"&gt;dapibus ac facilisis in&lt;/li&gt;
+                                        &lt;li class="list-group-item"&gt;morbi leo risus&lt;/li&gt;
+                                        &lt;li class="list-group-item"&gt;porta ac consectetur ac&lt;/li&gt;
+                                        &lt;li class="list-group-item"&gt;vestibulum at eros&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>With No Radius</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <ul class="list-group list-group-no-radius">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+                      <div class="row no-gutters mgn-t-25" -sm="-sm">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr">
+                            <pre>
+                                <code class="language-html">
+                                    &lt;ul class="list-group list-group-no-radius"&gt;
+                                        &lt;li class="list-group-item"&gt;cras justo odio&lt;/li&gt;
+                                        &lt;li class="list-group-item"&gt;dapibus ac facilisis in&lt;/li&gt;
+                                        &lt;li class="list-group-item"&gt;morbi leo risus&lt;/li&gt;
+                                        &lt;li class="list-group-item"&gt;porta ac consectetur ac&lt;/li&gt;
+                                        &lt;li class="list-group-item"&gt;vestibulum at eros&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Active and Disabled Items</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <ul class="list-group list-group-no-radius">
+                        <li class="list-group-item active">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item disabled">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+                      <div class="row no-gutters mgn-t-25" -sm="-sm">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr">
+                            <pre>
+                                <code class="language-html">
+                                    &lt;ul class="list-group list-group-no-radius"&gt;
+                                        &lt;li class="list-group-item active"&gt;cras justo odio&lt;/li&gt;
+                                        &lt;li class="list-group-item disabled"&gt;dapibus ac facilisis in&lt;/li&gt;
+                                        ........
+                                    &lt;/ul&gt;
+                                </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Links and Buttons</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">
+                          Cras justo odio
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                        <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                        <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                        <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+                      </div>
+                      <div class="row no-gutters mgn-t-25" -sm="-sm">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr">
+                            <pre>
+                                <code class="language-html">
+                                    &lt;div class="list-group"&gt;
+                                        &lt;a href="#" class="list-group-item list-group-item-action active"&gt;cras justo odio&lt;/a&gt;
+                                        &lt;a href="#" class="list-group-item list-group-item-action"&gt;dapibus ac facilisis in&lt;/a&gt;
+                                        &lt;a href="#" class="list-group-item list-group-item-action"&gt;morbi leo risus&lt;/a&gt;
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Flush</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                                <code class="language-html">
+                                    &lt;ul class="list-group list-group-flush"&gt;
+                                        &lt;li class="list-group-item"&gt;cras justo odio&lt;/li&gt;
+                                        &lt;li class="list-group-item"&gt;dapibus ac facilisis in&lt;/li&gt;
+                                        .......
+                                    &lt;/ul&gt;
+                                </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Contextual Classes</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr" -sm="-sm">
+                      <ul class="list-group">
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+                        <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+                        <li class="list-group-item list-group-item-success">A simple success list group item</li>
+                        <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+                        <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+                        <li class="list-group-item list-group-item-info">A simple info list group item</li>
+                        <li class="list-group-item list-group-item-light">A simple light list group item</li>
+                        <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+                      </ul>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr">
+                            <pre>
+                                <code class="language-html">
+                                    &lt;ul class="list-group"&gt;
+                                      &lt;li class="list-group-item"&gt;...&lt;/li&gt;
+                                      &lt;li class="list-group-item list-group-item-primary"&gt;...&lt;/li&gt;
+                                      &lt;li class="list-group-item list-group-item-secondary"&gt;...&lt;/li&gt;
+                                      &lt;li class="list-group-item list-group-item-success"&gt;...&lt;/li&gt;
+                                      &lt;li class="list-group-item list-group-item-danger"&gt;...&lt;/li&gt;
+                                      &lt;li class="list-group-item list-group-item-warning"&gt;...&lt;/li&gt;
+                                      &lt;li class="list-group-item list-group-item-info"&gt;...&lt;/li&gt;
+                                      &lt;li class="list-group-item list-group-item-light"&gt;...&lt;/li&gt;
+                                      &lt;li class="list-group-item list-group-item-dark"&gt;...&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="card-text mb-3 wth-sm-70p mgn-t-25">With Borderless</p>
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <ul class="list-group list-group-borderless">
+                        <li class="list-group-item list-group-item-light">Dapibus ac facilisis in</li>
+                        <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+                        <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+                        <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+                        <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+                        <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+                      </ul>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                                                  <code class="language-html">
+                                                      &lt;ul class="list-group list-group-borderless"&gt;
+                                                        &lt;li class="list-group-item list-group-item-primary"&gt;...&lt;/li&gt;
+                                                      &lt;/ul&gt;
+                                                  </code>
+                                                </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>With Pill Badges</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Cras justo odio
+                          <span class="badge badge-primary badge-pill">tags</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Dapibus ac facilisis in
+                          <span class="badge badge-secondary badge-pill">tags</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Morbi leo risus
+                          <span class="badge badge-success badge-pill">tags</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Dapibus ac facilisis in
+                          <span class="badge badge-warning badge-pill">tags</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Morbi leo risus
+                          <span class="badge badge-danger badge-pill">tags</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Morbi leo risus
+                          <span class="badge badge-info badge-pill">tags</span>
+                        </li>
+                      </ul>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                              <code class="language-html">
+                                  &lt;ul class="list-group"&gt;
+                                    &lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;
+                                        cras justo odio
+                                        &lt;span class="badge badge-primary badge-pill"&gt;tags&lt;/span&gt;
+                                    &lt;/li&gt;
+                                  &lt;/ul&gt;
+                              </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="card-text mb-3 wth-sm-70p mgn-t-25">With Rounded badges</p>
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Cras justo odio
+                          <span class="badge badge-primary badge-rounded">1</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Dapibus ac facilisis in
+                          <span class="badge badge-secondary badge-rounded">2</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Morbi leo risus
+                          <span class="badge badge-success badge-rounded">1</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Dapibus ac facilisis in
+                          <span class="badge badge-warning badge-rounded">2</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Morbi leo risus
+                          <span class="badge badge-danger badge-rounded">1</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          Morbi leo risus
+                          <span class="badge badge-info badge-rounded">1</span>
+                        </li>
+                      </ul>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                              <code class="language-html">
+                                  &lt;ul class="list-group"&gt;
+                                    &lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;
+                                        cras justo odio
+                                        &lt;span class="badge badge-primary badge-rounded"&gt;1&lt;/span&gt;
+                                    &lt;/li&gt;
+                                  &lt;/ul&gt;
+                              </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>User List V1</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="list-group list-group-user-v1 wth-sm-50p">
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/default.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">John Snow</h6>
+                            <span class="bottom">Art director</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-danger-soft">
+                                <i class="icon-trash"></i>
+                              </div>
+                            </a>
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-tag"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/user-thumb-1.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">Era Lara</h6>
+                            <span class="bottom">DOP</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-danger-soft">
+                                <i class="icon-trash"></i>
+                              </div>
+                            </a>
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-tag"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/user-thumb-2.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">John Snow</h6>
+                            <span class="bottom">Producer</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-danger-soft">
+                                <i class="icon-trash"></i>
+                              </div>
+                            </a>
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-tag"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/user-thumb-8.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">John Snow</h6>
+                            <span class="bottom">Lead developer</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-danger-soft">
+                                <i class="icon-trash"></i>
+                              </div>
+                            </a>
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-tag"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/default.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">Bello</h6>
+                            <span class="bottom">Nobody important</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-danger-soft">
+                                <i class="icon-trash"></i>
+                              </div>
+                            </a>
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-tag"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/default.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">John Lewlater</h6>
+                            <span class="bottom">Designer</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-danger-soft">
+                                <i class="icon-trash"></i>
+                              </div>
+                            </a>
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-tag"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item list-group-footer">
+                          <a href="#">
+                            <span class="text-uppercase">View All</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                              <code class="language-html">
+                                  &lt;div class="list-group list-group-user-v1 wth-sm-50p"&gt;
+                                    &lt;div class="d-flex flex-row list-group-item"&gt;
+                                        &lt;img src="image.." alt="notification" class="list-thumbnail  rounded-circle"&gt;
+                                        &lt;div class="info"&gt;
+                                            &lt;h6 class="top"&gt;era lara&lt;/h6&gt;
+                                            &lt;span class="bottom"&gt;art director&lt;/span&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="buttons ml-auto"&gt;
+                                            &lt;a href="#"&gt;
+                                                &lt;div class="icon-wrapper bg-danger-soft"&gt;
+                                                    &lt;i class="icon-trash"&gt;&lt;/i&gt;
+                                                &lt;/div&gt;
+                                            &lt;/a&gt;
+                                            &lt;a href="#"&gt;
+                                                &lt;div class="icon-wrapper bg-primary-soft"&gt;
+                                                    &lt;i class="icon-tag"&gt;&lt;/i&gt;
+                                                &lt;/div&gt;
+                                            &lt;/a&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="d-flex flex-row list-group-item list-group-footer"&gt;
+                                      &lt;a href="#" &gt;
+                                          &lt;span class="text-uppercase"&gt;view all&lt;/span&gt;
+                                      &lt;/a&gt;
+                                    &lt;/div&gt;
+                                  &lt;/div&gt;
+                              </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>User List V2</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="list-group list-group-user-v1 list-group-borderless wth-sm-50p">
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/default.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">John Snow</h6>
+                            <span class="bottom">Art director</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-danger-soft">
+                                <i class="icon-trash"></i>
+                              </div>
+                            </a>
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-tag"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/user-thumb-1.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">Era Lara</h6>
+                            <span class="bottom">DOP</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-danger-soft">
+                                <i class="icon-trash"></i>
+                              </div>
+                            </a>
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-tag"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/user-thumb-2.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">John Snow</h6>
+                            <span class="bottom">Producer</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-danger-soft">
+                                <i class="icon-trash"></i>
+                              </div>
+                            </a>
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-tag"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/user-thumb-8.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">John Snow</h6>
+                            <span class="bottom">Lead developer</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-danger-soft">
+                                <i class="icon-trash"></i>
+                              </div>
+                            </a>
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-tag"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/default.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">Bello</h6>
+                            <span class="bottom">Nobody important</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-danger-soft">
+                                <i class="icon-trash"></i>
+                              </div>
+                            </a>
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-tag"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/default.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">John Lewlater</h6>
+                            <span class="bottom">Designer</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-danger-soft">
+                                <i class="icon-trash"></i>
+                              </div>
+                            </a>
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-tag"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item list-group-footer">
+                          <a href="#">
+                            <span class="text-uppercase">View All</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                              <code class="language-html">
+                                &lt;div class="list-group list-group-user-v1 list-group-borderless wth-sm-50p"&gt;
+                                  &lt;div class="d-flex flex-row list-group-item"&gt;
+                                      &lt;img src="image.." alt="notification" class="list-thumbnail  rounded-circle"&gt;
+                                      &lt;div class="info"&gt;
+                                          &lt;h6 class="top"&gt;john  snow&lt;/h6&gt;
+                                          &lt;span class="bottom"&gt;art director&lt;/span&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class="buttons ml-auto"&gt;
+                                          &lt;a href="#"&gt;
+                                              &lt;div class="icon-wrapper bg-danger-soft"&gt;
+                                                  &lt;i class="icon-trash"&gt;&lt;/i&gt;
+                                              &lt;/div&gt;
+                                          &lt;/a&gt;
+                                          &lt;a href="#"&gt;
+                                              &lt;div class="icon-wrapper bg-primary-soft"&gt;
+                                                  &lt;i class="icon-tag"&gt;&lt;/i&gt;
+                                              &lt;/div&gt;
+                                          &lt;/a&gt;
+                                      &lt;/div&gt;
+                                  &lt;/div&gt;
+                                  &lt;div class="d-flex flex-row list-group-item list-group-footer"&gt;
+                                    &lt;a href="#" &gt;
+                                        &lt;span class="text-uppercase"&gt;view all&lt;/span&gt;
+                                    &lt;/a&gt;
+                                  &lt;/div&gt;
+                                &lt;/div&gt;
+                              </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>File List</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="list-group-file-manager txt-gray-5">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-folder mgn-r-10"></i>
+                              Best scenes Paoli Dam</a>
+                            <span class="size">100 GB</span>
+                            <span class="time">12 December, 2019</span>
+                            <span class="options">
+                              <div class="btn-group dropleft">
+                                <i class="icon-options-vertical btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="sr-only">Toggle Dropdown</span></i>
+                                <div class="dropdown-menu" x-placement="left-start" style="position: absolute; transform: translate3d(-186px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-arrow-down-circle mr-2"></i>View details
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-badge mr-2"></i>Mark as important
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-share-alt mr-2"></i>Share
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-cloud-download mr-2"></i>Download
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-docs mr-2"></i>Copy to
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-folder mr-2"></i>Move to
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-note mr-2"></i>Rename
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-trash mr-2"></i>Delete
+                                  </a>
+                                </div>
+                              </div>
+                            </span>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-folder mgn-r-10"></i>
+                              Tokon Thakur poems</a>
+                            <span class="size">12,00 KB</span>
+                            <span class="time">22 March, 2019</span>
+                            <span class="options">
+                              <div class="btn-group dropleft">
+                                <i class="icon-options-vertical btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="sr-only">Toggle Dropdown</span></i>
+                                <div class="dropdown-menu" x-placement="left-start" style="position: absolute; transform: translate3d(-186px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-arrow-down-circle mr-2"></i>View details
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-badge mr-2"></i>Mark as important
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-share-alt mr-2"></i>Share
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-cloud-download mr-2"></i>Download
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-docs mr-2"></i>Copy to
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-folder mr-2"></i>Move to
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-note mr-2"></i>Rename
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-trash mr-2"></i>Delete
+                                  </a>
+                                </div>
+                              </div>
+                            </span>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-folder mgn-r-10"></i>
+                              Best scenes Scarlet Johanson</a>
+                            <span class="size">99 GB</span>
+                            <span class="time">12 July, 2019</span>
+                            <span class="options">
+                              <div class="btn-group dropleft">
+                                <i class="icon-options-vertical btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="sr-only">Toggle Dropdown</span></i>
+                                <div class="dropdown-menu" x-placement="left-start" style="position: absolute; transform: translate3d(-186px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-arrow-down-circle mr-2"></i>View details
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-badge mr-2"></i>Mark as important
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-share-alt mr-2"></i>Share
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-cloud-download mr-2"></i>Download
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-docs mr-2"></i>Copy to
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-folder mr-2"></i>Move to
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-note mr-2"></i>Rename
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-trash mr-2"></i>Delete
+                                  </a>
+                                </div>
+                              </div>
+                            </span>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-folder mgn-r-10"></i>
+                              Radha Roy pics</a>
+                            <span class="size">120 MB</span>
+                            <span class="time">06 April, 2019</span>
+                            <span class="options">
+                              <div class="btn-group dropleft">
+                                <i class="icon-options-vertical btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="sr-only">Toggle Dropdown</span></i>
+                                <div class="dropdown-menu" x-placement="left-start" style="position: absolute; transform: translate3d(-186px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-arrow-down-circle mr-2"></i>View details
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-badge mr-2"></i>Mark as important
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-share-alt mr-2"></i>Share
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-cloud-download mr-2"></i>Download
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-docs mr-2"></i>Copy to
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-folder mr-2"></i>Move to
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-note mr-2"></i>Rename
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-trash mr-2"></i>Delete
+                                  </a>
+                                </div>
+                              </div>
+                            </span>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-folder mgn-r-10"></i>
+                              Misc videos</a>
+                            <span class="size">500 MB</span>
+                            <span class="time">20 May, 2019</span>
+                            <span class="options">
+                              <div class="btn-group dropleft">
+                                <i class="icon-options-vertical btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="sr-only">Toggle Dropdown</span></i>
+                                <div class="dropdown-menu" x-placement="left-start" style="position: absolute; transform: translate3d(-186px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-arrow-down-circle mr-2"></i>View details
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-badge mr-2"></i>Mark as important
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-share-alt mr-2"></i>Share
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-cloud-download mr-2"></i>Download
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-docs mr-2"></i>Copy to
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-folder mr-2"></i>Move to
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-note mr-2"></i>Rename
+                                  </a>
+                                  <a class="dropdown-item" href="#">
+                                    <i class="icon-trash mr-2"></i>Delete
+                                  </a>
+                                </div>
+                              </div>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                                <code class="language-html">
+                                  &lt;div class="list-group-file-manager txt-gray-5"&gt;
+                                    &lt;ul&gt;
+                                      &lt;li&gt;
+                                          &lt;a href="#"&gt;&lt;i class="fa fa-folder mgn-r-10"&gt;&lt;/i&gt; tokon thakur poems&lt;/a&gt;
+                                          &lt;span class="size"&gt;12,00 kb&lt;/span&gt;
+                                          &lt;span class="time"&gt;22 march, 2019&lt;/span&gt;
+                                          &lt;span class="options"&gt;
+                                              &lt;div class="btn-group dropleft"&gt;
+                                                  &lt;i class="icon-options-vertical btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;&lt;span class="sr-only"&gt;toggle dropdown&lt;/span&gt;&lt;/i&gt;
+                                                  &lt;div class="dropdown-menu" x-placement="left-start" style="position: absolute; transform: translate3d(-186px, 0px, 0px); top: 0px; left: 0px; will-change: transform;"&gt;
+                                                      &lt;a class="dropdown-item" href="#"&gt;
+                                                          &lt;i class="icon-arrow-down-circle mr-2"&gt;&lt;/i&gt;view details
+                                                      &lt;/a&gt;
+                                                       .....
+                                                  &lt;/div&gt;
+                                              &lt;/div&gt;
+                                          &lt;/span&gt;
+                                      &lt;/li&gt;
+                                      &lt;li&gt;
+                                          &lt;a href="#"&gt;&lt;i class="fa fa-folder mgn-r-10"&gt;&lt;/i&gt; best scenes scarlet johanson&lt;/a&gt;
+                                          &lt;span class="size"&gt;99 gb&lt;/span&gt;
+                                          &lt;span class="time"&gt;12 july, 2019&lt;/span&gt;
+                                          &lt;span class="options"&gt;
+                                              &lt;div class="btn-group dropleft"&gt;
+                                                  &lt;i class="icon-options-vertical btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;&lt;span class="sr-only"&gt;toggle dropdown&lt;/span&gt;&lt;/i&gt;
+                                                  &lt;div class="dropdown-menu" x-placement="left-start" style="position: absolute; transform: translate3d(-186px, 0px, 0px); top: 0px; left: 0px; will-change: transform;"&gt;
+                                                      &lt;a class="dropdown-item" href="#"&gt;
+                                                          &lt;i class="icon-arrow-down-circle mr-2"&gt;&lt;/i&gt;view details
+                                                      &lt;/a&gt;
+                                                       .....
+                                                  &lt;/div&gt;
+                                              &lt;/div&gt;
+                                          &lt;/span&gt;
+                                      &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                  &lt;/div&gt;
+                                </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+              </div>
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Timeline List</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="timeline timeline-border timeline-secondary">
+                        <div class="timeline-list">
+                          <div class="timeline-info">
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                            <small class="text-muted">05.11.18, 2:30 PM</small>
+                          </div>
+                        </div>
+                        <div class="timeline-list timeline-border timeline-primary">
+                          <div class="timeline-info">
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <small class="text-muted">05.11.18, 2:30 PM</small>
+                          </div>
+                        </div>
+                        <div class="timeline-list  timeline-border timeline-danger">
+                          <div class="timeline-info">
+                            <div>
+                              <a href="#">
+                                <strong>Request</strong>
+                              </a>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <small class="text-muted">05.11.18, 2:30 PM</small>
+                          </div>
+                        </div>
+                        <div class="timeline-list  timeline-border timeline-success">
+                          <div class="timeline-info">
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <small class="text-muted">05.11.18, 2:30 PM</small>
+                          </div>
+                        </div>
+                        <div class="timeline-list  timeline-border timeline-warning">
+                          <div class="timeline-info">
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <small class="text-muted">05.11.18, 2:30 PM</small>
+                          </div>
+                        </div>
+                        <div class="timeline-list  timeline-border timeline-info">
+                          <div class="timeline-info">
+                            <div>
+                              <a href="#">
+                                <strong>NJS</strong>
+                              </a>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <small class="text-muted">05.11.18, 2:30 PM</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                              <code class="language-html">
+                                &lt;div class="timeline timeline-border timeline-secondary"&gt;
+                                  &lt;div class="timeline-list"&gt;
+                                      &lt;div class="timeline-info"&gt;
+                                          &lt;div&gt;lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;/div&gt;
+                                          &lt;small class="text-muted"&gt;05.11.18, 2:30 pm&lt;/small&gt;
+                                      &lt;/div&gt;
+                                  &lt;/div&gt;
+                                  &lt;div class="timeline-list timeline-border timeline-primary"&gt;
+                                      &lt;div class="timeline-info"&gt;
+                                          &lt;div&gt;lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/div&gt;
+                                          &lt;small class="text-muted"&gt;05.11.18, 2:30 pm&lt;/small&gt;
+                                      &lt;/div&gt;
+                                  &lt;/div&gt;
+                                  &lt;div class="timeline-list  timeline-border timeline-danger"&gt;
+
+                                      &lt;div class="timeline-info"&gt;
+                                          &lt;div&gt;&lt;a href="#"&gt;&lt;strong&gt;request&lt;/strong&gt;&lt;/a&gt; lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/div&gt;
+                                          &lt;small class="text-muted"&gt;05.11.18, 2:30 pm&lt;/small&gt;
+                                      &lt;/div&gt;
+                                  &lt;/div&gt;
+                                &lt;/div&gt;
+                              </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Inbox List V1</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="list-group list-group-mail-v1">
+                        <div class="mail-item">
+                          <img src="assets/images/user/thumb/user-thumb-1.png" class="wth-45 rounded-circle" alt="">
+                          <div class="mgn-sm-l-20 flex-grow-1">
+                            <div class="d-flex justify-content-between mgn-b-2">
+                              <div class="txt-14">
+                                <a href="#" class="text-warning">
+                                  <i class="icon-star"></i>
+                                </a>
+                                <a href="#" class="text-light mgn-l-5">
+                                  <i class="icon-paper-clip"></i>
+                                </a>
+                              </div>
+                              <span class="txt-12 text-light">few minutes ago</span>
+                            </div>
+                            <h6 class="txt-14">
+                              <a href="#" class="text-dark txt-normal">Socrates Itumay</a>
+                              <span class="dot dot-sm dot-primary mgn-l-5"></span>
+                            </h6>
+                            <p class="txt-13 text-light mgn-b-10">I should be incapable of drawing a single stroke at the present moment.</p>
+                          </div>
+                        </div>
+                        <div class="mail-item">
+                          <img src="assets/images/user/thumb/user-thumb-2.png" class="wth-45 rounded-circle" alt="">
+                          <div class="mgn-sm-l-20 flex-grow-1">
+                            <div class="d-flex justify-content-between mgn-b-2">
+                              <div class="txt-14">
+                                <a href="#" class="text-light">
+                                  <i class="icon-star"></i>
+                                </a>
+                                <a href="#" class="text-light mgn-l-5">
+                                  <i class="icon-paper-clip"></i>
+                                </a>
+                              </div>
+                              <span class="txt-12 text-light">10 minutes ago</span>
+                            </div>
+                            <h6 class="txt-14">
+                              <a href="#" class="text-dark txt-normal">Albert Nash</a>
+                              <span class="dot dot-sm dot-light mgn-l-5"></span>
+                            </h6>
+                            <p class="txt-13 text-light mgn-b-10">Younef Hodgson will be briefing you soon.</p>
+                          </div>
+                        </div>
+                        <div class="mail-item active">
+                          <img src="assets/images/user/thumb/user-thumb-3.png" class="wth-45 rounded-circle" alt="">
+                          <div class="mgn-sm-l-20 flex-grow-1">
+                            <div class="d-flex justify-content-between mgn-b-2">
+                              <div class="txt-14">
+                                <a href="#" class="text-light">
+                                  <i class="icon-star"></i>
+                                </a>
+                              </div>
+                              <span class="txt-12 text-light">1 hours ago</span>
+                            </div>
+                            <!-- d-flex -->
+                            <h6 class="txt-14">
+                              <a href="#" class="text-dark txt-normal">Natasha Rao</a>
+                              <span class="dot dot-sm dot-danger mgn-l-5"></span>
+                            </h6>
+                            <p class="txt-13 text-light mgn-b-10">In the meantime, we will meet him.</p>
+                          </div>
+                        </div>
+                        <div class="mail-item">
+                          <img src="assets/images/user/thumb/user-thumb-4.png" class="wth-45 rounded-circle" alt="">
+                          <div class="mgn-sm-l-20 flex-grow-1">
+                            <div class="d-flex justify-content-between mgn-b-2">
+                              <div class="txt-14">
+                                <a href="#" class="text-light">
+                                  <i class="icon-star"></i>
+                                </a>
+                                <a href="#" class="text-light mgn-l-5">
+                                  <i class="icon-paper-clip"></i>
+                                </a>
+                              </div>
+                              <span class="txt-12 text-light">3 hours ago</span>
+                            </div>
+                            <!-- d-flex -->
+                            <h6 class="txt-14">
+                              <a href="#" class="text-dark txt-normal">Alex Maich</a>
+                              <span class="dot dot-sm dot-light mgn-l-5"></span>
+                            </h6>
+                            <p class="txt-13 text-light mgn-b-10">There were a sense of tranquility in there.</p>
+                          </div>
+                        </div>
+                        <div class="mail-item">
+                          <img src="assets/images/user/thumb/user-thumb-7.png" class="wth-45 rounded-circle" alt="">
+                          <div class="mgn-sm-l-20 flex-grow-1">
+                            <div class="d-flex justify-content-between mgn-b-2">
+                              <div class="txt-14">
+                                <a href="#" class="text-light">
+                                  <i class="icon-star"></i>
+                                </a>
+                              </div>
+                              <span class="txt-12 text-light">7 hours ago</span>
+                            </div>
+                            <!-- d-flex -->
+                            <h6 class="txt-14">
+                              <a href="#" class="text-dark txt-normal">Kevin Warren</a>
+                              <span class="dot dot-sm dot-light mgn-l-5"></span>
+                            </h6>
+                            <p class="txt-13 text-light mgn-b-10">When will he be there?</p>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row mail-item list-group-footer">
+                          <a href="#">
+                            <span class="text-uppercase">View All</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                                <code class="language-html">
+                                  &lt;div class="list-group list-group-mail-v1"&gt;
+                                    &lt;div class="mail-item"&gt;
+                                      &lt;img src="assets/images/user/thumb/user-thumb-1.png" class="wth-45 rounded-circle" alt=""&gt;
+                                      &lt;div class="mgn-sm-l-20 flex-grow-1"&gt;
+                                        &lt;div class="d-flex justify-content-between mgn-b-2"&gt;
+                                          &lt;div class="txt-14"&gt;
+                                            &lt;a href="#" class="text-warning"&gt;&lt;i class="icon-star"&gt;&lt;/i&gt;&lt;/a&gt;
+                                            &lt;a href="#" class="text-light mgn-l-5"&gt;&lt;i class="icon-paper-clip"&gt;&lt;/i&gt;&lt;/a&gt;
+                                          &lt;/div&gt;
+                                          &lt;span class="txt-12 text-light"&gt;few minutes ago&lt;/span&gt;
+                                        &lt;/div&gt;
+                                        &lt;h6 class="txt-14"&gt;
+                                          &lt;a href="#" class="text-dark txt-normal"&gt;socrates itumay&lt;/a&gt;
+                                          &lt;span class="dot dot-sm dot-primary mgn-l-5"&gt;&lt;/span&gt;
+                                        &lt;/h6&gt;
+                                        &lt;p class="txt-13 text-light mgn-b-10"&gt;i should be incapable of drawing a single stroke at the present moment.&lt;/p&gt;
+                                      &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="mail-item active"&gt;
+                                      &lt;img src="assets/images/user/thumb/user-thumb-3.png" class="wth-45 rounded-circle" alt=""&gt;
+                                      &lt;div class="mgn-sm-l-20 flex-grow-1"&gt;
+                                        &lt;div class="d-flex justify-content-between mgn-b-2"&gt;
+                                          &lt;div class="txt-14"&gt;
+                                            &lt;a href="#" class="text-light"&gt;&lt;i class="icon-star"&gt;&lt;/i&gt;&lt;/a&gt;
+                                          &lt;/div&gt;
+                                          &lt;span class="txt-12 text-light"&gt;1 hours ago&lt;/span&gt;
+                                        &lt;/div&gt;&lt;!-- d-flex --&gt;
+                                        &lt;h6 class="txt-14"&gt;
+                                          &lt;a href="#" class="text-dark txt-normal"&gt;natasha rao&lt;/a&gt;
+                                          &lt;span class="dot dot-sm dot-danger mgn-l-5"&gt;&lt;/span&gt;
+                                        &lt;/h6&gt;
+                                        &lt;p class="txt-13 text-light mgn-b-10"&gt;in the meantime, we will meet him.&lt;/p&gt;
+                                      &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="d-flex flex-row mail-item list-group-footer"&gt;
+                                        &lt;a href="#" &gt;
+                                            &lt;span class="text-uppercase"&gt;view all&lt;/span&gt;
+                                        &lt;/a&gt;
+                                    &lt;/div&gt;
+                                  &lt;/div&gt;
+                                </code>
+                              </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Media List</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="list-group list-group-media wth-sm-50p">
+                        <div class="list-group-item pdn-y-20">
+                          <div class="media">
+                            <div class="media-graphic wth-50">
+                              <i class="icon-bell bg-primary-soft"></i>
+                            </div>
+                            <!-- d-flex -->
+                            <div class="media-body">
+                              <h6>Easy Customization</h6>
+                              <p>List groups are a flexible and powerful component for displaying simple.</p>
+                            </div>
+                            <!-- media-body -->
+                          </div>
+                          <!-- media -->
+                        </div>
+                        <!-- list-group-item -->
+                        <div class="list-group-item pdn-y-20">
+                          <div class="media">
+                            <div class="media-graphic wth-50">
+                              <i class="icon-speedometer bg-primary-soft"></i>
+                            </div>
+                            <!-- d-flex -->
+                            <div class="media-body">
+                              <h6>Fastest to make</h6>
+                              <p>One of the fastest way to list any list.</p>
+                            </div>
+                            <!-- media-body -->
+                          </div>
+                          <!-- media -->
+                        </div>
+                        <!-- list-group-item -->
+                        <div class="list-group-item pdn-y-20">
+                          <div class="media">
+                            <div class="media-graphic wth-50">
+                              <i class="icon-energy bg-primary-soft"></i>
+                            </div>
+                            <!-- d-flex -->
+                            <div class="media-body">
+                              <h6>Great ui</h6>
+                              <p>A very user-friendly way to present lists.</p>
+                            </div>
+                            <!-- media-body -->
+                          </div>
+                          <!-- media -->
+                        </div>
+                        <!-- list-group-item -->
+                      </div>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                              <code class="language-html">
+                                &lt;div class="list-group list-group-media wth-sm-50p"&gt;
+                                  &lt;div class="list-group-item pdn-y-20"&gt;
+                                    &lt;div class="media"&gt;
+                                      &lt;div class="media-graphic wth-50"&gt;
+                                        &lt;i class="icon-bell bg-primary-soft"&gt;&lt;/i&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class="media-body"&gt;
+                                        &lt;h6&gt;easy customization&lt;/h6&gt;
+                                        &lt;p&gt;list groups...&lt;/p&gt;
+                                      &lt;/div&gt;
+                                    &lt;/div&gt;
+                                  &lt;/div&gt;
+                                  ..............
+                                &lt;/div&gt;
+                              </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+              </div>
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Custom Content</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="txt-14 mgn-b-15">A sample title
+                            </h5>
+                            <small>Feb 13</small>
+                          </div>
+                          <p class="mgn-0">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                          <small>Donec id elit non mi porta.</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="txt-14 mgn-b-15">Another one here</h5>
+                            <small class="text-muted">April 03</small>
+                          </div>
+                          <p class="mgn-0">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                          <small class="text-muted">Donec id elit non mi porta.</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="txt-14 mgn-b-15">The last one</h5>
+                            <small class="text-muted">August 01</small>
+                          </div>
+                          <p class="mgn-0">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                          <small class="text-muted">Donec id elit non mi porta.</small>
+                        </a>
+                      </div>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                              <code class="language-html">
+                                &lt;div class="list-group"&gt;
+                                  &lt;a href="#" class="list-group-item list-group-item-action flex-column align-items-start active"&gt;
+                                      &lt;div class="d-flex w-100 justify-content-between"&gt;
+                                          &lt;h5 class="txt-14 mgn-b-15"&gt;a sample title &lt;/h5&gt;
+                                          &lt;small&gt;feb 13&lt;/small&gt;
+                                      &lt;/div&gt;
+                                      &lt;p class="mgn-0"&gt;donec id elit non mi porta gravida at eget metus. maecenas sed diam eget risus varius blandit.&lt;/p&gt;
+                                      &lt;small&gt;donec id elit non mi porta.&lt;/small&gt;
+                                  &lt;/a&gt;
+                                  &lt;a href="#" class="list-group-item list-group-item-action flex-column align-items-start"&gt;
+                                      &lt;div class="d-flex w-100 justify-content-between"&gt;
+                                          &lt;h5 class="txt-14 mgn-b-15"&gt;another one here&lt;/h5&gt;
+                                          &lt;small class="text-muted"&gt;april 03&lt;/small&gt;
+                                      &lt;/div&gt;
+                                      &lt;p class="mgn-0"&gt;donec id elit non mi porta gravida at eget metus. maecenas sed diam eget risus varius blandit.&lt;/p&gt;
+                                      &lt;small class="text-muted"&gt;donec id elit non mi porta.&lt;/small&gt;
+                                  &lt;/a&gt;
+                                &lt;/div&gt;
+                              </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Notification List</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <div class="list-group list-group-notification-v1 wth-sm-50p">
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/default.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">John Snow</h6>
+                            <span class="bottom">July 12, 2019</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-danger-soft">
+                                <i class="icon-arrow-right"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/user-thumb-1.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">Era Lara</h6>
+                            <span class="bottom">February 16, 2019</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-arrow-right"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/user-thumb-2.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">John Snow</h6>
+                            <span class="bottom">June 12, 2019</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-arrow-right"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/user-thumb-8.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">John Snow</h6>
+                            <span class="bottom">March 27, 2019</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-arrow-right"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/default.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">Bello</h6>
+                            <span class="bottom">January 22, 2019</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-arrow-right"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item">
+                          <img src="assets/images/user/thumb/default.png" alt="Notification" class="list-thumbnail  rounded-circle">
+                          <div class="info">
+                            <h6 class="top">John Lewlater</h6>
+                            <span class="bottom">Designer</span>
+                          </div>
+                          <div class="buttons ml-auto">
+                            <a href="#">
+                              <div class="icon-wrapper bg-primary-soft">
+                                <i class="icon-arrow-right"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row list-group-item list-group-footer">
+                          <a href="#">
+                            <span class="text-uppercase">View All</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                              <code class="language-html">
+                                &lt;div class="list-group list-group-notification-v1 wth-sm-50p"&gt;
+                                  &lt;div class="d-flex flex-row list-group-item"&gt;
+                                      &lt;img src="image.." alt="notification" class="list-thumbnail  rounded-circle"&gt;
+                                      &lt;div class="info"&gt;
+                                          &lt;h6 class="top"&gt;john snow&lt;/h6&gt;
+                                          &lt;span class="bottom"&gt;july 12, 2019&lt;/span&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class="buttons ml-auto"&gt;
+                                          &lt;a href="#"&gt;
+                                              &lt;div class="icon-wrapper bg-danger-soft"&gt;
+                                                  &lt;i class="icon-arrow-right"&gt;&lt;/i&gt;
+                                              &lt;/div&gt;
+                                          &lt;/a&gt;
+                                      &lt;/div&gt;
+                                  &lt;/div&gt;
+                                  &lt;div class="d-flex flex-row list-group-item"&gt;
+                                      &lt;img src="image.." alt="notification" class="list-thumbnail  rounded-circle"&gt;
+                                      &lt;div class="info"&gt;
+                                          &lt;h6 class="top"&gt;era lara&lt;/h6&gt;
+                                          &lt;span class="bottom"&gt;february 16, 2019&lt;/span&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class="buttons ml-auto"&gt;
+                                          &lt;a href="#"&gt;
+                                              &lt;div class="icon-wrapper bg-primary-soft"&gt;
+                                                  &lt;i class="icon-arrow-right"&gt;&lt;/i&gt;
+                                              &lt;/div&gt;
+                                          &lt;/a&gt;
+                                      &lt;/div&gt;
+                                  &lt;/div&gt;
+                                  &lt;div class="d-flex flex-row list-group-item list-group-footer"&gt;
+                                      &lt;a href="#" &gt;
+                                          &lt;span class="text-uppercase"&gt;view all&lt;/span&gt;
+                                      &lt;/a&gt;
+                                  &lt;/div&gt;
+                                &lt;/div&gt;
+                              </code>
+                            </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Numbered List</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <ul class="list-group list-group-numbered">
+                        <li class="list-group-item">
+                          <span>1</span>
+                          <p class="mgn-l-10">Cras justo odio</p>
+                        </li>
+                        <li class="list-group-item">
+                          <span>2</span>
+                          <p class="mgn-l-10">Dapibus ac facilisis in</p>
+                        </li>
+                        <li class="list-group-item">
+                          <span>3</span>
+                          <p class="mgn-l-10">Morbi leo risus</p>
+                        </li>
+                        <li class="list-group-item">
+                          <span>4</span>
+                          <p class="mgn-l-10">Porta ac consectetur ac</p>
+                        </li>
+                        <li class="list-group-item">
+                          <span>5</span>
+                          <p class="mgn-l-10">Vestibulum at eros</p>
+                        </li>
+                      </ul>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                                <code class="language-html">
+                                  &lt;ul class="list-group list-group-numbered"&gt;
+                                    &lt;li class="list-group-item"&gt;cras justo odio&lt;/p&gt;
+                                    &lt;/i&gt;
+                                    &lt;li class="list-group-item"&gt;dapibus ac facilisis in&lt;/p&gt;
+                                    &lt;/li&gt;
+                                  &lt;/ul&gt;
+                                </code>
+                             </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+              <div class="col-12">
+
+                <div class="card">
+                  <div class="card-header pdn-sm-x-40">
+                    <h6>Icon List</h6>
+                  </div>
+                  <div class="card-body pdn-20 pdn-sm-40 pdn-t-20-imp">
+                    <div class="pdn-sm-55 pdn-15 bdr">
+                      <ul class="list-group">
+                        <li class="list-group-item">
+                          <i class="icon-umbrella"></i>
+                          <span class="mgn-l-10">Cras justo odio</span>
+                        </li>
+                        <li class="list-group-item">
+                          <i class="icon-star"></i>
+                          <span class="mgn-l-10">Dapibus ac facilisis in</span>
+                        </li>
+                        <li class="list-group-item">
+                          <i class="icon-energy"></i>
+                          <span class="mgn-l-10">Morbi leo risus</span>
+                        </li>
+                        <li class="list-group-item">
+                          <i class="icon-lock"></i>
+                          <span class="mgn-l-10">Porta ac consectetur ac</span>
+                        </li>
+                        <li class="list-group-item">
+                          <i class="icon-drawer"></i>
+                          <span class="mgn-l-10">Vestibulum at eros</span>
+                        </li>
+                      </ul>
+                      <div class="row no-gutters mgn-t-25">
+                        <div class="col-12">
+                          <div class="helper-snippets pdn-sm-25 pdn-xs-10 bdr-sm">
+                            <pre>
+                                <code class="language-html">
+                                  &lt;ul class="list-group"&gt;
+                                    &lt;li class="list-group-item"&gt;
+                                        &lt;i class="icon-umbrella"&gt;&lt;/i&gt;
+                                        &lt;span class="mgn-l-10"&gt;cras justo odio&lt;/span&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class="list-group-item"&gt;
+                                        &lt;i class="icon-star"&gt;&lt;/i&gt;
+                                        &lt;span class="mgn-l-10"&gt;dapibus ac facilisis in&lt;/span&gt;
+                                    &lt;/li&gt;
+                                  &lt;/ul&gt;
+                                </code>
+                             </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./card -->
+
+              </div>
+            </div>
+            <!-- ./row -->
+
+          </div>
+        </div>
+        <!-- ./container -->
+
+        <!-- .footer start -->
+        <footer class="footer">
+          <div class="left-footer">
+            &copy; 2019
+            <a href="https://www.madcoderz.com/" target="_blank">madCoderz</a>
+          </div>
+          <div class="right-footer">
+            <ul class="d-flex">
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+        <!-- .footer end -->
+
+      </div>
+      <!-- .content-wrapper end -->
+
+    </div>
+    <!-- #app end -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <!--Plugin-->
+    <script src="assets/js/vendor/prism/prism.js"></script>
+
+    <!--script-->
+    <script src="assets/js/components/aside.js"></script>
+    <script src="assets/js/components/main.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,88 @@
+/* -------------------------------------- */
+/* ############### Height ############### */
+/* -------------------------------------- */
+
+// Height mixin
+@mixin generate-height($num, $viewport: "") {
+  $p: $num + "%";
+
+  @if $viewport == "" {
+    $viewport: "-";
+  } @else {
+    $viewport: "-" + $viewport + "-";
+  }
+
+  .hgt#{$viewport}#{$num} { height: #{$num}px; }
+  .hgt#{$viewport}#{$num}p { height: #{$p}; }
+  .max-hgt#{$viewport}#{$num}p { max-height: #{$p}; }
+  .min-hgt#{$viewport}#{$num}p { min-height: #{$p}; }
+
+  .hgt#{$viewport}#{$num}-imp { height: #{$num}px !important; }
+  .hgt#{$viewport}#{$num}p-imp { height: #{$p} !important; }
+}
+
+@mixin generate-height-with-steps($viewport) {
+  $num: 5;
+  @while $num <= 100 {
+    @include generate-height($num, $viewport);
+    $num: $num + 5;
+  }
+
+  $num: 150;
+  @while $num <= 850 {
+    @include generate-height($num, $viewport);
+    $num: $num + 50;
+  }
+}
+
+$num: 0;
+@while $num <= 15 {
+  @include generate-height($num);
+  $num: $num + 1;
+}
+
+$num: 20;
+@while $num <= 100 {
+  @include generate-height($num);
+  $num: $num + 5;
+}
+
+//height: 100px to 800px with step of 50px
+$num: 150;
+@while $num <= 1000 {
+  .hgt-#{$num} { height: #{$num}px; }
+  $num: $num + 50;
+}
+
+// viewport height
+.hgt-100vh { height: 100vh; }
+
+//custom heights
+.hgt-auto { height: auto; }
+
+
+// media queries
+@media (min-width: 480px) {
+  @include generate-height-with-steps("xs");
+  .hgt-xs-100vh { height: 100vh; }
+}
+
+@include media-breakpoint-up(sm) {
+  @include generate-height-with-steps("xs");
+  .hgt-sm-100vh { height: 100vh; }
+}
+
+@include media-breakpoint-up(md) {
+  @include generate-height-with-steps("md");
+  .hgt-md-100vh { height: 100vh; }
+}
+
+@include media-breakpoint-up(lg) {
+  @include generate-height-with-steps("lg");
+  .hgt-lg-100vh { height: 100vh; }
+}
+
+@include media-breakpoint-up(xl) {
+  @include generate-height-with-steps("xl");
+  .hgt-xl-100vh { height: 100vh; }
+}

@@ -1,0 +1,61 @@
+.contact {
+    .contact-details {
+        img {
+            width: 70px;
+            height: 70px;
+        }
+
+        h6 {
+            font-size: 18px;
+            font-weight: 500;
+            color: $secondary;
+        }
+
+        p {
+            font-size: 13px;
+            margin-top: 3px;
+            color: #607D8B;
+        }
+
+        .skill {
+            .title {
+                font-size: 14px;
+                font-weight: 400;
+                color: #888;
+            }
+        }
+
+        span {
+            font-size: 14px;
+            color: #607D8B;
+            padding: 10px 0;
+        }
+    }
+
+    .bio {
+        font-size: 14px;
+        color: $secondary;
+    }
+
+    .social-icons {
+        i {
+            width: 30px;
+            height: 30px;
+            background-color: rgba($primary, 0.1);
+            color: $primary;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+        }
+    }
+
+    .social-content {
+        h5 {
+            color: $secondary;
+            margin: 2px;
+            font-size: 14px;
+        }
+    }
+}

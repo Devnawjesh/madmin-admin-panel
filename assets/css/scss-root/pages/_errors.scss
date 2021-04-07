@@ -1,0 +1,24 @@
+.err-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh !important;
+
+    .error-text {
+        font-weight: 500;
+        font-size: 120px;
+    }
+
+    .sad-face {
+        animation: faceSpin 320ms linear infinite alternate-reverse;
+    }
+}
+
+@keyframes faceSpin {
+    0% {
+        transform:rotate(-15deg);
+    }
+    100% {
+        transform:rotate(15deg);
+    }
+}

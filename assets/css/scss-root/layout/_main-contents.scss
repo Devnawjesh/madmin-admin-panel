@@ -1,0 +1,64 @@
+.content-wrapper {
+    overflow: hidden;
+    position: relative;
+    padding-top: 45px;
+    min-height: calc(100vh - 45px);
+}
+// Offsetting the content-wrapper based on main-menu version
+
+.aside-wrapper + .content-wrapper {
+    @include media-breakpoint-up('lg') {
+        margin-left: 210px;
+    }
+}
+
+.navbar-custom + .content-wrapper {
+    @include media-breakpoint-up('lg') {
+        margin-top: 50px;
+    }
+}
+
+.page-content {
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.page-title {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+
+    h4 {
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 12px;
+        color: $light;
+    }
+
+    .col-md-6:first-child {
+        a {
+            font-size: 12px;
+            color: $primary;
+            font-weight: 400;
+            position: relative;
+            margin-right: 16px;
+
+            &::after {
+                content: "";
+                width: 1px;
+                height: 10px;
+                position: absolute;
+                top: 2px;
+                right: -11px;
+                background-color: $secondary;
+            }
+        }
+    }
+
+    span {
+        font-size: 12px;
+        color: $light;
+        font-weight: 300;
+    }
+}

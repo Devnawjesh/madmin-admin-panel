@@ -1,0 +1,44 @@
+/* ------------------------------------ */
+/* ############### Misc ############### */
+/* ------------------------------------ */
+
+
+// This generate a class name of .op-1 having a style of opacity: 0.1.
+// Values goes up to 0.9;
+$num: 0;
+@while $num < 10 {
+  .opc-#{$num} { opacity: 0 + ($num * 0.1); }
+  .opc-#{$num}-imp { opacity: 0 + ($num * 0.1) !important; }
+  $num: $num + 1;
+}
+
+.opc-1 { opacity: 1; }
+
+@mixin generate-opacity($viewport) {
+  $num: 0;
+  @while $num < 10 {
+    .opc-#{$viewport}-#{$num} { opacity: 0 + ($num * 0.1); }
+    .opc-#{$viewport}-#{$num}-imp { opacity: 0 + ($num * 0.1) !important; }
+    $num: $num + 1;
+  }
+}
+
+@media (min-width: 480px) {
+  @include generate-opacity("xs");
+}
+
+@include media-breakpoint-up(sm) {
+  @include generate-opacity("sm");
+}
+
+@include media-breakpoint-up(md) {
+  @include generate-opacity("md");
+}
+
+@include media-breakpoint-up(lg) {
+  @include generate-opacity("lg");
+}
+
+@include media-breakpoint-up(xl) {
+  @include generate-opacity("xl");
+}

@@ -1,0 +1,145 @@
+/* -------------------------------------- */
+/* ############### Margin ############### */
+/* -------------------------------------- */
+
+@mixin generate-margin($num, $viewport:"") {
+
+  @if $viewport == "" {
+    $viewport: "-";
+  } @else {
+    $viewport: "-" + $viewport + "-";
+  }
+
+  //ie. .mg-sm-0
+  //ie. .mg-sm-0-imp
+  .mgn#{$viewport}#{$num} { margin: #{$num}px; }
+  .mgn#{$viewport}#{$num}-imp { margin: #{$num}px !important; }
+
+  //ie. .mg-sm-y-0
+  .mgn#{$viewport}y-#{$num} {
+    margin-top: #{$num}px;
+    margin-bottom: #{$num}px;
+  }
+
+  //ie. .mg-sm-y-0-imp
+  .mgn#{$viewport}y-#{$num}-imp {
+    margin-top: #{$num}px !important;
+    margin-bottom: #{$num}px !important;
+  }
+
+  //ie. .mg-sm-x-0
+  .mgn#{$viewport}x-#{$num} {
+    margin-left: #{$num}px;
+    margin-right: #{$num}px;
+  }
+
+  //ie. .mg-sm-x-0-imp
+  .mgn#{$viewport}x-#{$num}-imp {
+    margin-left: #{$num}px !important;
+    margin-right: #{$num}px !important;
+  }
+
+  //ie. .mg-sm-t-0
+  .mgn#{$viewport}t-#{$num} { margin-top: #{$num}px; }
+  .mgn#{$viewport}r-#{$num} { margin-right: #{$num}px; }
+  .mgn#{$viewport}b-#{$num} { margin-bottom: #{$num}px; }
+  .mgn#{$viewport}l-#{$num} { margin-left: #{$num}px; }
+
+  //ie. .mg-sm-t-0-imp
+  .mgn#{$viewport}t-#{$num}-imp { margin-top: #{$num}px !important; }
+  .mgn#{$viewport}r-#{$num}-imp { margin-right: #{$num}px !important; }
+  .mgn#{$viewport}b-#{$num}-imp { margin-bottom: #{$num}px !important; }
+  .mgn#{$viewport}l-#{$num}-imp { margin-left: #{$num}px !important; }
+}
+
+
+//margin: 0px to 9px
+$num: 0;
+@while $num <= 15 {
+  @include generate-margin($num);
+  $num: $num + 1;
+}
+
+//margin: 10x to 120px with step of 5px
+$num: 20;
+@while $num <= 120 {
+  @include generate-margin($num);
+  $num: $num + 5;
+}
+
+
+//margin: 10x to 120px with step of 5px
+$num: 1;
+@while $num <= 20 {
+  .mgn-t--#{$num} { margin-top: -#{$num}px; }
+  .mgn-r--#{$num} { margin-right: -#{$num}px; }
+  .mgn-b--#{$num} { margin-bottom: -#{$num}px; }
+  .mgn-l--#{$num} { margin-left: -#{$num}px; }
+  $num: $num + 1;
+}
+
+
+.mgn-t-auto { margin-top: auto; }
+.mgn-r-auto { margin-right: auto; }
+.mgn-b-auto { margin-bottom: auto; }
+.mgn-l-auto { margin-left: auto; }
+.mgn-x-auto { margin: auto; }
+.mgn-0-auto { margin: 0 auto; }
+
+@mixin generate-margin-with-steps($viewport) {
+  $num: 0;
+  @while $num < 10 {
+    @include generate-margin($num, $viewport);
+    $num: $num + 1;
+  }
+
+  //margin: 10x to 100px with step of 5px
+  $num: 10;
+  @while $num <= 100 {
+    @include generate-margin($num, $viewport);
+    $num: $num + 5;
+  }
+}
+
+@mixin generate-margin-responsive($viewport) {
+
+  .mgn-#{$viewport}-t-auto { margin-top: auto; }
+  .mgn-#{$viewport}-r-auto { margin-right: auto; }
+  .mgn-#{$viewport}-b-auto { margin-bottom: auto; }
+  .mgn-#{$viewport}-l-auto { margin-left: auto; }
+  .mgn-#{$viewport}-auto { margin: auto; }
+  .mgn-#{$viewport}-x-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mgn-#{$viewport}-l--1 { margin-left: -1px; }
+  .mgn-#{$viewport}-r--1 { margin-right: -1px; }
+  .mgn-#{$viewport}-t--1 { margin-top: -1px; }
+
+}
+
+@media (min-width: 480px) {
+  @include generate-margin-with-steps("xs");
+  @include generate-margin-responsive("xs");
+}
+
+@include media-breakpoint-up(sm) {
+  @include generate-margin-with-steps("sm");
+  @include generate-margin-responsive("sm");
+}
+
+@include media-breakpoint-up(md) {
+  @include generate-margin-with-steps("md");
+  @include generate-margin-responsive("md");
+}
+
+@include media-breakpoint-up(lg) {
+  @include generate-margin-with-steps("lg");
+  @include generate-margin-responsive("lg");
+}
+
+@include media-breakpoint-up(xl) {
+  @include generate-margin-with-steps("xl");
+  @include generate-margin-responsive("xl");
+}

@@ -1,0 +1,48 @@
+// Redefine BS colors
+$primary: #0074f1;
+$secondary: #7a87a0;
+$success: #07bf58;
+$danger: #ef1f3e;
+$warning: #FFBF00;
+$info: #0ac1ea;
+$light: #adb7cc;
+$dark: #214971;
+
+// Custom colors
+$queen-blue: #3A6EA5;
+$mazarine: #273c75;
+$naval: #40739e;
+$tomato: #eb2f06;
+$jalapeno: #b71540;
+$purple: #8854d0;
+$yellow: #ffd32a;
+$orange: #ff3f34;
+$green: #6ab04c;
+$grey: #95afc0;
+$dark-grey: #34495e;
+
+// Light version
+$primary-light: #ade9ff;
+$secondary-light: #7cb8ff;
+$success-light: #7effc2;
+$danger-light: #fdb7c2;
+$warning-light: #fff3a2;
+$info-light: #b3d6ff;
+$light-light: #f4f3f7;
+$dark-light: #e6e9ec;
+
+// Global colors
+$card-border-color: #f5f5f5;
+$border-color: #f5f5f5;
+$text-dark: #05353e; // Global text color
+$text-light: #9fa7b9;
+
+// Fonts
+$font-family-opensans:          'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+$font-family-roboto:            'Roboto', 'Helvetica Neue', Arial, sans-serif;
+$font-family-montserrat:        'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+$font-family-lato:              'Lato', 'Helvetica Neue', Arial, sans-serif;
+$font-family-poppins:           'Poppins', 'Helvetica Neue', Arial, sans-serif;
+
+$font-family-base:              $font-family-roboto;
+$font-size-base:                .875rem;

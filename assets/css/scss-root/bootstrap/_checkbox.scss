@@ -1,0 +1,93 @@
+.checkbox-primary {
+    .custom-control-input:checked ~ .custom-control-label,
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::before {
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+}
+
+.checkbox-secondary {
+    .custom-control-input:checked ~ .custom-control-label,
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::before {
+            background-color: $secondary;
+            border-color: $secondary;
+        }
+    }
+}
+
+.checkbox-success {
+    .custom-control-input:checked ~ .custom-control-label,
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::before {
+            background-color: $success;
+            border-color: $success;
+        }
+    }
+}
+
+.checkbox-danger {
+    .custom-control-input:checked ~ .custom-control-label,
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::before {
+            background-color: $danger;
+            border-color: $danger;
+        }
+    }
+}
+
+.checkbox-warning {
+    .custom-control-input:checked ~ .custom-control-label,
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::before {
+            background-color: $warning;
+            border-color: $warning;
+        }
+    }
+}
+
+.checkbox-info {
+    .custom-control-input:checked ~ .custom-control-label,
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::before {
+            background-color: $info;
+            border-color: $info;
+        }
+    }
+}
+
+.checkbox-light {
+    .custom-control-input:checked ~ .custom-control-label,
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::before {
+            background-color: $light;
+            border-color: $light;
+        }
+    }
+}
+
+.checkbox-dark {
+    .custom-control-input:checked ~ .custom-control-label,
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::before {
+            background-color: $dark;
+            border-color: $dark;
+        }
+    }
+}
+
+
+.checkbox-primary, .checkbox-secondary, .checkbox-success, .checkbox-danger, .checkbox-warning, .checkbox-info, .checkbox-light, .checkbox-dark {
+    .custom-control-input:checked ~ .custom-control-label {
+        &::after {
+            border-color: #fff;
+        }
+    }
+    .custom-control-input:disabled:checked ~ .custom-control-label {
+        &::after {
+            border-color: #fff;
+        }
+    }
+}

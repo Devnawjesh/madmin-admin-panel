@@ -1,0 +1,171 @@
+/* -------------------------------------- */
+/* ############### Border ############### */
+/* -------------------------------------- */
+
+// Borders
+.bdr-transparent{ border-color: transparent; }
+.bdr-initial{ border-color: transparent; }
+.bdr-inherit{ border-color: transparent; }
+
+.bdr-dashed { border-style: dashed; }
+.bdr-dotted { border-style: dotted; }
+
+.bdr { border: 1px solid #f5f5f5; }
+.bdr-t { border-top: 1px solid #f5f5f5; }
+.bdr-r { border-right: 1px solid #f5f5f5; }
+.bdr-b { border-bottom: 1px solid #f5f5f5; }
+.bdr-l { border-left: 1px solid #f5f5f5; }
+
+.bdr-y {
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.bdr-x {
+  border-left: 1px solid #f5f5f5;
+  border-right: 1px solid #f5f5f5;
+}
+
+.bdr-0 { border-width: 0; }
+.bdr-1 { border-width: 1px; }
+.bdr-2 { border-width: 2px; }
+.bdr-3 { border-width: 3px; }
+.bdr-4 { border-width: 4px; }
+.bdr-5 { border-width: 5px; }
+
+.bdr-t-0 { border-top: 0; }
+.bdr-r-0 { border-right: 0; }
+.bdr-b-0 { border-bottom: 0; }
+.bdr-l-0 { border-left: 0; }
+
+.bdr-t-0-imp { border-top: 0 !important; }
+.bdr-r-0-imp { border-right: 0 !important; }
+.bdr-b-0-imp { border-bottom: 0 !important; }
+.bdr-l-0-imp { border-left: 0 !important; }
+
+.bdr-y-0 {
+  border-top-width: 0;
+  border-bottom-width: 0;
+}
+
+.bdr-y-1 {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.bdr-y-2 {
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+}
+
+.bdr-x-0 {
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.bdr-x-1 {
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
+.bdr-x-2 {
+  border-left-width: 2px;
+  border-right-width: 2px;
+}
+
+
+// White border color
+.bdr-white-1 { border-color: rgba(#fff,.1); }
+.bdr-white-2 { border-color: rgba(#fff,.2); }
+.bdr-white-3 { border-color: rgba(#fff,.3); }
+.bdr-white-4 { border-color: rgba(#fff,.4); }
+.bdr-white-5 { border-color: rgba(#fff,.5); }
+.bdr-white-6 { border-color: rgba(#fff,.6); }
+.bdr-white-7 { border-color: rgba(#fff,.7); }
+.bdr-white-8 { border-color: rgba(#fff,.8); }
+
+// Gray border color
+.bdr-gray-1 { border-color: #f8f9fa; }
+.bdr-gray-2 { border-color: #e9ecef; }
+.bdr-gray-3 { border-color: #dee2e6; }
+.bdr-gray-4 { border-color: #ced4da; }
+.bdr-gray-5 { border-color: #adb5bd; }
+.bdr-gray-6 { border-color: #6c757d; }
+.bdr-gray-7 { border-color: #495057; }
+.bdr-gray-8 { border-color: #343a40; }
+.bdr-gray-9 { border-color: #212529; }
+
+// Border colors
+.bdr-white { border-color: #fff; }
+.bdr-black { border-color: #000; }
+.bdr-primary { border-color: $primary; }
+.bdr-secondary { border-color: $secondary; }
+.bdr-success { border-color: $success; }
+.bdr-danger { border-color: $danger; }
+.bdr-warning { border-color: $warning; }
+.bdr-info { border-color: $info; }
+
+
+// Border Radius
+// .rounded-1px to .rounded-15px
+$num: 1;
+@while $num < 16 {
+  .rounded-#{$num} { border-radius: #{$num}px; }
+  $num: $num + 1;
+}
+
+.rounded-20 { @include border-radius(20px); }
+.rounded-30 { @include border-radius(30px); }
+.rounded-40 { @include border-radius(40px); }
+.rounded-50 { @include border-radius(50px); }
+
+// .rounded-1% to .rounded-15%
+$num: 1;
+@while $num < 16 {
+  $p: #{$num}#{"%"};
+  .rounded-#{$num}p { border-radius: $p; }
+  $num: $num + 1;
+}
+
+.rounded-20p { @include border-radius(20%); }
+.rounded-30p { @include border-radius(30%); }
+.rounded-40p { @include border-radius(40%); }
+.rounded-50p { @include border-radius(50%); }
+
+@mixin generate-border-responsive($viewport) {
+
+  .bdr-#{$viewport}-t { border-top: 1px solid $card-border-color; }
+  .bdr-#{$viewport}-r { border-right: 1px solid $card-border-color; }
+  .bdr-#{$viewport}-b { border-bottom: 1px solid $card-border-color; }
+  .bdr-#{$viewport}-l { border-left: 1px solid $card-border-color; }
+  .bdr-#{$viewport} { border: 1px solid $card-border-color; }
+  .bdr-#{$viewport}-x {
+    border-left: 1px solid $card-border-color;
+    border-right: 1px solid $card-border-color;
+  }
+  .bdr-#{$viewport}-y {
+    border-top: 1px solid $card-border-color;
+    border-bottom: 1px solid $card-border-color;
+  }
+
+}
+
+@media (min-width: 480px) {
+  @include generate-border-responsive("xs");
+}
+
+@include media-breakpoint-up(sm) {
+  @include generate-border-responsive("sm");
+}
+
+@include media-breakpoint-up(md) {
+  @include generate-border-responsive("md");
+}
+
+@include media-breakpoint-up(lg) {
+  @include generate-border-responsive("lg");
+}
+
+@include media-breakpoint-up(xl) {
+  @include generate-border-responsive("xl");
+}
